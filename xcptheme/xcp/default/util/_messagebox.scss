@@ -1,0 +1,11 @@
+ @mixin xcp-messagebox {
+     .#{$prefix}message-box .#{$prefix}window-body {
+        .#{$prefix}window-item {
+            padding: 20px 20px 0px !important;
+        }
+
+        .#{$prefix}form-display-field {
+            padding-top: 0px;
+        }
+     }
+ }

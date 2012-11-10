@@ -1,0 +1,67 @@
+@mixin xcp-multivalue-input {
+    .xcp_multivalue_input_grid-cls {
+
+        .x-grid-body {
+            border-width: 0;
+        }
+
+        .x-grid-table {
+            width: 100% !important;
+            border-style: solid;
+            border-color: $xcp-toolbar-border-color;
+            border-width: 0px 1px 1px 1px !important;
+        }
+        /*@include xcp-box-shadow;*/
+    }
+
+
+    .xcp_multivalueinput {
+        /* To give the illusion of the panel expanding as items are added we
+         * make the actual panel transparent and then give a border and
+         * background to table and its contents
+         */
+        .x-grid-body {
+            border: none;
+            background: transparent;
+        }
+
+        .x-grid-table {
+            border-width: 0px;
+            table-layout: auto;
+        }
+
+        .x-grid-cell {
+            border-color: transparent;
+            border-width: 0px;
+
+        }
+
+        .x-grid-row {
+            background: #ffffff;
+        }
+
+        .x-grid-row-over {
+            background-color: #F0F7FB;
+        }
+
+    }
+
+    .invalidMultiValueInput {
+        .x-grid-table {
+            border-style: solid;
+            border-color: #CC3300;
+            border-width: 0px 1px 1px 1px;
+        }
+
+        .x-grid-row {
+            background-color: #CC3300;
+            @include opacity(0.9);
+        }
+
+        .xcp_multivalueinput_toolbar {
+            border-style: solid;
+            border-color: #CC3300;
+            border-width: 1px 1px 1px 0px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+@mixin xcp-datasource-instance {
+	.xcp-data-source-panel {
+		.x-panel-header {
+			@include linear-gradient(color-stops(#D5E5F5, #FFFFFF), bottom);
+		    border-color: #CCCCCC !important;
+		    border-width: 1px 1px 0px !important;
+		    height: 24px;
+		    border-radius: 0px;
+		    -moz-border-radius: 0px;
+	    }
+	    
+	    .x-panel-body {
+	    	font-size: 11;
+			overflow-y: auto;
+			border-style: solid;
+	    	border-width: 1px !important;
+	    	border-color: #CCCCCC;
+			
+			.xcp-data-source-instance {
+				margin: 10px 10px 0px 10px;
+				float: left;
+				width: 160px;
+				height: 20px;
+				img {
+					height: 16px;
+					width: 16px;
+					margin-right: 3px;
+					display:inline-block; 
+					vertical-align:middle;
+				}
+				
+				span {
+					height: 16px;
+					display:inline-block; 
+					vertical-align:middle;
+				}
+			}
+			
+			.xcp-empty-message {
+				font-size: 11;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				color: #808080;
+			}
+		}
+		
+		/* Change which of the ext icons were using to the down and up icons. */
+		.x-tool-collapse-bottom {
+		    background-position: 0 -75px;
+		}
+		
+		.x-tool-over .x-tool-collapse-bottom {
+			background-position: -15px -75px;
+		}
+		
+		.x-tool-expand-top {
+		    background-position: 0 -60px;
+		}
+		
+		.x-tool-over .x-tool-expand-top {
+			background-position: -15px -60px;
+		}
+	}
+	
+	
+	.xcp-ds-real-time-img {
+		background-image:url("../../../image/datasource_realtime_art.png"); 
+		background-color: transparent;
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 16px;
+	}
+	
+	.x-btn-xcp-dsi-toolbar-buttion-small-icon {
+		width: 20px;
+		height: 20px;
+		background: transparent;
+		border: none;
+		
+		.x-btn-icon {
+			width: 16px;
+			height: 16px;
+			top: 2;
+			left: 2;
+			bottom: 0;
+			right: 0;
+		}
+	}	 
+	
+	
+	.xcp-dsi-toolbar-button-over {
+		@include border-radius(3px);	
+		 @include background-image(linear-gradient(top, color_stops(
+	                #FFFFFF,
+	                #D0D0D0,
+	                #C4C4C4
+	         )));
+	}
+	
+}

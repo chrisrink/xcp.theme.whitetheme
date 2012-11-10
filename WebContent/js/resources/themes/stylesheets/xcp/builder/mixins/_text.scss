@@ -1,0 +1,22 @@
+@mixin xcp-builder-msgbox-panel-text {
+    @include xcp-text(        
+        $xcp-builder-normal-font,
+        $xcp-builder-normal-font-size,
+        $xcp-builder-normal-font-weight,
+        $xcp-builder-normal-font-color
+    );
+}
+
+
+@mixin xcp-text(  
+    $font,
+    $font-size,
+    $font-weight,
+    $color
+){   
+    font: $font;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    word-wrap:break-word;
+}

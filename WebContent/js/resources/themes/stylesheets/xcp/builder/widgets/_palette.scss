@@ -1,0 +1,111 @@
+@mixin white-background {
+     background-color: #FFFFFF;
+     background-image: none;
+}
+
+@mixin xcp-builder-palette {
+    
+    //palette border
+ 	#{$builder-id} .#{$prefix}panel-body-default {
+    	border-color: #999999;   	    	
+ 	} 
+ 	
+ 	#{$builder-id} .#{$prefix}grid-header-hidden .#{$prefix}grid-body {
+ 		 border-top-color: #999999 !important;
+	}
+	
+    
+    //widget section
+    @include extjs-panel-ui(
+        'builder-palette-category',
+
+        $ui-header-font-size: 11px,
+        $ui-header-font-weight: normal,
+        $ui-header-color: #000000,
+        $ui-header-background-color: #EEEEEE,
+        /*$ui-header-background-gradient: 'list',*/
+        $ui-body-border-width: 0,
+        $ui-border-color: #fff,
+        $ui-border-radius: 4px,
+        $ui-body-background-color: #fff,
+        $ui-body-font-size: 14px
+    );
+    
+    //widget     
+    #{$builder-id} .xcp-paletteWidgetFont {
+    	vertical-align: middle;
+    	text-align: left;
+        display: block;
+        color: #000000;
+        font-family: tahoma,helvetica,sans-serif ;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 16px;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+    
+    #{$builder-id} .xcp-paletteWidgetFont img {
+    	float: left;         
+        margin: 0 4px 0 3px;
+    }
+
+    #{$builder-id} .#{$prefix}panel-header-builder-palette-category {
+        border-color: #B7CADE !important;
+        border-width: 1px 1px 0 1px !important;
+        @include linear-gradient(color-stops(#FFFFFF, #D5E5F5), bottom);
+    }
+
+    //inactive tab
+    #{$builder-id} .#{$prefix}tab-default-top {      
+       @include white-background;
+    }
+    
+    #{$builder-id} .#{$prefix}tab-default-top {
+  		border-bottom: 1px solid #999999 !important;  		
+	}
+
+    #{$builder-id} .#{$prefix}tab-top-active {
+        background-color: #D5E5F5;
+        		 
+        @include linear-gradient(color-stops(#FFFFFF, #D5E5F5), top);
+    }
+
+    #{$builder-id} .#{$prefix}tab {
+        border-color: #999999;
+    }
+
+    #{$builder-id} .#{$prefix}tab-bar {
+       @include white-background;
+    }
+
+
+    //inactive tab font
+    #{$builder-id} .#{$prefix}tab button {
+      font-size: 11px;
+      font-weight: normal;
+      color: #000000;
+    }
+
+    #{$builder-id} .#{$prefix}tab-bar-strip-default, #{$builder-id} .#{$prefix}tab-bar-strip-default-plain {
+      background-color: #D5E5F5;
+      border-color: #999999;
+    }
+
+    #{$builder-id} .#{$prefix}tab-bar-top .#{$prefix}tab-bar-body {
+        border-width: 1px 0 0;
+        border-color: #FFFFFF;
+    }
+
+    #{$builder-id} .xcp-builder-widget-tab-icon {
+        background-image: url('../../../image/uiWwidgets_tab.png');
+    }
+
+     #{$builder-id} .#{$prefix}tab-default-top-active {
+      border-bottom-color: #D5E5F5 !important;
+    }
+   
+	#{$builder-id} .xcp-paletteWidgetDisabled {
+		color: #808080;
+	}
+}

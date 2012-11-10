@@ -1,0 +1,143 @@
+@mixin xcp-menu {
+    $triangle-height: 8px;
+    $triangle-width: 16px;
+
+    @mixin menu-marker-inner($pos: top)  {
+        $size: 12px;
+        $offset-height: $triangle-height;
+
+        position: relative;
+        /*border: solid $xcp-widget-border-color;*/
+        background: white;
+        overflow: hidden;
+        @include rotate(45deg);
+        @include xcp-box-shadow;
+
+        @if $pos == 'top' {
+            /*border-width: 1px 0 0 1px;*/
+            top: 2px;
+            left: 1px;
+            height: $triangle-width;
+            width: $size;
+        } @else if $pos == 'bottom' {
+            /*border-width: 0 1px 1px 0;*/
+            top: -$triangle-height;
+            height: $size;
+            width: $triangle-width;
+        } @else if $pos == 'left' {
+            /*border-width: 0 0 1px 1px;*/
+            top: -1px;
+            height: $triangle-width;
+            left: $triangle-height / 2;
+            width: $size;
+        } @else if $pos == 'right' {
+            /*border-width: 1px 1px 0 0;*/
+            left: -$triangle-height;
+            height: $triangle-width;
+            width: $size;
+        }
+    }
+
+    @mixin menu-marker($pos: top) {
+
+        .menu-marker-#{$pos} {
+            position: absolute;
+            overflow: hidden;
+
+            @if $pos == 'top' or $pos == 'bottom' {
+                height: $triangle-height;
+
+            } @else if $pos == 'left' or $pos == 'right' {
+                width: $triangle-height;
+                height: $triangle-width;
+            }
+
+            .menu-marker-inner {
+                @include menu-marker-inner($pos);
+            }
+        }
+    }
+
+    @include menu-marker(top);
+    @include menu-marker(left);
+    @include menu-marker(bottom);
+    @include menu-marker(right);
+
+
+    .#{$prefix}menu {
+        overflow: visible;
+        @include xcp-box-shadow;
+    }
+
+    .#{$prefix}menu-body {
+        padding: 0;
+        background-color: $xcp_menu_background-color !important;
+    }
+
+    .#{$prefix}menu-item-text {
+        @include xcp-context-menuitem-label-text;
+        @if (lightness($xcp_menu_background_color) < 40) {
+            @include text-shadow(rgba(0,0,0,.5) 0 -1px 0);
+        } @else {
+            @include text-shadow(rgba(255,255,255,.25) 0 1px 0);
+        }
+        vertical-align: middle;
+    }
+
+    .#{$prefix}menu-item-link {
+        display: block;
+        height: 100%;
+        padding: 5px 20px 5px 36px;
+        margin: 1px;
+        text-decoration: none !important;
+        cursor: default;
+    }
+
+    .#{$prefix}menu-item-active {
+        .#{$prefix}menu-item-link {
+            border: 1px solid $xcp-menu-item-background-over;
+            @include border-radius(0px);
+            background-color: $xcp-menu-item-background-over !important;
+        }
+
+        .#{$prefix}menu-item-text {
+            color: $xcp-context-menuitem-label-text-font-color-over;
+        }
+
+        .#{$prefix}menu-item-arrow {
+            background: theme-image($theme-name, $xcp-menu-item-trigger-arrow-over, false, $relative-image-path-for-uis) no-repeat center center;
+        }
+    }
+
+    .#{$prefix}menu-item-arrow {
+        top: 11px;
+        background: theme-image($theme-name, $xcp-menu-item-trigger-arrow, false, $relative-image-path-for-uis) no-repeat center center;
+    }
+
+    .#{$prefix}menu-icon-separator {
+        padding: 0 0 0 10px;
+        border-left: 0;
+        background-color: transparent;
+        width: 0px;
+    }
+
+    @if not $supports-gradients or $compile-all {
+        .#{$prefix}nlg {
+            .#{$prefix}menu-body {
+                border: 1px solid #D7D7D7;
+            }
+
+            .menu-marker-top, .menu-marker-right, .menu-marker-bottom, .menu-marker-left {
+                 .menu-marker-inner{
+                    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+                }
+            }
+
+            .#{$prefix}menu-item-active .#{$prefix}menu-item-link {
+                //override extjs css background
+                background: none;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,161 @@
+@mixin xcp-window-ui(
+    $ui-label,
+
+    $ui-border-radius: null,
+    $ui-padding: null,
+
+    $ui-header-background-color: null,
+    $ui-header-background-gradient: null,
+
+    $ui-background-color: null
+
+) {
+     $background-image: none;
+
+     @if ($xcp-page-background-image != null or  $xcp-page-background-image != 'none') {
+        $background-image: theme-image($theme-name, $xcp-page-background-image, false, $relative-image-path-for-uis);
+     }
+
+     @include x-frame(
+            'window',
+            'default',
+
+            $border-radius: $ui-border-radius,
+            $border-width: 0,
+            $padding: $ui-padding,
+            $background-color: $xcp-window-fill-color
+     );
+
+
+    .ext-mb-text {
+       @include xcp-msgbox-panel-text;
+    }
+
+
+    .#{$prefix}window-default {
+        overflow: visible;
+        min-width: 325px;
+        min-height: 125px;
+        max-width: 960px;
+        max-height: 740px;
+        padding: 5px;
+
+        @include xcp-box-shadow;
+
+        .#{$prefix}form-item {
+            @include xcp-msgbox-panel-text
+        }
+
+        .#{$prefix}window-header-#{$ui-label}-top {
+            border-width: 0px;
+            margin-bottom: -5px;
+            padding: 5px 5px 0px;
+            @include box-shadow(none);
+        }
+
+        .#{$prefix}window-header-text-container {
+            padding-top: 5px;
+            height: 30px;
+        }
+
+        .#{$prefix}window-header-text-default {
+            @include xcp-column-box-header-text;
+        }
+
+        .#{$prefix}window-header-default {
+            height: 30px;
+            background-color: transparent;
+
+            .#{$prefix}box-layout-ct, .#{$prefix}border-layout-ct, .#{$prefix}box-inner {
+                overflow: visible;
+            }
+        }
+
+        .#{$prefix}window-header-default-top {
+            .#{$prefix}tool {
+                padding: 2px;
+                width: 20px !important;
+                height: 20px !important;
+                background-color: $xcp-dialog-closer-background;
+                margin-top: -20px !important;
+                margin-right: -11px !important;
+                cursor: pointer;
+                @include border-radius(10px);
+                @include xcp-box-shadow;
+            }
+
+            .#{$prefix}tool img {
+                top: 2px;
+                left: 2px;
+                position: relative;
+                background-image: theme-image($theme-name, 'window-header/close_12.png', false, $relative-image-path-for-uis);
+            }
+
+            .#{$prefix}tool-over {
+                @include opacity(.9);
+
+                .#{$prefix}tool-close {
+                    background-position: 0 0;
+                }
+            }
+        }
+
+        .#{$prefix}window-body-default {
+            padding: 0px;
+            border-width: 0px;
+            background-color: transparent;
+            background-image: $background-image;
+            @include box-shadow(rgba(0,0,0, 0.2) 0 0 3px 1px inset);
+        }
+
+        .#{$prefix}toolbar-footer {
+            height: 42px;
+            padding: 10px 0px 4px;
+            margin: 0px;
+        }
+    }
+
+    .#{$prefix}message-box .#{$prefix}window-body-default {
+        background-image: none;
+        background-color: $xcp-window-fill-color;
+        @include box-shadow(none);
+    }
+
+    .#{$prefix}nbr {
+
+        .#{$prefix}frame-mc {
+            overflow: visible;
+        }
+
+
+        .#{$prefix}window-default-mc {
+            padding: 5px;
+        }
+
+        .#{$prefix}window-header-default-top-tl,
+        .#{$prefix}window-header-default-top-bl,
+        .#{$prefix}window-header-default-top-tr,
+        .#{$prefix}window-header-default-top-br,
+        .#{$prefix}window-header-default-top-tc,
+        .#{$prefix}window-header-default-top-bc,
+        .#{$prefix}window-header-default-top-ml,
+        .#{$prefix}window-header-default-top-mc,
+        .#{$prefix}window-header-default-top-mr {
+            background-image: none;
+            background-color: transparent;
+        }
+
+        .#{$prefix}window-default-tl,
+        .#{$prefix}window-default-bl,
+        .#{$prefix}window-default-tr,
+        .#{$prefix}window-default-br,
+        .#{$prefix}window-default-tc,
+        .#{$prefix}window-default-bc,
+        .#{$prefix}window-default-ml,
+        .#{$prefix}window-default-mc,
+        .#{$prefix}window-default-mr {
+            background-image: none;
+            background-color: $xcp-window-fill-color;
+        }
+    }
+}

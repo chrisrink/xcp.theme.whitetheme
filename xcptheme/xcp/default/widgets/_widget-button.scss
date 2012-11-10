@@ -1,0 +1,268 @@
+@mixin xcp-widget-button(
+    $ui: 'default',
+    $background-gradient: null,
+    $background-gradient-over: null,
+    $background-gradient-focus: null,
+    $background-gradient-pressed: null,
+    $background-gradient-disabled: null
+) {
+
+    $padding-top : top($xcp-widget-button-padding);
+    $padding-right: right($xcp-widget-button-padding);
+    $padding-bottom: bottom($xcp-widget-button-padding);
+    $padding-left: left($xcp-widget-button-padding);
+
+
+    .#{$prefix}btn-arrow-right-triangle {
+        position: relative;
+        float: right;
+        top: 50%;
+        left: 5px;
+        margin-top: -2px;
+        @include triangle("bottom", $width: 4px, $color: $xcp-app-menu-label-text-font-color);
+    }
+
+    //override ext button style
+    .#{$prefix}btn-#{$ui}-small, .xcp_action_menu-cls {
+        padding: $xcp-widget-button-padding;
+        margin: $xcp-widget-button-margin;
+    }
+
+    //no need for margin if inside column box
+    .xcp_column_box-cls .xcp_button-cls, .xcp_column_box-cls .xcp_action_menu-cls {
+        margin: 0px;
+    }
+
+    .x-toolbar-xcp-nav-toolbar .x-btn-arrow {
+        background-image: theme-image($theme-name, $xcp-menu-trigger-arrow, false, $relative-image-path-for-uis);
+    }
+
+   .xcp_nav_button-cls {
+        .#{$prefix}btn-arrow {
+            margin-right: 30px;
+        }
+
+        &.#{$prefix}btn-pressed, &.#{$prefix}btn-menu-active, &.#{$prefix}btn-over  {
+            .#{$prefix}btn-arrow {
+                background-image: theme-image($theme-name, $xcp-menu-trigger-arrow-over, false, $relative-image-path-for-uis);
+            }
+        }
+   }
+
+
+   .x-btn-disabled span {
+        @include opacity(.9);
+   }
+
+   //no opacity in IE
+   .#{$prefix}nlg .x-btn-disabled span {
+        filter: none;
+   }
+
+   .xcp_action_menu-cls {
+      .#{$prefix}btn-arrow {
+         background-image: theme-image($theme-name, $xcp-menu-trigger-arrow-over, false, $relative-image-path-for-uis);
+
+         .x-btn-inner {
+            margin-right: 15px;
+         }
+      }
+   }
+
+
+   .#{$prefix}btn-arrow-right {
+        padding-right: 0px;
+   }
+
+   .#{$prefix}btn-#{$ui}-small {
+        border-width: 0px !important;
+        margin-left: 5px !important;
+
+        .#{$prefix}btn-inner {
+            @include text-shadow(rgba(0,0,0,.4) 0 0 5px);
+        }
+   }
+
+   .#{$prefix}btn-#{$ui}-small-disabled {
+        .#{$prefix}btn-inner {
+            @include text-shadow(none);
+        }
+   }
+
+   .#{$prefix}btn-#{$ui}-small-pressed {
+        .#{$prefix}btn-inner {
+            @include text-shadow(none);
+        }
+   }
+
+   .#{$prefix}btn-#{$ui}-small-focus {
+        border-width: 2px !important;
+
+        padding-top: top($xcp-widget-button-padding) - 2 !important;
+        padding-left: left($xcp-widget-button-padding) - 2 !important;
+        padding-bottom: bottom($xcp-widget-button-padding) - 2 !important;
+        padding-right: right($xcp-widget-button-padding) - 2 !important;
+
+   }
+
+   .#{$prefix}btn-#{$ui}-small, .xcp_action_menu-cls {
+
+       &.x-btn-default-small-icon button,
+       &.x-btn-default-small-icon .x-btn-inner,
+       &.x-btn-default-small-noicon button,
+       &.x-btn-default-small-noicon .x-btn-inner {
+           height: $xcp-widget-button-icon-size;
+           line-height: $xcp-widget-button-text-font-size + 4;
+       }
+   }
+
+ @if not $supports-border-radius or $compile-all {
+        .#{$prefix}nbr {
+
+            .#{$prefix}btn-#{$ui}-small-mc {
+                padding: $xcp-widget-button-padding !important;
+            }
+
+            .#{$prefix}btn-#{$ui}-small-focus {
+                border-width: 2px !important;
+
+                .#{$prefix}btn-#{$ui}-small-mc {
+                    padding-top: top($xcp-widget-button-padding) - 2 !important;
+                    padding-left: left($xcp-widget-button-padding) - 2 !important;
+                    padding-bottom: bottom($xcp-widget-button-padding) - 2 !important;
+                    padding-right: right($xcp-widget-button-padding) - 2 !important;
+                }
+           }
+
+            .#{$prefix}btn-#{$ui}-over {
+                .#{$prefix}frame-tl,
+                .#{$prefix}frame-bl,
+                .#{$prefix}frame-tr,
+                .#{$prefix}frame-br,
+                .#{$prefix}frame-tc,
+                .#{$prefix}frame-bc {
+                    background-image: none;
+                }
+                .#{$prefix}frame-ml,
+                .#{$prefix}frame-mr {
+                    background-image: none;
+                }
+                .#{$prefix}frame-mc {
+                    @if $background-gradient-over {
+                        background-image: none;
+                    }
+                }
+            }
+
+            .#{$prefix}btn-#{$ui}-focus {
+                .#{$prefix}frame-tl,
+                .#{$prefix}frame-bl,
+                .#{$prefix}frame-tr,
+                .#{$prefix}frame-br,
+                .#{$prefix}frame-tc,
+                .#{$prefix}frame-bc {
+                    background-image: none;;
+                }
+                .#{$prefix}frame-ml,
+                .#{$prefix}frame-mr {
+                    background-image: none;
+                }
+                .#{$prefix}frame-mc {
+                    @if $background-gradient-focus {
+                        background-image: none;
+                    }
+                }
+            }
+
+            .#{$prefix}btn-#{$ui}-menu-active,
+            .#{$prefix}btn-#{$ui}-pressed {
+                .#{$prefix}frame-tl,
+                .#{$prefix}frame-bl,
+                .#{$prefix}frame-tr,
+                .#{$prefix}frame-br,
+                .#{$prefix}frame-tc,
+                .#{$prefix}frame-bc {
+                    background-image: none;
+                }
+                .#{$prefix}frame-ml,
+                .#{$prefix}frame-mr {
+                    background-image: none;
+                }
+                .#{$prefix}frame-mc {
+                    @if $background-gradient-pressed {
+                        background-image: none;
+                    }
+                }
+            }
+
+            .#{$prefix}btn-#{$ui}-disabled {
+                .#{$prefix}frame-tl,
+                .#{$prefix}frame-bl,
+                .#{$prefix}frame-tr,
+                .#{$prefix}frame-br,
+                .#{$prefix}frame-tc,
+                .#{$prefix}frame-bc {
+                    background-image: none;
+                }
+                .#{$prefix}frame-ml,
+                .#{$prefix}frame-mr {
+                    background-image: none;
+                }
+                .#{$prefix}frame-mc {
+                    @if $background-gradient-disabled {
+                        background-image: none;
+                    }
+                }
+            }
+        }
+    }
+
+    //override Ext style for IE
+    @if not $supports-gradients or $compile-all {
+        @if $background-gradient != null {
+            .#{$prefix}nlg {
+                .#{$prefix}btn-#{$ui} {
+                    background-repeat: repeat-x;
+                    background-image: none;
+                }
+            }
+        }
+
+        @if $background-gradient-over != null {
+            .#{$prefix}nlg {
+                .#{$prefix}btn-#{$ui}-over {
+                    background-repeat: repeat-x;
+                    background-image: none;
+                }
+            }
+        }
+
+        @if $background-gradient-focus != null {
+            .#{$prefix}nlg {
+                .#{$prefix}btn-#{$ui}-focus {
+                    background-repeat: repeat-x;
+                    background-image: none;
+                }
+            }
+        }
+
+        @if $background-gradient-pressed != null {
+            .#{$prefix}nlg {
+                .#{$prefix}btn-#{$ui}-menu-active,
+                .#{$prefix}btn-#{$ui}-pressed {
+                    background-repeat: repeat-x;
+                    background-image: none;
+                }
+            }
+        }
+
+        @if $background-gradient-disabled != null {
+            .#{$prefix}nlg {
+                .#{$prefix}btn-#{$ui}-disabled {
+                    background-repeat: repeat-x;
+                    background-image: none;
+                }
+            }
+        }
+    }
+}

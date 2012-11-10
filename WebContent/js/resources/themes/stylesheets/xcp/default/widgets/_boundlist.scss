@@ -1,0 +1,22 @@
+@mixin xcp-boundlist {
+    .#{$prefix}boundlist {
+        border: none;
+        @include xcp-box-shadow;
+    }
+
+    .#{$prefix}boundlist-item-over {
+        border-color: transparent;
+        background: $xcp-boundlist-item-hover-color;
+    }
+
+    .#{$prefix}boundlist-item {
+        @include xcp-form-value-text;
+    }
+
+    .#{$prefix}boundlist-selected {
+        background: $xcp-boundlist-selected-color;
+        border-style: $xcp-boundlist-item-selected-border-style;
+		border-color: $xcp-boundlist-item-selected-border-color;
+        border-width: $xcp-boundlist-item-selected-border-width;
+    }
+}

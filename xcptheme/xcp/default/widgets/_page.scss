@@ -1,0 +1,27 @@
+@mixin xcp-page {
+    $background-image: none;
+
+    @if ($xcp-page-background-image != null or  $xcp-page-background-image != 'none') {
+        $background-image: theme-image($theme-name, $xcp-page-background-image, false, $relative-image-path-for-uis);
+    }
+
+    .xcp-viewport {
+        background-image: $background-image;
+    }
+
+    /** Page **/
+    #_topPageContainer > .#{$prefix}panel-default {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #_topPageContainer > .#{$prefix}panel-default > .#{$prefix}panel-body-default {
+        background: transparent;
+    }
+
+    .xcp-content-area {
+        margin: $xcp-content-area-margin;
+        background: $xcp-content-area-background;
+    }
+
+}

@@ -1,0 +1,31 @@
+@mixin xcp-artifact-icon-cls {
+	.xcp-builder-realtime-icon {
+		background-image: url('../../../image/datasource_realtime_art.png');    		
+	}
+	.xcp-builder-search-icon {
+		background-image: url('../../../image/datasource_fulltext_art.png');    	
+	}	
+	.xcp-builder-historical-icon {
+		background-image: url('../../../image/datasource_historical_art.png');
+	}
+	.xcp-builder-data-action-instance-icon {
+		background-image: url('../../../image/primary_action_misc.png');
+	}
+	.xcp-builder-selector-data-action-instance-icon {
+		background-image: url("../../../image/uiaction_art.png");
+	}
+	.xcp-builder-tasklist-icon {
+		background-image: url('../../../image/tasklist_art.png');
+	}
+	.xcp-builder-stateless-process-icon {
+		background-image: url('../../../image/stateless_proc.png');
+	}
+}
+
+@mixin xcp-builder-dataservices-tree {
+
+	.#{$prefix}grid-tree-node-expanded {
+    	@include xcp-artifact-icon-cls;		
+	}
+	@include xcp-artifact-icon-cls;		
+}

@@ -1,0 +1,20 @@
+@mixin xcp-master-header {
+    .xcp-master-header > .#{$prefix}panel-body-xcp-column-box-ui{
+        margin-bottom: 0px;
+        border-bottom: 1px $xcp-app-menu-bottom-inner-border-color solid !important;
+
+        @include background-gradient($xcp-app-header-background, $xcp-app-header-background-gradient);
+    }
+
+    .xcp-master-header {
+        border-bottom: $xcp-app-menu-bottom-border-size $xcp-app-menu-bottom-border-color solid !important;
+
+        .xcp_columnhbox-cls, .xcp_columnvbox-cls {
+            margin: 0 !important;
+        }
+    }
+
+    .#{$prefix}nlg .xcp-master-header > * > .x-box-inner {
+        @include ie-linear-gradient($xcp-app-header-background-gradient-start, $xcp-app-header-background-gradient-end);
+    }
+}

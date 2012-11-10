@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  ~ Copyright (c) 2010-2011. EMC Corporation.  All Rights Reserved.
+  --><project basedir="." default="compile.sass" name="xcp-builder-sass">
+    <description>xCP Builder Page Editor SASS</description>
+	<property name="compass" value="${basedir}/compass"/>
+
+	<target name="clean">
+		 <delete file="css/xcp-builder.css"/>
+    </target>
+
+    <target name="build" depends="clean">
+        <antcall target="compile.sass"/>
+    </target>
+	
+    <target name="compile.sass">
+        <path id="jruby.classpath">
+            <fileset dir="${compass}/lib/">
+                <include name="jruby*.jar"/>
+            </fileset>
+        </path>
+
+        <java classname="org.jruby.Main" fork="true" failonerror="true" classpathref="jruby.classpath">
+            <arg value="${compass}/config/compile.rb"/>
+            <arg line=" compile sass --sass-dir sass --force"/>
+        </java>
+    </target>
+
+    <target name="watch.sass">
+        <path id="jruby.classpath">
+            <fileset dir="${compass}/lib/">
+                <include name="jruby*.jar"/>
+            </fileset>
+        </path>
+
+        <java classname="org.jruby.Main" fork="true" failonerror="true" classpathref="jruby.classpath">
+            <arg value="${compass}/config/compile.rb"/>
+            <arg line=" watch sass --sass-dir sass --force"/>
+        </java>
+    </target>
+
+</project>

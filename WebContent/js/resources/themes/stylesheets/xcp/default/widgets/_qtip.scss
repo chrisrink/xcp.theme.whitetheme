@@ -1,0 +1,22 @@
+@mixin xcp-qtip {
+    //extjs default qtip style is using default 3px padding, and it's not defined in variable
+    //so have to override it here
+    @include x-frame(
+        $cls: 'tip',
+        $border-radius: 4px,
+        $border-width: 1px,
+        $padding: $xcp-tooltip-padding,
+        $background-color: $xcp-tooltip-background-color,
+        $background-gradient: $tip-background-gradient,
+        $table: true
+    );
+
+    .#{$prefix}nbr .x-tip {
+        background-color : $xcp-tooltip-background-color;
+        padding: $xcp-tooltip-padding !important;
+    }
+
+    .#{$prefix}form-invalid-tip-body {
+        background: theme-image($ext-default-theme-name, 'form/exclamation.gif') 1px 0 no-repeat;
+    }
+}

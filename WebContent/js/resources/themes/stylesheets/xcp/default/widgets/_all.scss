@@ -1,0 +1,32 @@
+@mixin xcp-all {
+    body {
+        font-size: $xcp-default-font-size;
+        font-family: $xcp-default-font-family;
+    }
+
+
+    .#{$prefix}mask {
+        @include opacity($xcp-loadmask-opacity);
+        background: $xcp-loadmask-backgorund;
+    }
+
+    // $menu-text-color: $xcp-widget-value-text-font-color;
+
+    /** Widget Value Text **/
+    .xcp_plain_text-cls, .xcp_rich_text-cls {
+        @include  xcp-widget-value-text;
+    }
+
+    .xcp_rich_text-cls {
+        ol li{
+            list-style-type: decimal;
+            list-style-position: inside;
+        }
+
+        ul li {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+    }
+
+}

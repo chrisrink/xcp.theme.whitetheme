@@ -1,0 +1,108 @@
+@mixin xcp-tab-group {
+    $tab-height: $xcp-header-tab-height;
+    $tab-font-size: $xcp-widget-button-text-font-size;
+    $tab-font-weight: $xcp-widget-button-text-font-weight;
+    $tab-font-family: $xcp-widget-button-text-font-family;
+    $tab-font-weight-over: $xcp-widget-button-text-font-color-over;
+
+    $tab-color: $xcp-widget-button-text-font-color;
+    $tab-color-active: $xcp-widget-button-text-font-color-pressed;
+    $tab-color-disabled: $xcp-widget-button-text-font-color-disabled;
+    $tabbar-border-color: $xcp-tab-bar-border-color;
+
+    .xcp_tab_group-cls {
+        @include extjs-tabbar;
+    }
+
+    .xcp_tab_group-cls {
+        @include extjs-tab;
+    }
+
+    .xcp_tab_group-cls .x-tab em {
+        line-height: 13px !important;
+    }
+
+    .xcp_header_tab-cls .x-tab em {
+        padding: 0px;
+    }
+
+    .xcp_header_tab-cls .x-tab-icon {
+        padding: 0px 0px 0px 0px;
+        margin: 0px 5px 0px 0px !important;
+    }
+
+    .xcp_tab_bar-cls {
+        background: $xcp-tab-bar-background-color !important;
+        padding-left: 0px !important;
+        border-color: $xcp-tab-bar-background-color !important;
+    }
+    .xcp_tab_bar-cls .x-tab-bar-body {
+        background: $xcp-tab-bar-background-color !important;
+        border-color: $xcp-tab-bar-background-color !important;
+    }
+
+    .x-tab-bar-strip {
+        background: transparent !important;
+        border-color: transparent !important;
+        z-index: -1 !important;
+    }
+
+    .xcp_header_tab-cls {
+        padding: $xcp-header-tab-padding !important;
+        background: $xcp-header-tab-background-inactive;
+        @include opacity(1.0);
+    }
+
+    .x-tab-xcp-tab-ui-active {
+        background: $xcp-header-tab-background-active !important;
+        @include opacity(1.0);
+    }
+
+    .x-tab-xcp-tab-ui-over {
+        background: $xcp-header-tab-background-over  !important;
+        @include opacity(1.0);
+    }
+
+    .x-tab-xcp-tab-ui-disabled {
+        background: $xcp-header-tab-background-disabled !important;
+        @include opacity($xcp-header-tab-opacity-disabled);
+    }
+
+    .xcp_tab_group-cls .x-tab-bar-bottom {
+        .xcp-tab-bar-caret {
+            position: relative;
+            @include triangle($direction: "top", $width: $xcp-header-tab-caret-width, $height: $xcp-header-tab-caret-height, $color: $xcp-header-tab-background);
+        }
+    }
+
+    .xcp_tab_group-cls .x-tab-bar-top {
+        .xcp-tab-bar-caret {
+            position: relative;
+            @include triangle($direction: "bottom", $width: $xcp-header-tab-caret-width, $height: $xcp-header-tab-caret-height, $color: $xcp-header-tab-background);
+        }
+    }
+
+    .xcp_tab_group-cls .x-tab button {
+        color: $xcp-header-tab-background-active;
+        @include text-shadow(none);
+    }
+
+    .xcp_tab_group-cls .x-tab-over button {
+        color: $xcp-widget-button-text-font-color !important;
+        @include text-shadow($xcp-header-tab-text-shadow-over);
+    }
+
+    .xcp_tab_group-cls .x-tab-active button {
+        color: $xcp-widget-button-text-font-color-pressed;
+        @include text-shadow($xcp-header-tab-text-shadow-active);
+    }
+
+    .xcp_tab_group-cls .x-tab-disabled button {
+        color: $xcp-header-tab-font-disabled;
+        @include text-shadow(none);
+    }
+
+    .x-tab-xcp-tab-ui .x-tab-icon {
+        @include opacity($xcp-header-tab-icon-opacity);
+    }
+}

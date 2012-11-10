@@ -1,0 +1,121 @@
+@mixin xcp-widget-title-text {
+    @include xcp-text(
+        $xcp-widget-title-text-font-family,
+        $xcp-widget-title-text-font-family,
+        $xcp-widget-title-text-font-size,
+        $xcp-widget-title-text-font-weight,
+        $xcp-widget-title-text-font-color);
+};
+
+@mixin xcp-widget-label-text {
+    @include xcp-text(
+        $xcp-widget-label-text-font-family,
+        $xcp-widget-label-text-font-family,
+        $xcp-widget-label-text-font-size,
+        $xcp-widget-label-text-font-weight,
+        $xcp-widget-label-text-font-color);
+};
+
+@mixin xcp-form-label-text {
+    @include xcp-widget-label-text;
+}
+
+@mixin xcp-widget-value-text {
+    @include xcp-text(
+        $xcp-widget-value-text-font-family,
+        $xcp-widget-value-text-font-family,
+        $xcp-widget-value-text-font-size,
+        $xcp-widget-value-text-font-weight,
+        $xcp-widget-value-text-font-color);
+};
+
+@mixin xcp-form-value-text {
+    @include xcp-widget-value-text;
+}
+
+@mixin xcp-app-menu-label-text {
+    @include xcp-text(
+        $xcp-app-menu-label-text-font-family,
+        $xcp-app-menu-label-text-font-family,
+        $xcp-app-menu-label-text-font-size,
+        $xcp-app-menu-label-text-font-weight,
+        $xcp-app-menu-label-text-font-color
+    );
+}
+
+@mixin xcp-context-menuitem-label-text {
+    @include xcp-text(
+        $xcp-context-menuitem-label-text-font-family,
+        $xcp-context-menuitem-label-text-font-family,
+        $xcp-context-menuitem-label-text-font-size,
+        $xcp-context-menuitem-label-text-font-weight,
+        $xcp-context-menuitem-label-text-font-color
+    );
+}
+
+@mixin xcp-msgbox-panel-text {
+    @include xcp-text(
+        $xcp-widget-value-text-font-family,
+        $xcp-widget-value-text-font-family,
+        $xcp-widget-value-text-font-size,
+        $xcp-widget-value-text-font-weight,
+        $xcp-widget-value-text-font-color
+    );
+}
+
+@mixin xcp-column-box-header-text {
+    @include xcp-text(
+        $xcp-widget-value-text-font-family,
+        $xcp-widget-value-text-font-family,
+        $xcp-columnbox-header-text-font-size,
+        $xcp-columnbox-header-text-font-weight,
+        $xcp-columnbox-header-text-font-color
+    );
+}
+
+@mixin xcp-toolbar-button-label-text {
+     @include xcp-text(
+        $xcp-widget-label-text-font-family,
+        $xcp-widget-label-text-font-family,
+        $xcp-datepicker-toolbar-button-label-font-size,
+        $xcp-widget-label-text-font-weight,
+        $xcp-widget-label-text-font-color
+    );
+}
+
+@mixin xcp-text(
+    $font-family,
+    $font,
+    $font-size,
+    $font-weight,
+    $color
+){
+    font-family: $font-family;
+    font: $font;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    word-wrap:break-word;
+}
+
+@mixin xcp-link-text {
+     @include xcp-text(
+        $xcp-link-text-font-family,
+        $xcp-link-text-font-family,
+        $xcp-link-text-font-size,
+        $xcp-link-text-font-weight,
+        $xcp-link-text-font-color
+     );
+     cursor: pointer;
+}
+
+@mixin xcp-link {
+    text-decoration: underline;
+    color: #5588BB;
+    cursor: pointer;
+}
+
+/* Box-Shadow for widgets */
+@mixin xcp-box-shadow {
+    @include box-shadow(rgba(0,0,0, 0.2) 0 0 3px 1px);
+}

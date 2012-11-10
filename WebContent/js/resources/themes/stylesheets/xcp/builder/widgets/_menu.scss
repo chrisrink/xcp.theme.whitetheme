@@ -1,0 +1,54 @@
+@mixin xcp-builder-menu {
+	
+	.x-toolbar-xcp-nav-toolbar .x-btn-xcp-nav-button-toolbar-small {
+		border: 1px solid transparent;			
+	}
+	
+	.#{$prefix}panel-xcp-builder-menu {
+		@include box-shadow($xcp-builder-border 2px 2px 2px);
+        
+	    .#{$prefix}menu-item .xcp-builder-context-menu-delete {
+	        background: transparent no-repeat top left;
+	        background-image: url('../../../image/delete_tool.png');
+	    }
+	        
+	    .#{$prefix}menu-body {
+	    	@include border-radius(0);
+	    	border: 1px solid;
+	    	border-color: $xcp-builder-border; 
+	        background: none repeat scroll 0 0 $xcp-builder-toolbar !important;
+	        padding: $menu-padding;
+	    }
+	    	       
+		.#{$prefix}menu-icon-separator {
+			padding: 0;
+			position: absolute;
+	        top: 0px;
+	        left: $menu-item-indent;
+	        z-index: 0;
+	        border-left: solid 1px $xcp-builder-menu-separator-color;
+	        background-color: $menu-separator-background-color;        
+	        width: 2px;
+	        height: 100%;
+	        overflow: hidden;
+		}
+		
+		.x-menu-item-text {
+			font: $xcp-builder-menu-item-font;
+			color: $xcp-builder-menu-item-font-color;
+			font-size: $xcp-builder-menu-item-font-size; 	
+		}
+		
+		.#{$prefix}menu-item-icon {
+	        margin: 4px 14px 0px 2px;
+	        top: 2px;	    
+	    }
+		
+		.#{$prefix}menu-item-active {
+	        .#{$prefix}menu-item-link {
+	            @include background-gradient($xcp-builder-menu-item-background-over, 'matte');
+	            border: 1px solid $xcp-builder-menu-item-active-border-color;	            
+	        }
+    	}
+	}
+}

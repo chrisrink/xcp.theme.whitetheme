@@ -1,0 +1,68 @@
+/** Widget Button **/
+$button-default-base-color: $xcp-widget-button-color;
+$button-default-base-color-over: $xcp-widget-button-color;
+$button-default-base-color-focus: $xcp-widget-button-color;
+$button-default-base-color-pressed: $xcp-widget-button-color;
+$button-default-base-color-disabled: $xcp-widget-button-color-disabled;
+
+
+$button-default-background-color: $xcp-widget-button-color;
+$button-default-background-color-over: $xcp-widget-button-color-over;
+$button-default-background-color-focus: $xcp-widget-button-color-focus;
+$button-default-background-color-pressed: $xcp-widget-button-color-pressed;
+$button-default-background-color-disabled: $xcp-widget-button-color-disabled;
+
+$button-small-border-width: $xcp-widget-button-border-width;
+
+ /** button border color **/
+$button-default-border-color: $xcp-widget-border-color;
+$button-default-border-color-over: $xcp-widget-border-color;
+$button-default-border-color-focus: $xcp-widget-button-border-color-focus;
+$button-default-border-color-pressed: $xcp-widget-border-color;
+$button-default-border-color-disabled: adjust-color($xcp-widget-border-color, $hue: 0deg, $saturation: 0%, $lightness: 80%) !default;
+
+/** button border radius **/
+$button-small-border-radius: $xcp-widget-button-radius;
+
+@if $xcp-widget-button-use-gradients == true {
+    $button-default-background-gradient: 'matte';
+    $button-default-background-gradient-over: 'button-over';
+    $button-default-background-gradient-focus: 'button-over';
+    $button-default-background-gradient-pressed: 'button-pressed';
+    $button-default-background-gradient-disabled: null;
+} else {
+    $button-default-background-gradient: null;
+    $button-default-background-gradient-over: null;
+    $button-default-background-gradient-focus: null;
+    $button-default-background-gradient-pressed: null;
+    $button-default-background-gradient-disabled: null;
+}
+/** Widget Button Text **/
+
+//Font Family
+$button-small-font-family: $xcp-widget-button-text-font-family;
+$button-small-font-family-over: $xcp-widget-button-text-font-family;
+$button-small-font-family-focus: $xcp-widget-button-text-font-family;
+$button-small-font-family-pressed: $xcp-widget-button-text-font-family;
+$button-small-font-family-disabled: $xcp-widget-button-text-font-family;
+
+//Font Size
+$button-small-font-size: $xcp-widget-button-text-font-size;
+$button-small-font-size-over: $xcp-widget-button-text-font-size;
+$button-small-font-size-focus: $xcp-widget-button-text-font-size;
+$button-small-font-size-pressed: $xcp-widget-button-text-font-size;
+$button-small-font-size-disabled: $xcp-widget-button-text-font-size;
+
+//Font Style
+$button-small-font-weight: $xcp-widget-button-text-font-weight;
+$button-small-font-weight-over: $xcp-widget-button-text-font-weight;
+$button-small-font-weight-focus: $xcp-widget-button-text-font-weight;
+$button-small-font-weight-pressed: $xcp-widget-button-text-font-weight;
+$button-small-font-weight-disabled: $xcp-widget-button-text-font-weight;
+
+//Font Color
+$button-default-color:  $xcp-widget-button-text-font-color;
+$button-default-color-over:   $xcp-widget-button-text-font-color-over;
+$button-default-color-focus:   $xcp-widget-button-text-font-color-focus;
+$button-default-color-pressed:   $xcp-widget-button-text-font-color-pressed;
+$button-default-color-disabled: $xcp-widget-button-text-font-color-disabled;

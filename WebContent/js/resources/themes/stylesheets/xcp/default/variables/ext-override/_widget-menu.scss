@@ -1,0 +1,9 @@
+$menu-separator-border-color: $xcp-menu-separator-border-color;
+
+$menu-background-color: $xcp-nav-menu-background-color;
+
+//set to transparent so that extjs background-image mixin does not use gradient
+$menu-item-active-background-color: 'transparent';
+
+//for browsers that does not support background gradient, if gradient is on
+$menu-item-active-background-image: 'menu/menu-item-active-bg.gif';

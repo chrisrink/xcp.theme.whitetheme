@@ -1,0 +1,119 @@
+@import "compass/css3";
+@import "blueprint/typography";
+
+//include all ExtJs component SASS
+$include-default: true;
+$include-default-uis: false;
+
+@import 'ext4/default/functions';
+@import 'ext4/default/variables';
+@import 'ext4/default/mixins';
+
+@import 'ext4/default/widgets';
+
+@import 'variables';
+@import 'widgets';
+
+
+@import 'util/tool';
+@import 'mixins';
+
+//Default Runtime Theme
+$xcp-runtime-theme-name: 'xcp-default';
+
+//xcp builder theme name
+$builder-theme-name: 'builder';
+
+// Changes the location of images when creating UIs to be relative instead of within the ExtJS directory.
+$relative-image-path-for-uis: "../themes/images";
+
+@include xcp-runtime-widget($selectable-widget-border-color, $selected-widget-border-color);
+@include xcp-builder-palette;
+@include xcp-builder-dragndrop;
+@include xcp-builder-menu;
+@include xcp-builder-itemselector;
+@include xcp-builder-dialog;
+@include xcp-builder-dataservices-tree;
+@include xcp-builder-resultslist;
+@include xcp-builder-comments;
+@include xcp-builder-contenttree;
+@include xcp-splitter;
+@include xcp-builder-tool;
+@include xcp-builder-app-menu;
+@include xcp-builder-tabgroup;
+@include xcp-builder-columnbox;
+@include xcp-datasource-instance;
+
+.x-border-layout-ct {
+  background-color: #FFFFFF;
+}
+
+.xcp-pageeditor-body {
+	overflow: visible; 
+}
+
+.x-form-invalid-field, textarea.x-form-invalid-field {
+	background-color:white;
+	background-image:url('../images/xcp-builder-theme/grid/invalid_line.gif');
+	background-repeat:repeat-x;
+	background-position:bottom;
+	border-color:#cc3300
+}
+
+.x-message-box .x-window-header-text-default {
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 14;
+    color: #000000;
+
+}
+
+
+// the 2px right is for centering in a small button
+.xcp-button-add-tool-img {
+	background-image:url("../../../image/add_tool.png"); 
+	background-color: transparent;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-right: 2px;
+}
+
+.xcp-panel-collapse-left .x-tool-collapse-top {
+    margin-right: 5px;
+}
+
+
+
+/** Tucks the label under the field **/
+/** TODO: Remove once runtime generates the css correctly **/
+.#{$prefix}form-item-label {
+	overflow: hidden;
+}
+
+.xcp_columnhbox-cls, .xcp_columnvbox-cls {
+	border-style: dashed;
+	border-color:#cccccc;
+}
+
+.xcp_viewer_thmPanel .x-grid-row .x-grid-cell{
+  border-style:none;
+}
+
+.xcp_viewer_thmPanel .x-grid-row-over .x-grid-cell, .xcp_viewer .x-grid-row-over .x-grid-rowwrap-div {
+   background-color: transparent;
+}
+
+.xcp_viewer_thmPanel .x-panel-header-default{
+   background-image: none !important;
+   background-color: white !important;
+}
+
+.xcp_viewer_pgModPanel .x-toolbar-default, .xcp_viewer_thmPanel .x-toolbar-default{
+    border-color: #cccccc !important;
+    background-image: none !important;
+    background-color: white !important;
+}
+
+ 
+ 

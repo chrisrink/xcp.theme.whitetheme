@@ -1,0 +1,6 @@
+@mixin xcp-builder-contenttree {
+
+	.xcp-content-tree-root img.x-tree-expander {display: none}
+	.xcp-content-tree-root img.x-tree-icon     {display: none}
+	.xcp-content-tree-root .x-grid-cell-inner  {padding-left: 16px}
+}

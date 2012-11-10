@@ -1,0 +1,41 @@
+
+$font-family: $xcp-default-font-family;
+
+
+/** Widget Title Text **/
+$panel-header-font-family: $xcp-widget-title-text-font-family;
+$panel-header-font-size: $xcp-widget-title-text-font-size;
+$panel-header-font-weight: $xcp-widget-title-text-font-weight;
+$panel-header-color: $xcp-widget-title-text-font-color;
+
+
+
+/** Widget Interior **/
+
+//Background Color
+$panel-body-background-color: $xcp-widget-interior-background-color;
+//Widget Border Color
+$panel-border-color: $xcp-widget-border-color;
+$panel-body-border-color: $xcp-widget-border-color;
+$panel-header-border-color: $xcp-widget-header-border-color;
+$panel-header-inner-border-color: $xcp-widget-border-color;
+
+
+//Border Style
+
+/** Widget Header **/
+$panel-header-background-color: $xcp-widget-header-color;
+
+
+/** Widget Panel **/
+$panel-base-color: $xcp-widget-panel-color;
+
+
+/** Widget Labels **/
+/** TODO:  Override form-item-label to set the label padding */
+
+ /** TODO: **/
+$xcp-widget-label-position: left;
+$xcp-widget-label-width: 150;
+$xcp-widget-label-padding: 5;
+//$xcp-widget-label-separator:

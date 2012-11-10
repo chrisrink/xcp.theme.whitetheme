@@ -1,0 +1,43 @@
+@mixin xcp-tree {
+
+    .#{$prefix}tree-panel.xcp_content_tree-cls .#{$prefix}grid-row  .#{$prefix}grid-cell-inner{
+        height: $xcp-tree-elbow-height !important;
+        line-height: $xcp-tree-elbow-height !important;
+    }
+
+     .#{$prefix}tree-icon {
+        margin-top: 3px;
+    }
+
+    .#{$prefix}tree-arrows .#{$prefix}tree-expander {
+        margin-top: 8px;
+    }
+
+    .xcp_content_tree-cls  .#{$prefix}grid-body{
+        @include xcp-box-shadow;
+        overflow:visible;
+        margin: 3px;
+        border: none;
+    }
+
+    .xcp_content_tree-cls {
+        padding-left: 3px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+
+    .xcp_content_tree-cls .x-panel-header{
+        margin-left: 3px;
+        border-color: $xcp-widget-border-color-focus;
+    }
+
+    @if not $supports-gradients or $compile-all {
+          .#{$prefix}nlg {
+               .xcp_content_tree-cls  .#{$prefix}grid-body{
+                border: 1px $xcp-widget-border-color solid !important;
+            }
+       }
+    }
+
+}
+

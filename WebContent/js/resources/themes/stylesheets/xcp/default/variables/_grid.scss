@@ -1,0 +1,50 @@
+$xcp-grid-header-padding: 0 16px 0 5px;
+
+// ===============================
+// ========= GRID HEADER =========
+// ===============================
+$xcp-grid-header-background-color: $xcp-widget-interior-background-color;
+$xcp-grid-header-background-gradient: none;
+$xcp-grid-header-over-background-color: $xcp-page-background-color;
+$xcp-grid-header-over-background-gradient: none;
+$xcp-grid-header-over-border-color: $xcp-page-background-color;
+
+// ===============================
+// ========= GRID ROWS ===========
+// ===============================
+
+$xcp-grid-cell-border-top: $xcp-page-background-color;
+
+$xcp-grid-row-cell-color: #363636;
+$xcp-grid-row-cell-font: normal 12px  $font-family;
+
+//row body
+$xcp-grid-row-body-font: normal 12px $font-family;
+
+//row cell
+$xcp-grid-row-cell-background: $xcp-page-background-color;
+$xcp-grid-row-cell-border-color: #EEEEEE;
+
+//row cell alt
+$xcp-grid-row-cell-alt-background: $xcp-page-background-color;
+
+//row cell over
+$xcp-grid-row-cell-over-border-color: #EEEEEE;
+$xcp-grid-row-cell-over-background-color: #F0F7FB;
+$xcp-grid-row-cell-over-background-gradient: none;
+
+//row cell selected
+
+$xcp-grid-row-cell-selected-background-color: #E1F0F7;
+
+//row cell focus
+$xcp-grid-row-cell-focus-background-color: #E1F0F7;
+$xcp-grid-row-cell-focus-background-gradient: none;
+
+
+
+
+
+
+
+

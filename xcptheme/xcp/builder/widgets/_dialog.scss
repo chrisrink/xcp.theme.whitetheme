@@ -1,0 +1,262 @@
+@mixin xcp-builder-dialog {
+	
+	$theme-name: 'builder';
+	$relative-image-path-for-uis: "../themes/images";
+		 
+	.xcp-builder-dialog { 
+		border-color: $xcp-builder-border;
+		-moz-border-radius: 2px 2px;
+		background: #EEEEEE;
+		-webkit-border-radius: 2px 2px;
+		-o-border-radius: 2px 2px;
+		-ms-border-radius: 2px 2px;
+		-khtml-border-radius: 2px 2px;
+		border-radius: 2px 2px;
+		-moz-box-shadow: $xcp-builder-border 5px 1px 5px 0;
+		-webkit-box-shadow: $xcp-builder-border 5px 1px 5px 0;
+		-o-box-shadow: $xcp-builder-border 5px 1px 5px 0;
+		box-shadow: $xcp-builder-border 5px 1px 5px 0;
+		
+		.x-window-body {
+		  background-color: $xcp-builder-dialog-background-color;  
+		}
+	}
+	
+	.x-window-xcp-builder-dialog {
+		@extend .xcp-builder-dialog; 
+		padding: 5px;
+		border: 1px solid $xcp-builder-border;
+		
+		ul {
+            margin-left: 5px;
+        }
+        li {
+            list-style: disc;
+            margin-left: 15px;
+        }
+				
+		.xcp-builder-dialog-prompt-area {
+			margin-left: 42px;
+		}
+		
+		.ext-mb-text {
+			@include xcp-builder-msgbox-panel-text;
+		}
+	}
+	
+	.x-window-header-xcp-builder-dialog-top {
+		border-width: 1px;
+		border-style: solid;		
+	}
+	
+	.x-window-body-xcp-builder-dialog, .xcp-builder-dialog-body {
+		background: #EEEEEE;
+	}
+	
+	.x-window-header-xcp-builder-dialog, .xcp-builder-dialog-header {
+		padding: 5px 5px 5px 5px;
+		background-image: none;
+		background-color: #EEEEEE;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#D5E5F5) );
+		background-image: -webkit-linear-gradient(top, white, #D5E5F5);
+		background-image: -moz-linear-gradient(top, white, #D5E5F5);
+		background-image: -o-linear-gradient(top, white, #D5E5F5);
+		background-image: linear-gradient(top, #ffffff, #D5E5F5);
+		border-top-color: $xcp-builder-border;
+		border-right-color: $xcp-builder-border;
+		border-left-color: $xcp-builder-border;
+		border-bottom-color: white;
+		border-bottom-width: 1px !important;
+		-moz-border-radius-topleft: 3px 3px;
+		-webkit-border-top-left-radius: 3px 3px;
+		-o-border-top-left-radius: 3px 3px;
+		-ms-border-top-left-radius: 3px 3px;
+		-khtml-border-top-left-radius: 3px 3px;
+		border-top-left-radius: 3px 3px;
+		-moz-border-radius-topright: 3px 3px;
+		-webkit-border-top-right-radius: 3px 3px;
+		-o-border-top-right-radius: 3px 3px;
+		-ms-border-top-right-radius: 3px 3px;
+		-khtml-border-top-right-radius: 3px 3px;
+		border-top-right-radius: 3px 3px;
+		-moz-box-shadow: 0px 1px 0px #B7CADE;
+		-webkit-box-shadow: 0px 1px 0px #B7CADE;
+		-o-box-shadow: 0px 1px 0px #B7CADE;
+		box-shadow: 0px 1px 0px #B7CADE;
+	}
+			
+	.xcp-builder-dialog-topContainer {
+		padding: 15px 16px 3px 16px;
+		overflow: hidden;
+		background: #EEEEEE;
+		border: 0px;
+	}
+	
+	.xcp-builder-dialog-innerContainer {
+		padding: 0px;
+		overflow: hidden;
+		background: #FFFFFF;
+		border: 1px solid;
+		border-color: #CCCCCC;
+	}
+	
+	.xcp-builder-dialog-innerContainer-body {
+		border: 0px;
+	}
+	
+	.x-window-xcp-builder-dialog-toolbar, .xcp-builder-dialog-toolbar {
+		padding: 2px 16px 3px 2px;
+	}
+	
+	
+	.x-window-xcp-builder-dialog .x-btn, .xcp-builder-dialog-toolbar-button {
+		border: 1px solid;
+		-moz-box-shadow: inset 0px -1px #FFFFFF, inset 0px 1px #FFFFFF, inset 1px 0px #FFFFFF, inset -1px 0px #FFFFFF;
+		-webkit-box-shadow: inset 0px -1px #FFFFFF, inset 0px 1px #FFFFFF, inset 1px 0px #FFFFFF, inset -1px 0px #FFFFFF;
+		-o-box-shadow: inset 0px -1px #FFFFFF, inset 0px 1px #FFFFFF, inset 1px 0px #FFFFFF, inset -1px 0px #FFFFFF;
+		box-shadow: inset 0px -1px #FFFFFF, inset 0px 1px #FFFFFF, inset 1px 0px #FFFFFF, inset -1px 0px #FFFFFF;
+		background-image: none;
+		background-color: #EEEEEE;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#DFDFF5) );
+		background-image: -webkit-linear-gradient(top, white, #DFDFF5);
+		background-image: -moz-linear-gradient(top, white, #DFDFF5);
+		background-image: -o-linear-gradient(top, white, #DFDFF5);
+		background-image: linear-gradient(top, white, #DFDFF5);
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-o-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-khtml-border-radius: 2px;
+		border-radius: 2px;
+		border-color: #003366;
+	}
+	
+	.x-window-xcp-builder-dialog .x-btn-default-small .x-btn-inner, .xcp-builder-dialog-toolbar-button-span {
+		font-family: Tahoma;
+		font-size: 11px;
+		color: #000000;
+	}
+	
+	.x-window-xcp-builder-dialog .x-btn-disabled .x-btn-inner, .xcp-builder-dialog-toolbar-button-span-disabled {
+		font-family: Tahoma;
+		font-size: 11px;
+		color: #808080;
+	}
+	
+	.x-window-xcp-builder-dialog .x-btn-over, .xcp-builder-dialog-toolbar-button-hover {
+		-moz-box-shadow: inset 0px -2px #ffcc66, inset 0px 2px #ffcc66, inset 2px 0px #ffcc66, inset -2px 0px #ffcc66;
+		-webkit-box-shadow: inset 0px -2px #ffcc66, inset 0px 2px #ffcc66, inset 2px 0px #ffcc66, inset -2px 0px #ffcc66;
+		-o-box-shadow: inset 0px -2px #ffcc66, inset 0px 2px #ffcc66, inset 2px 0px #ffcc66, inset -2px 0px #ffcc66;
+		box-shadow: inset 0px -2px #ffcc66, inset 0px 2px #ffcc66, inset 2px 0px #ffcc66, inset -2px 0px #ffcc66;
+		background-image: none;
+		background-color: #EEEEEE;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#DFDFF5) );
+		background-image: -webkit-linear-gradient(top, white, #DFDFF5);
+		background-image: -moz-linear-gradient(top, white, #DFDFF5);
+		background-image: -o-linear-gradient(top, white, #DFDFF5);
+		background-image: linear-gradient(top, white, #DFDFF5);
+		border-color: #003366;
+	}
+	
+	.x-window-xcp-builder-dialog .x-btn-pressed, .x-xcp-builder-dialog-toolbar-button-pressed {
+		-moz-box-shadow: inset 0px -1px #FFFFFF, inset 0px 1px #FFFFFF, inset 1px 0px #FFFFFF, inset -1px 0px #FFFFFF;
+		-webkit-box-shadow: inset 0px -1px #FFFFFF, inset 0px 1px #FFFFFF, inset 1px 0px #FFFFFF, inset -1px 0px #FFFFFF;
+		-o-box-shadow: inset 0px -1px #FFFFFF, inset 0px 1px #FFFFFF, inset 1px 0px #FFFFFF, inset -1px 0px #FFFFFF;
+		box-shadow: inset 0px -1px #FFFFFF, inset 0px 1px #FFFFFF, inset 1px 0px #FFFFFF, inset -1px 0px #FFFFFF;
+		background-image: none;
+		background-color: #EEEEEE;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DFDFF5), to(white) );
+		background-image: -webkit-linear-gradient(top, #DFDFF5, white);
+		background-image: -moz-linear-gradient(top, #DFDFF5, white);
+		background-image: -o-linear-gradient(top, #DFDFF5, white);
+		background-image: linear-gradient(top, #DFDFF5, white);
+		border-color: #003366;
+	}
+	
+	.x-window-xcp-builder-dialog .x-btn-disabled, .xcp-builder-dialog-toolbar-button-disabled {
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		-o-box-shadow: none;
+		box-shadow: none;
+		background-image: none;
+		background-color: #F1F1F1;
+		color: #808080;
+		border-color: #C5C5C5;
+	}
+	
+	.xcp-builder-dialog-header-title {
+		
+	}
+	.xcp-builder-dialog-toolbar-top{
+		font-family: Tahoma;
+		font-weight: bold;
+		font-size: 11px;
+		color: #000000;
+		height:24px;
+		background-image: none;
+		background-color: #EEEEEE;
+		border: 0px;
+		vertical-align: baseline;
+		padding: 0px 10px 0px 10px;
+		line-height:24px;		
+	}
+	
+	.xcp-builder-dialog-multiSelect-label{
+		font-family: Tahoma;
+		font-size: 11px;
+		color: #000000;
+	}
+
+    .xcp-builder-dialog-instructions-top {
+        padding-bottom: 5px
+    }
+
+    .xcp-builder-dialog-instructions-header {
+        font-family: Tahoma;
+        font-weight: bold;
+        font-size: 11px;
+        padding-top: 2px;
+    }
+
+    .xcp-builder-dialog-radio-instructions {
+        margin-left: 4px;
+    }
+	
+	.x-window-header-text-xcp-builder-dialog, .x-window-header-text-dialog {
+		font-family: Tahoma;
+		font-weight: bold;
+		font-size: 11px;
+		color: #000000;
+	}
+	
+	.xcp-builder-dialog-toolbar-button-inner {
+		font-size: 11px;
+		font-weight: bold;
+		font-family: Tahoma;
+		color: #000000;
+	}
+	
+	.xcp_results_list_creationdialog-cls {
+		border: 0px;
+	}
+	
+	.xcp-builder-mb-error {
+    	background: transparent no-repeat top left;
+    	background-image: theme-image($theme-name, 'shared/error_32_msg.png', false, $relative-image-path-for-uis);    	
+	}
+	
+	.xcp-builder-mb-warning {
+    	background: transparent no-repeat top left;
+    	background-image: theme-image($theme-name, 'shared/warning_32_msg.png', false, $relative-image-path-for-uis);    	
+	}
+	
+	.xcp-builder-mb-info {
+    	background: transparent no-repeat top left;
+    	background-image: theme-image($theme-name, 'shared/info_32_msg.png', false, $relative-image-path-for-uis);    	
+	}
+	
+	.xcp-builder-mb-question {
+		background: transparent no-repeat top left;
+    	background-image: theme-image($theme-name, 'shared/question_32_msg.png', false, $relative-image-path-for-uis); 			
+	}
+}

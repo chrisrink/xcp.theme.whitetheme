@@ -1,0 +1,257 @@
+@mixin xcp-grid {
+
+    .#{$prefix}column-header-trigger {
+        background-color: $grid-header-over-background-color;
+        background-image: theme-image($theme-name, 'grid/grid3-hd-btn.gif', false, $relative-image-path-for-uis);
+    }
+
+    .#{$prefix}column-header-over,
+    .#{$prefix}column-header-sort-ASC,
+    .#{$prefix}column-header-sort-DESC  {
+        .#{$prefix}column-header-text {
+            color: #363636 !important;
+        }
+    }
+
+    .#{$prefix}column-header-inner {
+        .#{$prefix}column-header-text {
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 12px;
+            font-weight: bold;
+            color: #707070;
+        }
+    }
+
+    .#{$prefix}column-header-sort-ASC .#{$prefix}column-header-text,
+    .#{$prefix}column-header-sort-DESC .#{$prefix}column-header-text {
+        padding-right: 20px !important;
+    }
+
+    .#{$prefix}column-header-checkbox {
+        .#{$prefix}column-header-inner {
+          padding: 5px;
+        }
+    }
+
+    .xcp_results_list_grid-cls  .#{$prefix}grid-row {
+        height: auto !important;
+    }
+
+    .xcp_folder_list-cls  .#{$prefix}grid-row {
+        height: auto !important;
+    }
+
+    .#{$prefix}grid-row {
+        .#{$prefix}grid-cell {
+            color: $xcp-grid-row-cell-color;
+            border-top-color: $grid-row-cell-border-color;
+            border-bottom-color: transparent;
+        }
+    }
+
+    .#{$prefix}grid-row-selected .#{$prefix}grid-cell,
+    .#{$prefix}grid-row-selected .#{$prefix}grid-rowwrap-div {
+        border-top-color: $grid-row-cell-border-color;
+        border-color: none;
+        border-bottom-color: transparent;
+    }
+
+    .#{$prefix}grid-row-focused .#{$prefix}grid-cell,
+    .#{$prefix}grid-row-focused .#{$prefix}grid-rowwrap-div {
+        border-top-color: $grid-row-cell-border-color;
+        border-color: none;
+        border-bottom-color: transparent;
+    }
+
+    .#{$prefix}grid-row-over .#{$prefix}grid-cell,
+    .#{$prefix}grid-row-over .#{$prefix}grid-rowwrap-div {
+        border-top-color: $grid-row-cell-border-color;
+        border-color: none;
+        border-bottom-color: transparent;
+    }
+
+    .xcp-summaryrow-selected {
+        background-color: #E1F0F7;
+    }
+
+    .xcp-summaryrow-over {
+        background-color: #F0F7FB;
+    }
+
+    .xcp_grid_rowbody-cls  .#{$prefix}grid-rowbody {
+        padding: 0 0 8px 10px;
+        font-size: 11px;
+        color: #707070;
+    }
+
+    .xcp_grid_matchingterms-cls {
+        background-color:#FFFFAA;
+    }
+
+    //this is panel as gridpanel doesnt use a baseCls..........
+    .#{$prefix}panel-with-col-lines .#{$prefix}grid-row .#{$prefix}grid-cell {
+        border-right: none;
+    }
+
+    @if $include-ie {
+        .#{$prefix}ie {
+
+            .#{$prefix}grid-row-over .#{$prefix}grid-cell-inner {
+                border-top-color: $grid-row-cell-border-color;
+                border-color: none;
+                border-bottom-color: none;
+                border-bottom-width: 0px;
+            }
+
+            .#{$prefix}grid-row-focused .#{$prefix}grid-cell-inner {
+                border-top-color: $grid-row-cell-border-color;
+                border-color: none;
+                border-bottom-color: none;
+                border-bottom-width: 0px;
+            }
+
+            .#{$prefix}grid-row-selected .#{$prefix}grid-cell-inner {
+                border-top-color: $grid-row-cell-border-color;
+                border-color: none;
+                border-bottom-color: none;
+                border-bottom-width: 0px;
+            }
+        }
+    }
+
+    //support IE background gradient by using image
+    @if not $supports-gradients or $compile-all {
+        .#{$prefix}nlg {
+            .#{$prefix}grid-header-ct,
+            .#{$prefix}column-header {
+                background: none;
+                background-color: $xcp-widget-interior-background-color;
+            }
+
+            .#{$prefix}column-header-over,
+            .#{$prefix}column-header-sort-ASC,
+            .#{$prefix}column-header-sort-DESC {
+                background: none;
+            }
+        }
+    }
+
+    .xcp_results_list-cls .#{$prefix}grid-row {
+        vertical-align: middle !important;
+        .#{$prefix}grid-cell {
+            vertical-align: middle !important;
+            padding-top: 7px !important;
+            padding-bottom: 7px !important;
+            .#{$prefix}grid-cell-inner {
+                padding-top: 1px !important;
+                padding-bottom: 1px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                > img {
+                    vertical-align: middle !important;
+                }
+            }
+        }
+    }
+
+    .xcp_results_list-cls .#{$prefix}column-header-inner {
+        padding-top: 7px !important;
+        padding-bottom: 7px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .xcp_results_list-cls {
+        $paging-theme-name: "gray";
+        .#{$prefix}tbar-page-first {
+            background-image: theme-background-image($paging-theme-name, 'grid/page-first.gif') !important;
+        }
+
+        .#{$prefix}tbar-loading {
+            background-image: theme-background-image($paging-theme-name, 'grid/refresh.gif') !important;
+        }
+
+        .#{$prefix}tbar-page-last {
+            background-image: theme-background-image($paging-theme-name, 'grid/page-last.gif') !important;
+        }
+
+        .#{$prefix}tbar-page-next {
+            background-image: theme-image($theme-name, 'grid/page-next.gif', false, $relative-image-path-for-uis) !important;
+        }
+
+        .#{$prefix}tbar-page-prev {
+            background-image: theme-image($theme-name, 'grid/page-prev.gif', false, $relative-image-path-for-uis) !important;
+        }
+
+        .#{$prefix}item-disabled {
+            .#{$prefix}tbar-loading {
+                background-image: theme-background-image($paging-theme-name, 'grid/refresh-disabled.gif') !important;
+            }
+
+            .#{$prefix}tbar-page-first {
+                background-image: theme-background-image($paging-theme-name, 'grid/page-first-disabled.gif') !important;
+            }
+
+            .#{$prefix}tbar-page-last {
+                background-image: theme-background-image($paging-theme-name, 'grid/page-last-disabled.gif') !important;
+            }
+
+            .#{$prefix}tbar-page-next {
+                background-image: theme-image($theme-name, 'grid/page-next-disabled.gif', false, $relative-image-path-for-uis) !important;
+            }
+
+            .#{$prefix}tbar-page-prev {
+                background-image: theme-image($theme-name, 'grid/page-prev-disabled.gif', false, $relative-image-path-for-uis) !important;
+            }
+        }
+    }
+
+    .xcp_pagingtoolbar-cls {
+        height: 36px;
+        border-width: 1px 0px 0px 0px !important;
+        border-color: #D7D7D7 !important;
+        border-style: solid !important;
+        .#{$prefix}btn-default-toolbar-small {
+           margin-right: 2px !important;
+           top: 12px;
+        }
+    }
+
+    .xcp_results_list-cls {
+        margin: 0px 3px 3px 3px !important;
+        overflow: visible !important;
+        >.#{$prefix}panel-body {
+            overflow: visible !important;
+            > .#{$prefix}splitter-vertical {
+                margin: 0px 3px 0px 3px !important;
+                overflow: visible !important;
+            }
+            .xcp_results_list_grid-cls {
+                @include xcp-box-shadow;
+            }
+        }
+    }
+
+    .xcp_results_list_grid-cls {
+        .#{$prefix}grid-body {
+            border: none !important;
+        }
+        .#{$prefix}grid-header-ct {
+            height: 32px;
+            border-width: 0px 0px 1px 0px !important;
+            border-color: #D7D7D7;
+        }
+
+        .#{$prefix}column-header-last {
+            border-right-color: transparent !important;
+        }
+    }
+
+    .#{$prefix}grid-row .#{$prefix}grid-cell-special {
+        padding: 0;
+        border-right: 0px !important;
+        background-image: none !important;
+        @include background-gradient($xcp-grid-row-cell-background, 'grid-cell-special');
+    }
+}

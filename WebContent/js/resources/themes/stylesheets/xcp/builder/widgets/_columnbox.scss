@@ -1,0 +1,13 @@
+@mixin xcp-builder-columnbox {
+	.xcp_column_box-cls.xcp-widget-selectable {
+		border-width: 3px !important;
+	}
+	
+	.xcp_column_box-cls.xcp-widget-selected {
+		border-width: 3px !important;
+	}
+	
+	.xcp_column_box-cls.xcp-widget-base {
+	 	border: solid 3px transparent;
+	}
+}

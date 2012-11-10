@@ -1,0 +1,2259 @@
+/**
+ * @var {string} $prefix 
+ * The prefix to be applied to all CSS selectors. If this is changed, it must also be changed in your 
+ * JavaScript application.
+ */
+/**
+ * @var {string} $theme-name 
+ * The name of the theme. This must match the the output directory of the images.
+ * (defaults to 'default')
+ */
+/**
+ * @var {boolean/string} $relative-image-path-for-uis 
+ * True to use a relative image path for all new UIs. If true, the path will be "../images/".
+ * It can also be a string of the path value.
+ * It defaults to false, which means it will look for the images in the ExtJS SDK folder.
+ */
+/**
+ * @var {string} $font-family 
+ * The default font-family to be used throughout the theme.
+ */
+/**
+ * @var {string} $base-gradient 
+ * The base gradient to be used throughout the theme.
+ */
+/**
+ * @var {color} $base-color
+ * The base color to be used throughout the theme.
+ */
+/**
+ * @var {boolean} $include-not-found-images
+ * True to include files which are not found when compiling your SASS
+ */
+/**
+ * @var {boolean} $include-ie
+ * True to include Internet Explorer specific rules
+ */
+/**
+ * @var {boolean} $include-ff
+ * True to include Firefox specific rules
+ */
+/**
+ * @var {boolean} $include-chrome
+ * True to include Chrome specific rules
+ */
+/**
+ * @var {boolean} $include-safari
+ * True to include Safari specific rules
+ */
+/**
+ * @var {boolean} $include-opera
+ * True to include Opera specific rules
+ */
+/**
+ * @var {boolean} $include-webkit
+ * True to include Webkit specific rules
+ */
+/**
+ * @var {boolean} $compile-all
+ * True to copile all CSS, even if above include rules are false
+ */
+/**
+ * @var {boolean} $scope-reset-css
+ * True to scope the reset CSS within the $prefix variable.
+ */
+/**
+ * @var {color} $css-shadow-background-color
+ * The base color for CSS shadows
+ */
+/**
+ * @var {color} $include-shadow-images
+ * True to include all shadow images.
+ */
+/**
+ * Toolbar buttons
+ */
+/**
+ * @class Ext.form.*
+ */
+/**
+ * @class Ext.form.field.Base
+ */
+/**
+ * @class Ext.form.field.TextArea
+ */
+/**
+ * @class Ext.form.Label
+ */
+/**
+ * @class Ext.form.field.Checkbox
+ */
+/**
+ * @class Ext.form.field.Radio
+ */
+/**
+ * Error messages
+ */
+/**
+ * Trigger Field
+ */
+/**
+ * Fieldsets
+ */
+/**
+ * Sliders
+ */
+/**
+ * @mixin background-gradient
+ * 
+ * @param {Color} $background-color The background color of the gradient
+ * @param {String/List} $type The type of gradient to be used. Can either be a String which is a predefined gradient, or it can
+ *                            can be a list of color_stops. If none is set, it will still set the `background-color` to the $background-color.
+ * @param {String} $direction The direction of the gradient. Can either me `top` or `left`. (defaults to `top`)
+ */
+/**
+ * Method which inserts a full background-image property for a theme image.
+ * It checks if the file exists and if it doesn't, it'll throw an error. 
+ * By default it will not include the background-image property if it is not found,
+ * but this can be changed by changing the default value of $include-missing-images to 
+ * be true. 
+ */
+/**
+  * @class Ext.Button
+  * Used to create the base structure of an Ext.Button
+  */
+/**
+ * @mixin extjs-btn-group-ui
+ * @class Ext.ButtonGroup
+ */
+/**
+  * @class Ext.menu.*
+  */
+/**
+  * @class Ext.Panel
+  * Used to create the base structure of an Ext.Panel
+  */
+/**
+  * @class Ext.Panel
+  * Used to create a visual theme for an Ext.Panel
+  */
+/**
+ * @mixin ext-toolbar-ui
+ * @class Ext.toolbar.Toolbar
+ * @param {String} $ui The name of the UI
+ * @param {Color} $background-color The background color of the toolbar (defaults to transparent)
+ * @param {Gradient/color-stops} $background-gradient The background gradient of the toolbar (defaults to null)
+ * @param {Color} $border-color The border color of the toolbar (defaults to null)
+ */
+/**
+  * @class Ext.Window
+  * Used to create a visual theme for an Ext.Panel
+  */
+/**
+  * @class Ext.tab.Bar
+  */
+/**
+  * @class Ext.Tab
+  */
+/**
+  * @class Ext.LoadMask
+  * Component used to mask a component
+  */
+/* line 5, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_loadmask.scss */
+.x-mask {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  zoom: 1;
+  background: #cccccc;
+}
+
+/* line 21, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_loadmask.scss */
+.x-mask-msg {
+  z-index: 20001;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2px;
+  border: 1px solid;
+  border-color: #99bce8;
+  background-image: none;
+  background-color: #dfe9f6;
+}
+/* line 40, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_loadmask.scss */
+.x-mask-msg div {
+  padding: 5px 10px 5px 25px;
+  background-image: url('../../ext-4.1/resources/themes/images/default/grid/loading.gif');
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  cursor: wait;
+  border: 1px solid #a3bad9;
+  background-color: #eeeeee;
+  color: #222222;
+  font: normal 11px tahoma, arial, verdana, sans-serif;
+}
+
+/**
+ * @mixin extjs-progress-ui
+ */
+/**
+ * W3C Suggested Default style sheet for HTML 4
+ * http://www.w3.org/TR/CSS21/sample.html
+ */
+/** Menu **/
+/** Normal Text **/
+/**Copy from Runtime variables **/
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-widget-base {
+  border: 1px solid transparent;
+}
+
+/* line 6, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-widget-selected {
+  border: 1px solid #ff9900 !important;
+}
+
+/* line 10, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-widget-selectable {
+  border: 1px solid gray !important;
+  cursor: pointer;
+}
+
+/* line 14, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-widget-selectable-selected {
+  border: 1px solid #ff9900;
+  cursor: pointer;
+}
+
+/* line 18, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-dsi-selected {
+  border: 1px solid #ff9900 !important;
+}
+
+/* line 21, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-dsi-overItemCls {
+  cursor: pointer;
+}
+
+/* If there is no header, the first child is panel body. */
+/* line 26, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-form-region > .x-panel-body:first-child {
+  padding: 2px;
+}
+
+/* If there is a header, the second child is panel body and we don't want the padding */
+/* between it and the header. */
+/* line 31, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-form-region > .x-panel-body {
+  padding: 0 2px 2px 2px;
+}
+
+/* line 35, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-form-region > .x-panel-body > .x-box-inner {
+  border: 1px dotted gray;
+}
+
+/* line 39, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-form-region-selected > .x-panel-body > .x-box-inner {
+  border: 1px dotted #ff9900;
+}
+
+/* xcp_columnbox/content/xcp_columnbox.css temporary added here, will be removed later once we have theme support */
+/* line 45, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-content-area {
+  background-color: #CCCCCC;
+  text-align: center;
+  font-family: tahoma,arial,verdana,sans-serif;
+  color: #666666;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+/* line 54, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-content-area .xcp-contentarea-center {
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/** the style that simulates those for the runtime view port **/
+/* line 63, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-panel-collapse-left .x-tool-collapse-top {
+  margin-right: 5px;
+}
+
+/* line 67, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.xcp-panel-collapse-left .x-tool-expand-bottom {
+  margin-right: 5px;
+}
+
+/* line 9, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-panel-body-default {
+  border-color: #999999;
+}
+
+/* line 13, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-grid-header-hidden .x-grid-body {
+  border-top-color: #999999 !important;
+}
+
+/* line 248, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-builder-palette-category {
+  border-color: white;
+}
+
+/* line 253, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-header-builder-palette-category {
+  font-size: 11px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  background-image: none;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #e4e4e4));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: linear-gradient(top, #f6f6f6, #e4e4e4);
+  -moz-box-shadow: white 0 1px 0px 0 inset;
+  -webkit-box-shadow: white 0 1px 0px 0 inset;
+  -o-box-shadow: white 0 1px 0px 0 inset;
+  box-shadow: white 0 1px 0px 0 inset;
+}
+
+/* line 277, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-nlg .x-panel-header-builder-palette-category-top {
+  background-image: url('../../ext-4.1/resources/themes/images/default/panel-header/panel-header-builder-palette-category-top-bg.gif');
+}
+
+/* line 281, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-nlg .x-panel-header-builder-palette-category-bottom {
+  background-image: url('../../ext-4.1/resources/themes/images/default/panel-header/panel-header-builder-palette-category-bottom-bg.gif');
+}
+
+/* line 285, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-nlg .x-panel-header-builder-palette-category-left {
+  background-image: url('../../ext-4.1/resources/themes/images/default/panel-header/panel-header-builder-palette-category-left-bg.gif');
+}
+
+/* line 289, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-nlg .x-panel-header-builder-palette-category-right {
+  background-image: url('../../ext-4.1/resources/themes/images/default/panel-header/panel-header-builder-palette-category-right-bg.gif');
+}
+
+/* line 293, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-nlg .x-panel-header-builder-palette-category-right {
+  background-position: top right;
+}
+
+/* line 297, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-nlg .x-panel-header-builder-palette-category-bottom {
+  background-position: bottom left;
+}
+
+/* line 305, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-nbr .x-panel-header-builder-palette-category {
+  background-image: none;
+}
+
+/* line 338, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-header-text-builder-palette-category {
+  color: black;
+  font-size: 11px;
+  font-weight: normal;
+  font-family: tahoma, arial, verdana, sans-serif;
+  line-height: 17px;
+}
+
+/* line 348, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-body-builder-palette-category {
+  background: white;
+  font-size: 14px;
+  border-width: 0;
+  border-style: solid;
+}
+
+/* line 69, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-panel-builder-palette-category {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  padding: 4px 4px 4px 4px;
+  border-width: 0;
+  border-style: solid;
+  background-color: white;
+}
+
+/* line 102, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nlg .x-panel-builder-palette-category-mc {
+  background-color: white;
+}
+
+/* line 115, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-builder-palette-category {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-position: 1000404px 1000404px;
+}
+/* line 147, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-builder-palette-category-tl,
+.x-nbr .x-panel-builder-palette-category-bl,
+.x-nbr .x-panel-builder-palette-category-tr,
+.x-nbr .x-panel-builder-palette-category-br,
+.x-nbr .x-panel-builder-palette-category-tc,
+.x-nbr .x-panel-builder-palette-category-bc,
+.x-nbr .x-panel-builder-palette-category-ml,
+.x-nbr .x-panel-builder-palette-category-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel/panel-builder-palette-category-corners.gif');
+}
+/* line 168, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-builder-palette-category-ml,
+.x-nbr .x-panel-builder-palette-category-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel/panel-builder-palette-category-sides.gif');
+  background-position: 0 0;
+  background-repeat: repeat-y;
+}
+/* line 200, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-builder-palette-category-mc {
+  padding: 0px 0px 0px 0px;
+}
+
+/* line 210, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-strict .x-ie7 .x-panel-builder-palette-category-tl,
+.x-strict .x-ie7 .x-panel-builder-palette-category-bl {
+  position: relative;
+  right: 0;
+}
+
+/* line 69, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-panel-header-builder-palette-category-top {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -khtml-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -o-border-bottom-right-radius: 0;
+  -ms-border-bottom-right-radius: 0;
+  -khtml-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -o-border-bottom-left-radius: 0;
+  -ms-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 4px 5px 4px 5px;
+  border-width: 0 0 0 0;
+  border-style: solid;
+  background-image: none;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #e4e4e4));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: linear-gradient(top, #f6f6f6, #e4e4e4);
+}
+
+/* line 102, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nlg .x-panel-header-builder-palette-category-top-mc {
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-top-bg.gif');
+  background-color: #eeeeee;
+}
+
+/* line 115, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-top {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-position: 1000404px 1000000px;
+}
+/* line 147, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-top-tl,
+.x-nbr .x-panel-header-builder-palette-category-top-bl,
+.x-nbr .x-panel-header-builder-palette-category-top-tr,
+.x-nbr .x-panel-header-builder-palette-category-top-br,
+.x-nbr .x-panel-header-builder-palette-category-top-tc,
+.x-nbr .x-panel-header-builder-palette-category-top-bc,
+.x-nbr .x-panel-header-builder-palette-category-top-ml,
+.x-nbr .x-panel-header-builder-palette-category-top-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-top-corners.gif');
+}
+/* line 168, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-top-ml,
+.x-nbr .x-panel-header-builder-palette-category-top-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-top-sides.gif');
+  background-position: 0 0;
+}
+/* line 200, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-top-mc {
+  padding: 0px 1px 4px 1px;
+}
+
+/* line 210, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-top-tl,
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-top-bl {
+  position: relative;
+  right: 0;
+}
+
+/* line 69, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-panel-header-builder-palette-category-right {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -o-border-top-left-radius: 0;
+  -ms-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -o-border-bottom-left-radius: 0;
+  -ms-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 5px 4px 5px 4px;
+  border-width: 0 0 0 0;
+  border-style: solid;
+  background-image: none;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #f6f6f6), color-stop(100%, #e4e4e4));
+  background-image: -webkit-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -moz-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: linear-gradient(right, #f6f6f6, #e4e4e4);
+}
+
+/* line 102, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nlg .x-panel-header-builder-palette-category-right-mc {
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-right-bg.gif');
+  background-color: #eeeeee;
+}
+
+/* line 115, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-right {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-position: 1000004px 1100400px;
+}
+/* line 147, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-right-tl,
+.x-nbr .x-panel-header-builder-palette-category-right-bl,
+.x-nbr .x-panel-header-builder-palette-category-right-tr,
+.x-nbr .x-panel-header-builder-palette-category-right-br,
+.x-nbr .x-panel-header-builder-palette-category-right-tc,
+.x-nbr .x-panel-header-builder-palette-category-right-bc,
+.x-nbr .x-panel-header-builder-palette-category-right-ml,
+.x-nbr .x-panel-header-builder-palette-category-right-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-right-corners.gif');
+}
+/* line 157, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-right-tc,
+.x-nbr .x-panel-header-builder-palette-category-right-bc {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-right-sides.gif');
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+/* line 200, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-right-mc {
+  padding: 1px 0px 1px 4px;
+}
+
+/* line 210, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-right-tl,
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-right-bl {
+  position: relative;
+  right: 0;
+}
+
+/* line 69, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-panel-header-builder-palette-category-bottom {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -o-border-top-left-radius: 0;
+  -ms-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  -o-border-top-right-radius: 0;
+  -ms-border-top-right-radius: 0;
+  -khtml-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 3px 5px 4px 5px;
+  border-width: 0 0 0 0;
+  border-style: solid;
+  background-image: none;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #e4e4e4));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: linear-gradient(top, #f6f6f6, #e4e4e4);
+}
+
+/* line 102, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nlg .x-panel-header-builder-palette-category-bottom-mc {
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-bottom-bg.gif');
+  background-color: #eeeeee;
+}
+
+/* line 115, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-bottom {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-position: 1000000px 1000404px;
+}
+/* line 147, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-bottom-tl,
+.x-nbr .x-panel-header-builder-palette-category-bottom-bl,
+.x-nbr .x-panel-header-builder-palette-category-bottom-tr,
+.x-nbr .x-panel-header-builder-palette-category-bottom-br,
+.x-nbr .x-panel-header-builder-palette-category-bottom-tc,
+.x-nbr .x-panel-header-builder-palette-category-bottom-bc,
+.x-nbr .x-panel-header-builder-palette-category-bottom-ml,
+.x-nbr .x-panel-header-builder-palette-category-bottom-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-bottom-corners.gif');
+}
+/* line 168, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-bottom-ml,
+.x-nbr .x-panel-header-builder-palette-category-bottom-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-bottom-sides.gif');
+  background-position: 0 0;
+}
+/* line 200, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-bottom-mc {
+  padding: 3px 1px 0px 1px;
+}
+
+/* line 210, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-bottom-tl,
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-bottom-bl {
+  position: relative;
+  right: 0;
+}
+
+/* line 69, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-panel-header-builder-palette-category-left {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -khtml-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  -o-border-top-right-radius: 0;
+  -ms-border-top-right-radius: 0;
+  -khtml-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -o-border-bottom-right-radius: 0;
+  -ms-border-bottom-right-radius: 0;
+  -khtml-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 5px 4px 5px 4px;
+  border-width: 0 0 0 0;
+  border-style: solid;
+  background-image: none;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #f6f6f6), color-stop(100%, #e4e4e4));
+  background-image: -webkit-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -moz-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: linear-gradient(right, #f6f6f6, #e4e4e4);
+}
+
+/* line 102, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nlg .x-panel-header-builder-palette-category-left-mc {
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-left-bg.gif');
+  background-color: #eeeeee;
+}
+
+/* line 115, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-left {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-position: 1000400px 1100004px;
+}
+/* line 147, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-left-tl,
+.x-nbr .x-panel-header-builder-palette-category-left-bl,
+.x-nbr .x-panel-header-builder-palette-category-left-tr,
+.x-nbr .x-panel-header-builder-palette-category-left-br,
+.x-nbr .x-panel-header-builder-palette-category-left-tc,
+.x-nbr .x-panel-header-builder-palette-category-left-bc,
+.x-nbr .x-panel-header-builder-palette-category-left-ml,
+.x-nbr .x-panel-header-builder-palette-category-left-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-left-corners.gif');
+}
+/* line 157, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-left-tc,
+.x-nbr .x-panel-header-builder-palette-category-left-bc {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-left-sides.gif');
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+/* line 200, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-left-mc {
+  padding: 1px 4px 1px 0px;
+}
+
+/* line 210, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-left-tl,
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-left-bl {
+  position: relative;
+  right: 0;
+}
+
+/* line 399, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-header-builder-palette-category-top {
+  -moz-box-shadow: white 0 1px 0px 0 inset, white -1px 0 0px 0 inset, white 1px 0 0px 0 inset;
+  -webkit-box-shadow: white 0 1px 0px 0 inset, white -1px 0 0px 0 inset, white 1px 0 0px 0 inset;
+  -o-box-shadow: white 0 1px 0px 0 inset, white -1px 0 0px 0 inset, white 1px 0 0px 0 inset;
+  box-shadow: white 0 1px 0px 0 inset, white -1px 0 0px 0 inset, white 1px 0 0px 0 inset;
+}
+
+/* line 403, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-header-builder-palette-category-right {
+  -moz-box-shadow: white 0 1px 0px 0 inset, white 0 -1px 0px 0 inset, white -1px 0 0px 0 inset;
+  -webkit-box-shadow: white 0 1px 0px 0 inset, white 0 -1px 0px 0 inset, white -1px 0 0px 0 inset;
+  -o-box-shadow: white 0 1px 0px 0 inset, white 0 -1px 0px 0 inset, white -1px 0 0px 0 inset;
+  box-shadow: white 0 1px 0px 0 inset, white 0 -1px 0px 0 inset, white -1px 0 0px 0 inset;
+}
+
+/* line 407, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-header-builder-palette-category-bottom {
+  -moz-box-shadow: white 0 -1px 0px 0 inset, white -1px 0 0px 0 inset, white 1px 0 0px 0 inset;
+  -webkit-box-shadow: white 0 -1px 0px 0 inset, white -1px 0 0px 0 inset, white 1px 0 0px 0 inset;
+  -o-box-shadow: white 0 -1px 0px 0 inset, white -1px 0 0px 0 inset, white 1px 0 0px 0 inset;
+  box-shadow: white 0 -1px 0px 0 inset, white -1px 0 0px 0 inset, white 1px 0 0px 0 inset;
+}
+
+/* line 411, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-header-builder-palette-category-left {
+  -moz-box-shadow: white 0 1px 0px 0 inset, white 0 -1px 0px 0 inset, white 1px 0 0px 0 inset;
+  -webkit-box-shadow: white 0 1px 0px 0 inset, white 0 -1px 0px 0 inset, white 1px 0 0px 0 inset;
+  -o-box-shadow: white 0 1px 0px 0 inset, white 0 -1px 0px 0 inset, white 1px 0 0px 0 inset;
+  box-shadow: white 0 1px 0px 0 inset, white 0 -1px 0px 0 inset, white 1px 0 0px 0 inset;
+}
+
+/* line 452, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel .x-panel-header-builder-palette-category-top {
+  border-bottom-width: 1px !important;
+}
+
+/* line 456, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel .x-panel-header-builder-palette-category-right {
+  border-left-width: 1px !important;
+}
+
+/* line 460, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel .x-panel-header-builder-palette-category-bottom {
+  border-top-width: 1px !important;
+}
+
+/* line 464, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel .x-panel-header-builder-palette-category-left {
+  border-right-width: 1px !important;
+}
+
+/* line 468, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-header-builder-palette-category-collapsed {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 69, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-panel-header-builder-palette-category-collapsed-top {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -khtml-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 4px 5px 4px 5px;
+  border-width: 0;
+  border-style: solid;
+  background-image: none;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #e4e4e4));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: linear-gradient(top, #f6f6f6, #e4e4e4);
+}
+
+/* line 102, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nlg .x-panel-header-builder-palette-category-collapsed-top-mc {
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-top-bg.gif');
+  background-color: #eeeeee;
+}
+
+/* line 115, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-position: 1000404px 1000404px;
+}
+/* line 147, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-tl,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-bl,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-tr,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-br,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-tc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-bc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-ml,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-top-corners.gif');
+}
+/* line 168, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-ml,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-top-sides.gif');
+  background-position: 0 0;
+}
+/* line 200, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-top-mc {
+  padding: 0px 1px 0px 1px;
+}
+
+/* line 210, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-collapsed-top-tl,
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-collapsed-top-bl {
+  position: relative;
+  right: 0;
+}
+
+/* line 69, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-panel-header-builder-palette-category-collapsed-right {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -khtml-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 5px 4px 5px 4px;
+  border-width: 0;
+  border-style: solid;
+  background-image: none;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #f6f6f6), color-stop(100%, #e4e4e4));
+  background-image: -webkit-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -moz-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: linear-gradient(right, #f6f6f6, #e4e4e4);
+}
+
+/* line 102, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nlg .x-panel-header-builder-palette-category-collapsed-right-mc {
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-right-bg.gif');
+  background-color: #eeeeee;
+}
+
+/* line 115, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-position: 1000404px 1100404px;
+}
+/* line 147, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-tl,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-bl,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-tr,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-br,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-tc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-bc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-ml,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-right-corners.gif');
+}
+/* line 157, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-tc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-bc {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-right-sides.gif');
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+/* line 200, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-right-mc {
+  padding: 1px 0px 1px 0px;
+}
+
+/* line 210, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-collapsed-right-tl,
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-collapsed-right-bl {
+  position: relative;
+  right: 0;
+}
+
+/* line 69, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-panel-header-builder-palette-category-collapsed-bottom {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -khtml-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 4px 5px 4px 5px;
+  border-width: 0;
+  border-style: solid;
+  background-image: none;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #e4e4e4));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #e4e4e4);
+  background-image: linear-gradient(top, #f6f6f6, #e4e4e4);
+}
+
+/* line 102, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nlg .x-panel-header-builder-palette-category-collapsed-bottom-mc {
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-bottom-bg.gif');
+  background-color: #eeeeee;
+}
+
+/* line 115, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-position: 1000404px 1000404px;
+}
+/* line 147, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-tl,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-bl,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-tr,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-br,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-tc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-bc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-ml,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-bottom-corners.gif');
+}
+/* line 168, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-ml,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-bottom-sides.gif');
+  background-position: 0 0;
+}
+/* line 200, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-bottom-mc {
+  padding: 0px 1px 0px 1px;
+}
+
+/* line 210, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-collapsed-bottom-tl,
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-collapsed-bottom-bl {
+  position: relative;
+  right: 0;
+}
+
+/* line 69, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-panel-header-builder-palette-category-collapsed-left {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -o-border-top-left-radius: 4px;
+  -ms-border-top-left-radius: 4px;
+  -khtml-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -o-border-top-right-radius: 4px;
+  -ms-border-top-right-radius: 4px;
+  -khtml-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -o-border-bottom-right-radius: 4px;
+  -ms-border-bottom-right-radius: 4px;
+  -khtml-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -o-border-bottom-left-radius: 4px;
+  -ms-border-bottom-left-radius: 4px;
+  -khtml-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 5px 4px 5px 4px;
+  border-width: 0;
+  border-style: solid;
+  background-image: none;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #f6f6f6), color-stop(100%, #e4e4e4));
+  background-image: -webkit-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -moz-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -o-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: -ms-linear-gradient(right, #f6f6f6, #e4e4e4);
+  background-image: linear-gradient(right, #f6f6f6, #e4e4e4);
+}
+
+/* line 102, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nlg .x-panel-header-builder-palette-category-collapsed-left-mc {
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-left-bg.gif');
+  background-color: #eeeeee;
+}
+
+/* line 115, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  background-position: 1000404px 1100404px;
+}
+/* line 147, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-tl,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-bl,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-tr,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-br,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-tc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-bc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-ml,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-mr {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-left-corners.gif');
+}
+/* line 157, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-tc,
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-bc {
+  zoom: 1;
+  background-image: url('../themes/images/default/panel-header/panel-header-builder-palette-category-collapsed-left-sides.gif');
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+/* line 200, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-nbr .x-panel-header-builder-palette-category-collapsed-left-mc {
+  padding: 1px 0px 1px 0px;
+}
+
+/* line 210, ../../ext-4.1/resources/themes/stylesheets/ext4/default/mixins/_frame.scss */
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-collapsed-left-tl,
+.x-strict .x-ie7 .x-panel-header-builder-palette-category-collapsed-left-bl {
+  position: relative;
+  right: 0;
+}
+
+/* line 481, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-header-builder-palette-category-right-tc,
+.x-panel-header-builder-palette-category-right-mc,
+.x-panel-header-builder-palette-category-right-bc {
+  background-position: right 0;
+}
+
+/* line 487, ../../ext-4.1/resources/themes/stylesheets/ext4/default/widgets/_panel.scss */
+.x-panel-header-builder-palette-category-bottom-tc,
+.x-panel-header-builder-palette-category-bottom-mc,
+.x-panel-header-builder-palette-category-bottom-bc {
+  background-position: 0 bottom;
+}
+
+/* line 35, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .xcp-paletteWidgetFont {
+  vertical-align: middle;
+  text-align: left;
+  display: block;
+  color: #000000;
+  font-family: tahoma,helvetica,sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* line 48, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .xcp-paletteWidgetFont img {
+  float: left;
+  margin: 0 4px 0 3px;
+}
+
+/* line 53, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-panel-header-builder-palette-category {
+  border-color: #B7CADE !important;
+  border-width: 1px 1px 0 1px !important;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ffffff), color-stop(100%, #d5e5f5));
+  background-image: -webkit-linear-gradient(bottom, #ffffff, #d5e5f5);
+  background-image: -moz-linear-gradient(bottom, #ffffff, #d5e5f5);
+  background-image: -o-linear-gradient(bottom, #ffffff, #d5e5f5);
+  background-image: -ms-linear-gradient(bottom, #ffffff, #d5e5f5);
+  background-image: linear-gradient(bottom, #ffffff, #d5e5f5);
+}
+
+/* line 60, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-tab-default-top {
+  background-color: #FFFFFF;
+  background-image: none;
+}
+
+/* line 64, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-tab-default-top {
+  border-bottom: 1px solid #999999 !important;
+}
+
+/* line 68, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-tab-top-active {
+  background-color: #D5E5F5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d5e5f5));
+  background-image: -webkit-linear-gradient(top, #ffffff, #d5e5f5);
+  background-image: -moz-linear-gradient(top, #ffffff, #d5e5f5);
+  background-image: -o-linear-gradient(top, #ffffff, #d5e5f5);
+  background-image: -ms-linear-gradient(top, #ffffff, #d5e5f5);
+  background-image: linear-gradient(top, #ffffff, #d5e5f5);
+}
+
+/* line 74, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-tab {
+  border-color: #999999;
+}
+
+/* line 78, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-tab-bar {
+  background-color: #FFFFFF;
+  background-image: none;
+}
+
+/* line 84, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-tab button {
+  font-size: 11px;
+  font-weight: normal;
+  color: #000000;
+}
+
+/* line 90, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-tab-bar-strip-default, #xcp_pageEditor_paletteContextData .x-tab-bar-strip-default-plain {
+  background-color: #D5E5F5;
+  border-color: #999999;
+}
+
+/* line 95, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-tab-bar-top .x-tab-bar-body {
+  border-width: 1px 0 0;
+  border-color: #FFFFFF;
+}
+
+/* line 100, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .xcp-builder-widget-tab-icon {
+  background-image: url("../../../image/uiWwidgets_tab.png");
+}
+
+/* line 104, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .x-tab-default-top-active {
+  border-bottom-color: #D5E5F5 !important;
+}
+
+/* line 108, ../themes/stylesheets/xcp/builder/widgets/_palette.scss */
+#xcp_pageEditor_paletteContextData .xcp-paletteWidgetDisabled {
+  color: #808080;
+}
+
+/**
+ * Drag and drop CSS
+ **/
+/* line 77, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.ddProxy {
+  background-color: #FFFF00;
+}
+
+/* line 81, ../themes/stylesheets/xcp/builder/widgets/_widget.scss */
+.insertionPointLine {
+  background: #006600;
+}
+
+/* line 3, ../themes/stylesheets/xcp/builder/widgets/_menu.scss */
+.x-toolbar-xcp-nav-toolbar .x-btn-xcp-nav-button-toolbar-small {
+  border: 1px solid transparent;
+}
+
+/* line 7, ../themes/stylesheets/xcp/builder/widgets/_menu.scss */
+.x-panel-xcp-builder-menu {
+  -moz-box-shadow: #999999 2px 2px 2px;
+  -webkit-box-shadow: #999999 2px 2px 2px;
+  -o-box-shadow: #999999 2px 2px 2px;
+  box-shadow: #999999 2px 2px 2px;
+}
+/* line 10, ../themes/stylesheets/xcp/builder/widgets/_menu.scss */
+.x-panel-xcp-builder-menu .x-menu-item .xcp-builder-context-menu-delete {
+  background: transparent no-repeat top left;
+  background-image: url("../../../image/delete_tool.png");
+}
+/* line 15, ../themes/stylesheets/xcp/builder/widgets/_menu.scss */
+.x-panel-xcp-builder-menu .x-menu-body {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid;
+  border-color: #999999;
+  background: none repeat scroll 0 0 #eeeeee !important;
+  padding: 2px;
+}
+/* line 23, ../themes/stylesheets/xcp/builder/widgets/_menu.scss */
+.x-panel-xcp-builder-menu .x-menu-icon-separator {
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  left: 27px;
+  z-index: 0;
+  border-left: solid 1px #cccccc;
+  background-color: white;
+  width: 2px;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 36, ../themes/stylesheets/xcp/builder/widgets/_menu.scss */
+.x-panel-xcp-builder-menu .x-menu-item-text {
+  font: Tahoma;
+  color: black;
+  font-size: 11px;
+}
+/* line 42, ../themes/stylesheets/xcp/builder/widgets/_menu.scss */
+.x-panel-xcp-builder-menu .x-menu-item-icon {
+  margin: 4px 14px 0px 2px;
+  top: 2px;
+}
+/* line 48, ../themes/stylesheets/xcp/builder/widgets/_menu.scss */
+.x-panel-xcp-builder-menu .x-menu-item-active .x-menu-item-link {
+  background-image: none;
+  background-color: #d9e8fb;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e7f0fc), color-stop(100%, #c7ddf9));
+  background-image: -webkit-linear-gradient(top, #e7f0fc, #c7ddf9);
+  background-image: -moz-linear-gradient(top, #e7f0fc, #c7ddf9);
+  background-image: -o-linear-gradient(top, #e7f0fc, #c7ddf9);
+  background-image: -ms-linear-gradient(top, #e7f0fc, #c7ddf9);
+  background-image: linear-gradient(top, #e7f0fc, #c7ddf9);
+  border: 1px solid #b7cade;
+}
+
+/* line 9, ../themes/stylesheets/xcp/builder/widgets/_itemselector.scss */
+.x-form-itemselector-body .x-form-item {
+  margin: 0;
+}
+
+/* line 12, ../themes/stylesheets/xcp/builder/widgets/_itemselector.scss */
+.x-form-itemselector-btn {
+  border-width: 0px;
+  background-image: none;
+  background-color: white;
+}
+
+/* line 17, ../themes/stylesheets/xcp/builder/widgets/_itemselector.scss */
+.x-form-itemselector-empty-text {
+  font-family: Tahoma;
+  font-size: 10px;
+  color: #808080;
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_itemselector.scss */
+.x-btn .x-form-itemselector-up {
+  background-image: url(../themes/images/builder/ux/directional_up_alt_tool.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_itemselector.scss */
+.x-btn .x-form-itemselector-add {
+  background-image: url(../themes/images/builder/ux/directional_add_alt_tool.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_itemselector.scss */
+.x-btn .x-form-itemselector-remove {
+  background-image: url(../themes/images/builder/ux/directional_remove_alt_tool.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_itemselector.scss */
+.x-btn .x-form-itemselector-down {
+  background-image: url(../themes/images/builder/ux/directional_down_alt_tool.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 6, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog, .x-window-xcp-builder-dialog {
+  border-color: #999999;
+  -moz-border-radius: 2px 2px;
+  background: #EEEEEE;
+  -webkit-border-radius: 2px 2px;
+  -o-border-radius: 2px 2px;
+  -ms-border-radius: 2px 2px;
+  -khtml-border-radius: 2px 2px;
+  border-radius: 2px 2px;
+  -moz-box-shadow: #999999 5px 1px 5px 0;
+  -webkit-box-shadow: #999999 5px 1px 5px 0;
+  -o-box-shadow: #999999 5px 1px 5px 0;
+  box-shadow: #999999 5px 1px 5px 0;
+}
+/* line 20, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog .x-window-body, .x-window-xcp-builder-dialog .x-window-body {
+  background-color: #eeeeee;
+}
+
+/* line 25, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog {
+  padding: 5px;
+  border: 1px solid #999999;
+}
+/* line 30, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog ul {
+  margin-left: 5px;
+}
+/* line 33, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog li {
+  list-style: disc;
+  margin-left: 15px;
+}
+/* line 38, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog .xcp-builder-dialog-prompt-area {
+  margin-left: 42px;
+}
+/* line 42, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog .ext-mb-text {
+  font: Tahoma;
+  font-size: 11px;
+  font-weight: normal;
+  color: black;
+  word-wrap: break-word;
+}
+
+/* line 47, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-header-xcp-builder-dialog-top {
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* line 52, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-body-xcp-builder-dialog, .xcp-builder-dialog-body {
+  background: #EEEEEE;
+}
+
+/* line 56, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-header-xcp-builder-dialog, .xcp-builder-dialog-header {
+  padding: 5px 5px 5px 5px;
+  background-image: none;
+  background-color: #EEEEEE;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#d5e5f5));
+  background-image: -webkit-linear-gradient(top, white, #d5e5f5);
+  background-image: -moz-linear-gradient(top, white, #d5e5f5);
+  background-image: -o-linear-gradient(top, white, #d5e5f5);
+  background-image: linear-gradient(top, #ffffff, #d5e5f5);
+  border-top-color: #999999;
+  border-right-color: #999999;
+  border-left-color: #999999;
+  border-bottom-color: white;
+  border-bottom-width: 1px !important;
+  -moz-border-radius-topleft: 3px 3px;
+  -webkit-border-top-left-radius: 3px 3px;
+  -o-border-top-left-radius: 3px 3px;
+  -ms-border-top-left-radius: 3px 3px;
+  -khtml-border-top-left-radius: 3px 3px;
+  border-top-left-radius: 3px 3px;
+  -moz-border-radius-topright: 3px 3px;
+  -webkit-border-top-right-radius: 3px 3px;
+  -o-border-top-right-radius: 3px 3px;
+  -ms-border-top-right-radius: 3px 3px;
+  -khtml-border-top-right-radius: 3px 3px;
+  border-top-right-radius: 3px 3px;
+  -moz-box-shadow: 0px 1px 0px #B7CADE;
+  -webkit-box-shadow: 0px 1px 0px #B7CADE;
+  -o-box-shadow: 0px 1px 0px #B7CADE;
+  box-shadow: 0px 1px 0px #B7CADE;
+}
+
+/* line 88, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog-topContainer {
+  padding: 15px 16px 3px 16px;
+  overflow: hidden;
+  background: #EEEEEE;
+  border: 0px;
+}
+
+/* line 95, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog-innerContainer {
+  padding: 0px;
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 1px solid;
+  border-color: #CCCCCC;
+}
+
+/* line 103, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog-innerContainer-body {
+  border: 0px;
+}
+
+/* line 107, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog-toolbar, .xcp-builder-dialog-toolbar {
+  padding: 2px 16px 3px 2px;
+}
+
+/* line 112, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog .x-btn, .xcp-builder-dialog-toolbar-button {
+  border: 1px solid;
+  -moz-box-shadow: inset 0px -1px white, inset 0px 1px white, inset 1px 0px white, inset -1px 0px white;
+  -webkit-box-shadow: inset 0px -1px white, inset 0px 1px white, inset 1px 0px white, inset -1px 0px white;
+  -o-box-shadow: inset 0px -1px white, inset 0px 1px white, inset 1px 0px white, inset -1px 0px white;
+  box-shadow: inset 0px -1px white, inset 0px 1px white, inset 1px 0px white, inset -1px 0px white;
+  background-image: none;
+  background-color: #EEEEEE;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#dfdff5));
+  background-image: -webkit-linear-gradient(top, white, #dfdff5);
+  background-image: -moz-linear-gradient(top, white, #dfdff5);
+  background-image: -o-linear-gradient(top, white, #dfdff5);
+  background-image: linear-gradient(top, #ffffff, #dfdff5);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  border-color: #003366;
+}
+
+/* line 134, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog .x-btn-default-small .x-btn-inner, .xcp-builder-dialog-toolbar-button-span {
+  font-family: Tahoma;
+  font-size: 11px;
+  color: #000000;
+}
+
+/* line 140, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog .x-btn-disabled .x-btn-inner, .xcp-builder-dialog-toolbar-button-span-disabled {
+  font-family: Tahoma;
+  font-size: 11px;
+  color: #808080;
+}
+
+/* line 146, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog .x-btn-over, .xcp-builder-dialog-toolbar-button-hover {
+  -moz-box-shadow: inset 0px -2px #ffcc66, inset 0px 2px #ffcc66, inset 2px 0px #ffcc66, inset -2px 0px #ffcc66;
+  -webkit-box-shadow: inset 0px -2px #ffcc66, inset 0px 2px #ffcc66, inset 2px 0px #ffcc66, inset -2px 0px #ffcc66;
+  -o-box-shadow: inset 0px -2px #ffcc66, inset 0px 2px #ffcc66, inset 2px 0px #ffcc66, inset -2px 0px #ffcc66;
+  box-shadow: inset 0px -2px #ffcc66, inset 0px 2px #ffcc66, inset 2px 0px #ffcc66, inset -2px 0px #ffcc66;
+  background-image: none;
+  background-color: #EEEEEE;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#dfdff5));
+  background-image: -webkit-linear-gradient(top, white, #dfdff5);
+  background-image: -moz-linear-gradient(top, white, #dfdff5);
+  background-image: -o-linear-gradient(top, white, #dfdff5);
+  background-image: linear-gradient(top, #ffffff, #dfdff5);
+  border-color: #003366;
+}
+
+/* line 161, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog .x-btn-pressed, .x-xcp-builder-dialog-toolbar-button-pressed {
+  -moz-box-shadow: inset 0px -1px white, inset 0px 1px white, inset 1px 0px white, inset -1px 0px white;
+  -webkit-box-shadow: inset 0px -1px white, inset 0px 1px white, inset 1px 0px white, inset -1px 0px white;
+  -o-box-shadow: inset 0px -1px white, inset 0px 1px white, inset 1px 0px white, inset -1px 0px white;
+  box-shadow: inset 0px -1px white, inset 0px 1px white, inset 1px 0px white, inset -1px 0px white;
+  background-image: none;
+  background-color: #EEEEEE;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dfdff5), to(white));
+  background-image: -webkit-linear-gradient(top, #dfdff5, white);
+  background-image: -moz-linear-gradient(top, #dfdff5, white);
+  background-image: -o-linear-gradient(top, #dfdff5, white);
+  background-image: linear-gradient(top, #dfdff5, #ffffff);
+  border-color: #003366;
+}
+
+/* line 176, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-xcp-builder-dialog .x-btn-disabled, .xcp-builder-dialog-toolbar-button-disabled {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  background-image: none;
+  background-color: #F1F1F1;
+  color: #808080;
+  border-color: #C5C5C5;
+}
+
+/* line 190, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog-toolbar-top {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 11px;
+  color: #000000;
+  height: 24px;
+  background-image: none;
+  background-color: #EEEEEE;
+  border: 0px;
+  vertical-align: baseline;
+  padding: 0px 10px 0px 10px;
+  line-height: 24px;
+}
+
+/* line 204, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog-multiSelect-label {
+  font-family: Tahoma;
+  font-size: 11px;
+  color: #000000;
+}
+
+/* line 210, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog-instructions-top {
+  padding-bottom: 5px;
+}
+
+/* line 214, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog-instructions-header {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 11px;
+  padding-top: 2px;
+}
+
+/* line 221, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog-radio-instructions {
+  margin-left: 4px;
+}
+
+/* line 225, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.x-window-header-text-xcp-builder-dialog, .x-window-header-text-dialog {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 11px;
+  color: #000000;
+}
+
+/* line 232, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-dialog-toolbar-button-inner {
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Tahoma;
+  color: #000000;
+}
+
+/* line 239, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp_results_list_creationdialog-cls {
+  border: 0px;
+}
+
+/* line 243, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-mb-error {
+  background: transparent no-repeat top left;
+  background-image: url('../themes/images/builder/shared/error_32_msg.png');
+}
+
+/* line 248, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-mb-warning {
+  background: transparent no-repeat top left;
+  background-image: url('../themes/images/builder/shared/warning_32_msg.png');
+}
+
+/* line 253, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-mb-info {
+  background: transparent no-repeat top left;
+  background-image: url('../themes/images/builder/shared/info_32_msg.png');
+}
+
+/* line 258, ../themes/stylesheets/xcp/builder/widgets/_dialog.scss */
+.xcp-builder-mb-question {
+  background: transparent no-repeat top left;
+  background-image: url('../themes/images/builder/shared/question_32_msg.png');
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.x-grid-tree-node-expanded .xcp-builder-realtime-icon {
+  background-image: url("../../../image/datasource_realtime_art.png");
+}
+/* line 5, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.x-grid-tree-node-expanded .xcp-builder-search-icon {
+  background-image: url("../../../image/datasource_fulltext_art.png");
+}
+/* line 8, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.x-grid-tree-node-expanded .xcp-builder-historical-icon {
+  background-image: url("../../../image/datasource_historical_art.png");
+}
+/* line 11, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.x-grid-tree-node-expanded .xcp-builder-data-action-instance-icon {
+  background-image: url("../../../image/primary_action_misc.png");
+}
+/* line 14, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.x-grid-tree-node-expanded .xcp-builder-selector-data-action-instance-icon {
+  background-image: url("../../../image/uiaction_art.png");
+}
+/* line 17, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.x-grid-tree-node-expanded .xcp-builder-tasklist-icon {
+  background-image: url("../../../image/tasklist_art.png");
+}
+/* line 20, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.x-grid-tree-node-expanded .xcp-builder-stateless-process-icon {
+  background-image: url("../../../image/stateless_proc.png");
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.xcp-builder-realtime-icon {
+  background-image: url("../../../image/datasource_realtime_art.png");
+}
+
+/* line 5, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.xcp-builder-search-icon {
+  background-image: url("../../../image/datasource_fulltext_art.png");
+}
+
+/* line 8, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.xcp-builder-historical-icon {
+  background-image: url("../../../image/datasource_historical_art.png");
+}
+
+/* line 11, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.xcp-builder-data-action-instance-icon {
+  background-image: url("../../../image/primary_action_misc.png");
+}
+
+/* line 14, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.xcp-builder-selector-data-action-instance-icon {
+  background-image: url("../../../image/uiaction_art.png");
+}
+
+/* line 17, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.xcp-builder-tasklist-icon {
+  background-image: url("../../../image/tasklist_art.png");
+}
+
+/* line 20, ../themes/stylesheets/xcp/builder/widgets/_dataservices-tree.scss */
+.xcp-builder-stateless-process-icon {
+  background-image: url("../../../image/stateless_proc.png");
+}
+
+/* line 5, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.x-column-header.xcp-widget-grid-column-selectable {
+  border-width: 1px 1px 0 1px;
+  border-left-color: gray;
+  border-right-color: gray !important;
+  border-top-color: gray;
+  cursor: pointer;
+}
+
+/* line 13, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.x-column-header.xcp-widget-grid-column-selected {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-left-color: #ff9900;
+  border-right-color: #ff9900 !important;
+  border-top-color: #ff9900;
+  cursor: pointer;
+}
+
+/* line 22, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.x-grid-with-col-lines .x-grid-cell {
+  border-right: 0px none;
+}
+
+/* line 28, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.x-grid-row .xcp-widget-grid-column-selectable {
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-left-color: gray;
+  border-right-color: gray;
+  cursor: pointer;
+}
+/* line 36, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.x-grid-row .xcp-widget-grid-column-selected {
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-left-color: #ff9900;
+  border-right-color: #ff9900;
+  cursor: pointer;
+}
+/* line 44, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.x-grid-row .xcp-widget-grid-column-selectable-last-row {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-bottom-color: gray;
+  cursor: pointer;
+}
+/* line 51, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.x-grid-row .xcp-widget-grid-column-selected-last-row {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-bottom-color: #ff9900;
+  cursor: pointer;
+}
+
+/* line 59, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.xcp_results_list-cls.xcp-widget-selectable {
+  border-width: 3px !important;
+}
+
+/* line 63, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.xcp_results_list-cls.xcp-widget-selected {
+  border-width: 3px !important;
+}
+
+/* line 67, ../themes/stylesheets/xcp/builder/widgets/_resultslist.scss */
+.xcp_results_list-cls.xcp-widget-base {
+  border: solid 3px transparent;
+}
+
+/* line 3, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.xcp-comment-tree.x-tree-panel .x-grid-row .x-grid-cell-inner {
+  height: auto;
+  white-space: pre-wrap;
+  margin: 5px 5px 0px 0px;
+}
+
+/* line 9, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.xcp-comment-tree .comment-header {
+  font-weight: bold;
+}
+
+/* line 13, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.xcp-comment-tree .comment-body {
+  margin-top: 10px;
+}
+
+/* line 17, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.xcp-comment-tree .comment-footer {
+  margin-top: 10px;
+  color: #555555;
+}
+
+/* line 22, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.xcp-comment-tree .comment-hr {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* line 27, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.x-mask-msg.xcp-mask-error div {
+  background-color: #ffdddd;
+  background-image: none;
+  padding: 5px 10px;
+}
+
+/* line 33, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.x-mask-msg.xcp-mask-info div {
+  background-color: #eeffee;
+  background-image: none;
+  padding: 5px 10px;
+}
+
+/* line 39, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.x-grid-row .xcp-comment-form-ct {
+  background-color: transparent !important;
+}
+
+/* line 43, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.x-scroller-vertical .x-scroller-ct {
+  overflow-y: scroll;
+}
+
+/* line 47, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.xcp-comment-tree .x-grid-dirty-cell {
+  background-image: none;
+}
+
+/* line 51, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.xcp-comment-tree-add-comment {
+  background-image: url("xcp-core/icons/comment_add.png");
+}
+
+/* line 55, ../themes/stylesheets/xcp/builder/widgets/_comments.scss */
+.xcp-comment-tree-new-comment-label {
+  font-weight: bold;
+}
+
+/* line 3, ../themes/stylesheets/xcp/builder/widgets/_contenttree.scss */
+.xcp-content-tree-root img.x-tree-expander {
+  display: none;
+}
+
+/* line 4, ../themes/stylesheets/xcp/builder/widgets/_contenttree.scss */
+.xcp-content-tree-root img.x-tree-icon {
+  display: none;
+}
+
+/* line 5, ../themes/stylesheets/xcp/builder/widgets/_contenttree.scss */
+.xcp-content-tree-root .x-grid-cell-inner {
+  padding-left: 16px;
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_splitter.scss */
+.x-layout-split-left {
+  background: url('../themes/images/builder/util/splitter/mini-left.gif') no-repeat top right;
+}
+
+/* line 6, ../themes/stylesheets/xcp/builder/widgets/_splitter.scss */
+.x-layout-split-right {
+  background: url('../themes/images/builder/util/splitter/mini-right.gif') no-repeat top left;
+}
+
+/* line 11, ../themes/stylesheets/xcp/builder/widgets/_splitter.scss */
+.x-splitter-collapsed .x-layout-split-left {
+  background: url('../themes/images/builder/util/splitter/mini-right.gif') no-repeat top left;
+}
+/* line 15, ../themes/stylesheets/xcp/builder/widgets/_splitter.scss */
+.x-splitter-collapsed .x-layout-split-right {
+  background: url('../themes/images/builder/util/splitter/mini-left.gif') no-repeat top right;
+}
+
+/* EXACT same as Ext but for some reason (I suspect import order, this file 
+gets precedence over what ever file was over writting the ext file and killing 
+the style  */
+/* line 23, ../themes/stylesheets/xcp/builder/widgets/_splitter.scss */
+.x-splitter-vertical {
+  cursor: e-resize;
+  cursor: col-resize;
+}
+
+/* line 28, ../themes/stylesheets/xcp/builder/widgets/_splitter.scss */
+.x-splitter-vertical.x-splitter-collapsed {
+  cursor: default;
+}
+
+/* line 3, ../themes/stylesheets/xcp/builder/util/_tool.scss */
+.x-tool img {
+  background-image: url("../themes/images/builder/tools/tools-sprites-trans-xcpbuilder.gif");
+}
+
+/* line 3, ../themes/stylesheets/xcp/builder/widgets/_app-menu.scss */
+.xcp-master-header.xcp-widget-selectable, .x-toolbar-xcp-nav-toolbar.xcp-widget-selectable {
+  border-bottom-width: 5px !important;
+  border-bottom-color: #3399cc !important;
+  -moz-box-shadow: 0 1px 0 gray;
+  -webkit-box-shadow: 0 1px 0 gray;
+  -o-box-shadow: 0 1px 0 gray;
+  box-shadow: 0 1px 0 gray;
+}
+
+/* line 9, ../themes/stylesheets/xcp/builder/widgets/_app-menu.scss */
+.xcp-master-header.xcp-widget-selected, .x-toolbar-xcp-nav-toolbar.xcp-widget-selected {
+  border-bottom-width: 5px !important;
+  border-bottom-color: #3399cc !important;
+  -moz-box-shadow: 0 1px 0 #ff9900;
+  -webkit-box-shadow: 0 1px 0 #ff9900;
+  -o-box-shadow: 0 1px 0 #ff9900;
+  box-shadow: 0 1px 0 #ff9900;
+}
+
+/* line 15, ../themes/stylesheets/xcp/builder/widgets/_app-menu.scss */
+.xcp-master-header .x-toolbar-xcp-nav-toolbar.xcp-widget-selectable {
+  border-bottom-width: 1px !important;
+  border-bottom-color: gray !important;
+}
+
+/* line 20, ../themes/stylesheets/xcp/builder/widgets/_app-menu.scss */
+.xcp-master-header .x-toolbar-xcp-nav-toolbar.xcp-widget-selected {
+  border-bottom-width: 1px !important;
+  border-bottom-color: #ff9900 !important;
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_tabgroup.scss */
+.xcp_tab_group-cls.xcp-widget-selectable {
+  border-width: 3px !important;
+}
+
+/* line 6, ../themes/stylesheets/xcp/builder/widgets/_tabgroup.scss */
+.xcp_tab_group-cls.xcp-widget-selected {
+  border-width: 3px !important;
+}
+
+/* line 10, ../themes/stylesheets/xcp/builder/widgets/_tabgroup.scss */
+.xcp_tab_group-cls.xcp-widget-base {
+  border: solid 3px transparent;
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_columnbox.scss */
+.xcp_column_box-cls.xcp-widget-selectable {
+  border-width: 3px !important;
+}
+
+/* line 6, ../themes/stylesheets/xcp/builder/widgets/_columnbox.scss */
+.xcp_column_box-cls.xcp-widget-selected {
+  border-width: 3px !important;
+}
+
+/* line 10, ../themes/stylesheets/xcp/builder/widgets/_columnbox.scss */
+.xcp_column_box-cls.xcp-widget-base {
+  border: solid 3px transparent;
+}
+
+/* line 2, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel {
+  /* Change which of the ext icons were using to the down and up icons. */
+}
+/* line 3, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-panel-header {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #d5e5f5), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(bottom, #d5e5f5, #ffffff);
+  background-image: -moz-linear-gradient(bottom, #d5e5f5, #ffffff);
+  background-image: -o-linear-gradient(bottom, #d5e5f5, #ffffff);
+  background-image: -ms-linear-gradient(bottom, #d5e5f5, #ffffff);
+  background-image: linear-gradient(bottom, #d5e5f5, #ffffff);
+  border-color: #CCCCCC !important;
+  border-width: 1px 1px 0px !important;
+  height: 24px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+/* line 12, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-panel-body {
+  font-size: 11;
+  overflow-y: auto;
+  border-style: solid;
+  border-width: 1px !important;
+  border-color: #CCCCCC;
+}
+/* line 19, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-panel-body .xcp-data-source-instance {
+  margin: 10px 10px 0px 10px;
+  float: left;
+  width: 160px;
+  height: 20px;
+}
+/* line 24, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-panel-body .xcp-data-source-instance img {
+  height: 16px;
+  width: 16px;
+  margin-right: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 32, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-panel-body .xcp-data-source-instance span {
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 39, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-panel-body .xcp-empty-message {
+  font-size: 11;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #808080;
+}
+/* line 49, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-tool-collapse-bottom {
+  background-position: 0 -75px;
+}
+/* line 53, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-tool-over .x-tool-collapse-bottom {
+  background-position: -15px -75px;
+}
+/* line 57, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-tool-expand-top {
+  background-position: 0 -60px;
+}
+/* line 61, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-data-source-panel .x-tool-over .x-tool-expand-top {
+  background-position: -15px -60px;
+}
+
+/* line 67, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-ds-real-time-img {
+  background-image: url("../../../image/datasource_realtime_art.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 75, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.x-btn-xcp-dsi-toolbar-buttion-small-icon {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+}
+/* line 81, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.x-btn-xcp-dsi-toolbar-buttion-small-icon .x-btn-icon {
+  width: 16px;
+  height: 16px;
+  top: 2;
+  left: 2;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 92, ../themes/stylesheets/xcp/builder/widgets/_datasources-instance.scss */
+.xcp-dsi-toolbar-button-over {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #d0d0d0), color-stop(100%, #c4c4c4));
+  background-image: -webkit-linear-gradient(top, #ffffff, #d0d0d0, #c4c4c4);
+  background-image: -moz-linear-gradient(top, #ffffff, #d0d0d0, #c4c4c4);
+  background-image: -o-linear-gradient(top, #ffffff, #d0d0d0, #c4c4c4);
+  background-image: -ms-linear-gradient(top, #ffffff, #d0d0d0, #c4c4c4);
+  background-image: linear-gradient(top, #ffffff, #d0d0d0, #c4c4c4);
+}
+
+/* line 47, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.x-border-layout-ct {
+  background-color: #FFFFFF;
+}
+
+/* line 51, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.xcp-pageeditor-body {
+  overflow: visible;
+}
+
+/* line 55, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.x-form-invalid-field, textarea.x-form-invalid-field {
+  background-color: white;
+  background-image: url("../images/xcp-builder-theme/grid/invalid_line.gif");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  border-color: #cc3300;
+}
+
+/* line 63, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.x-message-box .x-window-header-text-default {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 14;
+  color: #000000;
+}
+
+/* line 73, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.xcp-button-add-tool-img {
+  background-image: url("../../../image/add_tool.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+
+/* line 82, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.xcp-panel-collapse-left .x-tool-collapse-top {
+  margin-right: 5px;
+}
+
+/** Tucks the label under the field **/
+/** TODO: Remove once runtime generates the css correctly **/
+/* line 90, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.x-form-item-label {
+  overflow: hidden;
+}
+
+/* line 94, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.xcp_columnhbox-cls, .xcp_columnvbox-cls {
+  border-style: dashed;
+  border-color: #cccccc;
+}
+
+/* line 99, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.xcp_viewer_thmPanel .x-grid-row .x-grid-cell {
+  border-style: none;
+}
+
+/* line 103, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.xcp_viewer_thmPanel .x-grid-row-over .x-grid-cell, .xcp_viewer .x-grid-row-over .x-grid-rowwrap-div {
+  background-color: transparent;
+}
+
+/* line 107, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.xcp_viewer_thmPanel .x-panel-header-default {
+  background-image: none !important;
+  background-color: white !important;
+}
+
+/* line 112, ../themes/stylesheets/xcp/builder/_xcp-builder.scss */
+.xcp_viewer_pgModPanel .x-toolbar-default, .xcp_viewer_thmPanel .x-toolbar-default {
+  border-color: #cccccc !important;
+  background-image: none !important;
+  background-color: white !important;
+}

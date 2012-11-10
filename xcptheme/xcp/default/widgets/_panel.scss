@@ -1,0 +1,88 @@
+
+@mixin xcp-panel-ui(
+    $ui-label,
+
+    $ui-base-color: null,
+
+    $ui-border-color: null,
+    $ui-border-radius: null,
+    $ui-border-width: 0,
+
+    $ui-header-color: null,
+    $ui-header-font-family: $panel-header-font-family,
+    $ui-header-font-size: $panel-header-font-size,
+    $ui-header-font-weight: $panel-header-font-weight,
+    $ui-header-border-color: $ui-border-color,
+    $ui-header-background-color: null,
+    $ui-header-background-gradient: null,
+    $ui-header-inner-border-color: null,
+
+    $ui-body-color: null,
+    $ui-body-border-color: null,
+    $ui-body-border-width: null,
+    $ui-body-border-style: solid,
+    $ui-body-background-color: null,
+    $ui-body-font-size: null,
+    $ui-body-font-weight: null
+){
+    .#{$prefix}tool-expand-top, .#{$prefix}tool-collapse-top {
+        background-position: 0 -75px;
+    }
+
+    .#{$prefix}tool-over .#{$prefix}tool-expand-top, .#{$prefix}tool-over .#{$prefix}tool-collapse-top {
+        background-position: -15px -75px;
+    }
+
+    .#{$prefix}tool-expand-bottom, .#{$prefix}tool-collapse-bottom {
+        background-position: 0 -120px;
+    }
+
+    .#{$prefix}tool-over .#{$prefix}tool-expand-bottom, .#{$prefix}tool-over .#{$prefix}tool-collapse-bottom {
+        background-position: -15px -120px;
+    }
+
+    .xcp-panel-collapse-left {
+        margin-right: 5px;
+    }
+
+    .x-panel-header-default {
+        border-top-width: 1px !important;
+        border-left-width: 0px !important;
+        border-right-width: 0px !important;
+        border-bottom-width: 0px !important;
+        height: 25px;
+        @if $xcp-widget-header-background-color == null {
+            //override extjs hardcoded background-color
+            background-color: transparent;
+        }
+    }
+
+    .#{$prefix}panel-body-default {
+        background: $xcp-page-background-color;
+    }
+
+    .x-panel-header-text-default {
+        padding-bottom: 5px;
+    }
+
+    // header background images, used to support IE background gradient
+    .#{$prefix}nlg {
+
+        .#{$prefix}panel-header-#{$ui-label}-top {
+            background-image: none;
+        }
+
+        .#{$prefix}panel-header-#{$ui-label}-bottom {
+            background-image: none;
+        }
+
+        .#{$prefix}panel-header-#{$ui-label}-left {
+            background-image: none;
+        }
+
+        .#{$prefix}panel-header-#{$ui-label}-right {
+            background-image: none;
+        }
+    }
+
+}

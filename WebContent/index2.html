@@ -1,0 +1,150 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title id='title'>Page</title>
+
+	<script type='text/javascript'>
+		var XcpDesignerUtil = (function (){ return {
+			getParameter: function (parameter){
+				var p = escape(unescape(parameter));
+				var regex = new RegExp("[?&]" + p + "(?:=([^&]*))?","i");
+				var match = regex.exec(window.location.search);
+				var value = null;
+				if( match != null ){
+					value = match[1];
+				}
+				return !value || value.length ==0 ? null : value;
+			},
+
+			loadJavascript: function(url, callback) {
+		        var script = document.createElement("script");
+		        script.type = "text/javascript";
+		        script.src = url;
+
+		        script.onreadystatechange = function() {
+		        	if (this.readyState == 'complete') {
+		            	callback();
+		        	}
+		        }
+
+		        script.onload = callback;
+
+		        if (typeof script != "undefined") {
+		        	document.getElementsByTagName("head")[0].appendChild(script);
+		        }
+
+		        return script;
+			},
+
+			enableDebugMode: function(){
+				//use event capture phase
+				window.addEventListener("click", function(e){
+					if (e.ctrlKey && e.shiftKey && !window.debugModeEnabled) {
+						window.debugModeEnabled = true;
+						XcpDesignerUtil.loadJavascript("https://getfirebug.com/firebug-lite.js", function(){
+							alert('debug mode enabled, press F12 to open the console');
+						});
+					}
+				}, true);
+			},
+
+			errorHandler : function (msg, source, line) {
+				var errorMsg = "PageEditor Error: " + msg + "\nSource:" + source + "\nLine: " + line;
+				if (typeof javaLog != 'undefined') {
+					javaLog("ERROR", errorMsg);
+				}
+			}
+		}
+		})();
+		//need to show errors in canvas?
+		window.onerror = XcpDesignerUtil.errorHandler;
+	</script>
+
+    <script type='text/javascript'>
+        <!-- ExtJS Javascript -->
+        if (window.navigator.userAgent.indexOf("rv:1.9.2.16") >= 0) { // in xulrunner
+            document.write("<script type='text/javascript' src='js/ext-4.1/ext-all.js'><\/script>");
+        } else { // not in xulrunner
+            document.write("<script type='text/javascript' src='js/ext-4.1/ext-all-dev.js'><\/script>");
+            document.write("<script type='text/javascript' src='js/ext-4.1/src/diag/layout/Context.js'><\/script>");
+            document.write("<script type='text/javascript' src='js/ext-4.1/src/diag/layout/ContextItem.js'><\/script>");
+        }
+    </script>
+	<!-- Design time JavaScript-->
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-startup.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-core.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-component.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-menu.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-action.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-default-actions.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-uxcmp.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-dialog.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-utility.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-dd-DropZone.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-external-methods.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-palette.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-paletteWidget.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-dataSourceInstances.js'></script>
+	<script type='text/javascript' src='js/xcp/src/xcp-designer-dataservices-tree.js'></script>
+
+	<script type='text/javascript' src='component/xcp-core/openajax/lib/openajax/OpenAjax.js'></script>
+
+	<script type='text/javascript'>
+
+		(function(){
+			function getLanguageCode() {
+				var debug = XcpDesignerUtil.getParameter('debug');
+				//ExtJs seems to have some language pack specific to country, below is the list of it.
+				var extCountryLangPacks = ["zh_TW", "zh_CN", "sv_SE", "sr_RS",
+				                           "pt_PT", "pt_BR", "no_NN",
+				                           "no_NB", "fr_CA", "en_GB", "el_GR"];
+
+				var locale = XcpDesignerUtil.getParameter('locale');
+				var lang = "en";
+				if (locale) {
+					if (extCountryLangPacks.indexOf(locale) != -1) {
+						lang = locale;
+					} else {
+						var loc = locale.split("_");
+						lang = loc.length == 2 ? loc[0] : loc;
+					}
+				}
+				return lang;
+			};
+
+			function getLocaleParam() {
+				var loc = XcpDesignerUtil.getParameter('locale');
+				return loc ? "?locale=" + loc : "";
+			};
+
+			function injectScript(url) {
+				//load script before DOMContentLoaded
+				document.write("<script type='text/javascript' src='" + url + "'><\/script>");
+			};
+
+
+			//Component Script
+            var loc =  getLocaleParam();
+            if (window.navigator.userAgent.indexOf("rv:1.9.2.16") >= 0) { // in xulrunner
+			    injectScript("component/contents.js" + loc);
+            } else if (loc) {
+                injectScript("component/contents.js" + loc + "&nominify");
+            } else {
+                injectScript("component/contents.js" + loc + "?nominify");
+            }
+			//get extJS locale specific strings
+			injectScript("js/ext-4.1/locale/ext-lang-" + getLanguageCode() + ".js");
+
+		})()
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+
+Ext.onReady(function(){
+	xcp.designer.Startup.start();
+});
+
+</script>
+</body>
+</html>

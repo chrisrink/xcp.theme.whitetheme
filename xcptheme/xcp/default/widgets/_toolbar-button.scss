@@ -1,0 +1,361 @@
+@mixin xcp-toolbar-button {
+
+//override ext toolbar button because xcp toolbar button style is different from default button style
+  @include extjs-button-ui(
+        'default-toolbar-small',
+
+        $xcp-toolbar-button-border-radius,
+        $xcp-toolbar-button-border-width,
+
+        $button-toolbar-border-color,
+        $xcp-toolbar-button-border-color-over,
+        $button-toolbar-border-color-focus,
+        $xcp-toolbar-button-border-color-pressed,
+        $button-toolbar-border-color-disabled,
+
+        $xcp-toolbar-button-small-padding,
+        $button-small-text-padding,
+
+        $xcp-toolbar-button-background-color,
+        $xcp-toolbar-button-background-color-over,
+        $xcp-toolbar-button-background-color-focus,
+        $xcp-toolbar-button-background-color-pressed,
+        $xcp-toolbar-button-background-color-disabled,
+
+        $xcp-toolbar-button-background-gradient,
+        $xcp-toolbar-button-background-gradient-over,
+        $xcp-toolbar-button-background-gradient-focus,
+        $xcp-toolbar-button-background-gradient-pressed,
+        $xcp-toolbar-button-background-gradient-disabled,
+
+        $xcp-toolbar-button-text-color,
+        $xcp-toolbar-button-text-color-over,
+        $xcp-toolbar-button-text-color-focus,
+        $xcp-toolbar-button-text-color-pressed,
+        $xcp-toolbar-button-text-color,
+
+        $xcp-toolbar-button-text-font-size,
+        $xcp-toolbar-button-text-font-size,
+        $xcp-toolbar-button-text-font-size,
+        $xcp-toolbar-button-text-font-size,
+        $xcp-toolbar-button-text-font-size,
+
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+
+        $xcp-toolbar-button-small-icon-size
+    );
+
+    @include extjs-button-ui(
+        'default-toolbar-medium',
+
+        $xcp-toolbar-button-border-radius,
+        $xcp-toolbar-button-border-width,
+
+        $button-toolbar-border-color,
+        $xcp-toolbar-button-border-color-over,
+        $button-toolbar-border-color-focus,
+        $xcp-toolbar-button-border-color-pressed,
+        $button-toolbar-border-color-disabled,
+
+        $button-medium-padding,
+        $button-medium-text-padding,
+
+        $xcp-toolbar-button-background-color,
+        $xcp-toolbar-button-background-color-over,
+        $xcp-toolbar-button-background-color-focus,
+        $xcp-toolbar-button-background-color-pressed,
+        $xcp-toolbar-button-background-color-disabled,
+
+        $xcp-toolbar-button-background-gradient,
+        $xcp-toolbar-button-background-gradient-over,
+        $xcp-toolbar-button-background-gradient-focus,
+        $xcp-toolbar-button-background-gradient-pressed,
+        $xcp-toolbar-button-background-gradient-disabled,
+
+        $xcp-toolbar-button-text-color,
+        $xcp-toolbar-button-text-color-over,
+        $xcp-toolbar-button-text-color-focus,
+        $xcp-toolbar-button-text-color-pressed,
+        $xcp-toolbar-button-text-color,
+
+        $button-medium-font-size,
+        $button-medium-font-size-over,
+        $button-medium-font-size-focus,
+        $button-medium-font-size-pressed,
+        $button-medium-font-size-disabled,
+
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+
+        $button-medium-icon-size
+    );
+
+    @include extjs-button-ui(
+        'default-toolbar-large',
+
+        $xcp-toolbar-button-border-radius,
+        $xcp-toolbar-button-border-width,
+
+        $button-toolbar-border-color,
+        $xcp-toolbar-button-border-color-over,
+        $button-toolbar-border-color-focus,
+        $xcp-toolbar-button-border-color-pressed,
+        $button-toolbar-border-color-disabled,
+
+        $button-large-padding,
+        $button-large-text-padding,
+
+        $xcp-toolbar-button-background-color,
+        $xcp-toolbar-button-background-color-over,
+        $xcp-toolbar-button-background-color-focus,
+        $xcp-toolbar-button-background-color-pressed,
+        $xcp-toolbar-button-background-color-disabled,
+
+        $xcp-toolbar-button-background-gradient,
+        $xcp-toolbar-button-background-gradient-over,
+        $xcp-toolbar-button-background-gradient-focus,
+        $xcp-toolbar-button-background-gradient-pressed,
+        $xcp-toolbar-button-background-gradient-disabled,
+
+        $xcp-toolbar-button-text-color,
+        $xcp-toolbar-button-text-color-over,
+        $xcp-toolbar-button-text-color-focus,
+        $xcp-toolbar-button-text-color-pressed,
+        $xcp-toolbar-button-text-color,
+
+        $button-large-font-size,
+        $button-large-font-size-over,
+        $button-large-font-size-focus,
+        $button-large-font-size-pressed,
+        $button-large-font-size-disabled,
+
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+        $xcp-toolbar-button-text-font-weight,
+
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+        $xcp-toolbar-button-text-font-family,
+
+        $button-large-icon-size
+    );
+
+    .#{$prefix}toolbar-xcp-toolbar, .rmViewerToolBar, .xcp_results_list_grid-cls .#{$prefix}toolbar-docked-top {
+        .x-btn {
+            height: $xcp-toolbar-height;
+        }
+
+        .#{$prefix}btn-default-toolbar-small-icon {
+            .#{$prefix}btn-icon {
+                top: 7px;
+            }
+        }
+
+    }
+
+   .#{$prefix}toolbar .#{$prefix}btn-arrow-right {
+        padding-right: 0px;
+        margin-right: 30px;
+   }
+
+   .#{$prefix}toolbar .#{$prefix}btn-split-right {
+        background-image: theme-image($theme-name, $xcp-split-button-trigger-default, false, $relative-image-path-for-uis);
+   }
+
+   .#{$prefix}btn-default-toolbar-small {
+        .#{$prefix}btn-arrow {
+            background-image: theme-image($theme-name, $xcp-menu-trigger-arrow, false, $relative-image-path-for-uis);
+        }
+   }
+
+   .#{$prefix}btn-default-toolbar-small-menu-active, .#{$prefix}btn-default-toolbar-small-pressed {
+        .#{$prefix}btn-arrow {
+            background-image: theme-image($theme-name, $xcp-menu-trigger-arrow-over, false, $relative-image-path-for-uis);
+        }
+
+        .#{$prefix}btn-split-right {
+            background-image: theme-image($theme-name, $xcp-split-button-trigger-on, false, $relative-image-path-for-uis);
+        }
+   }
+
+   .#{$prefix}toolbar .#{$prefix}btn-default-small {
+        padding: $xcp-widget-button-padding;
+   }
+
+  .#{$prefix}btn-default-toolbar-small-disabled {
+        @include opacity(.5);
+   }
+
+   .#{$prefix}btn-default-toolbar-medium-disabled {
+        @include opacity(.5);
+   }
+
+
+   @include xcp-toolbar-button-ie("small", $button-small-icon-size);
+
+   @include xcp-toolbar-button-ie("medium", $button-medium-icon-size);
+
+ }
+
+ //For IE
+@mixin xcp-toolbar-button-ie($button-size, $button-icon-size) {
+
+   @if not $supports-border-radius or $compile-all {
+        .#{$prefix}nbr {
+            .#{$prefix}btn-default-toolbar-#{$button-size}-over {
+                .#{$prefix}frame-tl,
+                .#{$prefix}frame-bl,
+                .#{$prefix}frame-tr,
+                .#{$prefix}frame-br,
+                .#{$prefix}frame-tc,
+                .#{$prefix}frame-bc {
+                    background-image: none;;
+                }
+                .#{$prefix}frame-ml,
+                .#{$prefix}frame-mr {
+                    background-image: none;;
+                }
+                .#{$prefix}frame-mc {
+                    background-color: $xcp-toolbar-button-background-color-over;
+                    background-image: none;
+                }
+            }
+
+            .#{$prefix}btn-default-toolbar-#{$button-size}-focus {
+                .#{$prefix}frame-tl,
+                .#{$prefix}frame-bl,
+                .#{$prefix}frame-tr,
+                .#{$prefix}frame-br,
+                .#{$prefix}frame-tc,
+                .#{$prefix}frame-bc {
+                    background-image: none;
+                }
+                .#{$prefix}frame-ml,
+                .#{$prefix}frame-mr {
+                    background-image: none;
+                }
+                .#{$prefix}frame-mc {
+                    background-color: $xcp-toolbar-button-background-color-focus;
+                    background-image: none;
+                }
+            }
+
+            .#{$prefix}btn-default-toolbar-#{$button-size}-menu-active,
+            .#{$prefix}btn-default-toolbar-#{$button-size}-pressed {
+                .#{$prefix}frame-tl,
+                .#{$prefix}frame-bl,
+                .#{$prefix}frame-tr,
+                .#{$prefix}frame-br,
+                .#{$prefix}frame-tc,
+                .#{$prefix}frame-bc {
+                    background-image: none;
+                }
+                .#{$prefix}frame-ml,
+                .#{$prefix}frame-mr {
+                    background-image: none;
+                }
+                .#{$prefix}frame-mc {
+                    background-color: $xcp-toolbar-button-background-color-pressed;
+                    background-image: none;
+                }
+            }
+
+            .#{$prefix}btn-default-toolbar-#{$button-size}-disabled {
+                .#{$prefix}frame-tl,
+                .#{$prefix}frame-bl,
+                .#{$prefix}frame-tr,
+                .#{$prefix}frame-br,
+                .#{$prefix}frame-tc,
+                .#{$prefix}frame-bc {
+                    background-image: none;
+                }
+                .#{$prefix}frame-ml,
+                .#{$prefix}frame-mr {
+                    background-image: none;
+                }
+                .#{$prefix}frame-mc {
+                    background-color: $xcp-toolbar-button-background-color-disabled;
+                    background-image: none;
+                }
+            }
+        }
+
+        .#{$prefix}ie8 {
+            .#{$prefix}btn-default-toolbar-#{$button-size}-over {
+                .#{$prefix}frame-mc {
+                    background-color: $xcp-toolbar-button-background-color-over-ie8;
+                    background-image: none;
+                }
+            }
+
+            .#{$prefix}btn-default-toolbar-#{$button-size}-focus,
+            .#{$prefix}btn-default-toolbar-#{$button-size}-pressed {
+                .#{$prefix}frame-mc {
+                    background-color: $xcp-toolbar-button-background-color-pressed;
+                    background-image: none;
+                }
+            }
+
+            .#{$prefix}toolbar-xcp-toolbar, .rmViewerToolBar, .xcp_results_list_grid-cls .#{$prefix}toolbar-docked-top {
+                .#{$prefix}btn-default-toolbar-small-icon {
+                    .#{$prefix}btn-icon {
+                        top: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+   @if not $supports-gradients or $compile-all {
+
+        .#{$prefix}nlg {
+            .#{$prefix}btn-default-toolbar-#{$button-size} {
+                background-image: none;
+            }
+
+            .#{$prefix}btn-default-toolbar-#{$button-size}-over {
+                background-image: none;
+            }
+
+            .#{$prefix}btn-default-toolbar-#{$button-size}-focus {
+                background-image: none;
+            }
+
+            .#{$prefix}btn-default-toolbar-#{$button-size}-menu-active,
+            .#{$prefix}btn-default-toolbar-#{$button-size}-pressed {
+                background-image: none;
+            }
+
+            .#{$prefix}btn-default-toolbar-#{$button-size}-disabled {
+                background-image: none;
+            }
+
+            .#{$prefix}btn-default-toolbar-#{$button-size}-icon-text-bottom  .#{$prefix}btn-icon{
+                height: $button-icon-size;
+            }
+        }
+    }
+}

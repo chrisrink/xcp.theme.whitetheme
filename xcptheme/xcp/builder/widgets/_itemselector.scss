@@ -1,0 +1,30 @@
+@mixin xcp-builder-itemselector-background($pos) {
+	.#{$prefix}btn .#{$prefix}form-itemselector-#{$pos} {
+	    background-image: url(../themes/images/builder/ux/directional_#{$pos}_alt_tool.png);
+		background-repeat:no-repeat;
+		background-position:center center;
+	}
+}
+@mixin xcp-builder-itemselector {
+	.#{$prefix}form-itemselector-body .#{$prefix}form-item {
+	    margin: 0;
+	}
+	.#{$prefix}form-itemselector-btn {
+		border-width: 0px;
+ 	 	background-image: none;
+	  	background-color: white;
+	}
+	.#{$prefix}form-itemselector-empty-text{
+		font-family: Tahoma;
+		font-size: 10px;
+		color: #808080;
+		width:100%;
+		display: table;
+		text-align: center;
+	}
+	@include xcp-builder-itemselector-background(up);
+	@include xcp-builder-itemselector-background(add);
+	@include xcp-builder-itemselector-background(remove);
+	@include xcp-builder-itemselector-background(down);
+	
+}

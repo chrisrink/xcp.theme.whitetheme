@@ -1,0 +1,18 @@
+//include all ExtJs component SASS
+$include-default: true;
+$include-default-uis: false;
+
+//use ExtJs's gray theme as base theme
+$theme-name: 'gray';
+
+/**
+ * @var {color} $base-color
+ * The base color to be used throughout the theme.
+ * need to define it here, otherwise, sencha slice tool will not work
+ */
+$base-color   : #CCCCCC !default;
+
+$xcp-default-font-family: Helvetica, Arial, sans-serif;
+
+$font-family: $xcp-default-font-family;
+

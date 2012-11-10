@@ -1,0 +1,38 @@
+//datepicker
+$datepicker-border-color: $xcp-datepicker-border-color;
+$datepicker-background-color: $xcp-widget-interior-background-color;
+
+$datepicker-border: $datepicker-border-width $datepicker-border-style $datepicker-border-color;
+
+//datepicker header
+$datepicker-header-background-color: $xcp-datepicker-header-background-color;
+$datepicker-header-background-gradient: $xcp-datepicker-header-background-gradient;
+$datepicker-next-image: 'shared/xcp-sprites.png';
+$datepicker-prev-image: 'shared/xcp-sprites.png';
+$datepicker-th-border-bottom-color: $xcp-datepicker-header-border-color;
+/*$datepicker-tool-sprite-image: 'shared/xcp-sprites.png';*/
+
+//datepicker th bg color
+$datepicker-th-color: $xcp-widget-value-text-font-color;
+$datepicker-th-background-color: $xcp-datepicker-th-background-color;
+$datepicker-th-background-gradient: $xcp-datepicker-th-background-gradient;
+$datepicker-th-font-family: $xcp-widget-value-text-font-family;
+$datepicker-th-font: $datepicker-th-font-weight $datepicker-th-font-size $datepicker-th-font-family;
+$datepicker-th-text-align: center;
+
+$datepicker-today-item-border-color: $xcp-datepicker-today-item-border-color;
+
+$datepicker-item-color: $xcp-widget-value-text-font-color;
+$datepicker-selected-item-background-color: $xcp-datepicker-selected-item-background-color;
+$datepicker-selected-item-border-color: $xcp-datepicker-selected-item-border-color;
+$datepicker-item-hover-background-color: $xcp-datepicker-item-hover-background-color;
+
+$datepicker-monthpicker-item-font: $xcp-widget-value-text-font-family;
+$datepicker-monthpicker-item-color: $xcp-widget-value-text-font-color;
+$datepicker-monthpicker-item-selected-background-color: $datepicker-selected-item-background-color;
+$datepicker-monthpicker-item-hover-background-color: $xcp-monthpicker-item-hover-background-color;
+$datepicker-month-arrow-image: 'button/arrow.gif';
+$datepicker-monthpicker-item-selected-border: solid $datepicker-selected-item-border-color $datepicker-selected-item-border-width;
+
+$datepicker-footer-background-color: $xcp-datepicker-footer-background-color;
+$datepicker-footer-background-gradient: null;

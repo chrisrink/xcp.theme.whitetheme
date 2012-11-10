@@ -1,0 +1,24 @@
+@mixin xcp-builder-app-menu { 
+	
+	.xcp-master-header.xcp-widget-selectable, .x-toolbar-xcp-nav-toolbar.xcp-widget-selectable {
+		border-bottom-width: 5px !important;
+		border-bottom-color: $xcp-app-menu-bottom-border-color !important;
+        @include single-box-shadow($selectable-widget-border-color, 0, 1px, 0);                 
+	}
+	       
+	.xcp-master-header.xcp-widget-selected, .x-toolbar-xcp-nav-toolbar.xcp-widget-selected {
+		border-bottom-width: 5px !important;
+		border-bottom-color: $xcp-app-menu-bottom-border-color !important;
+        @include single-box-shadow($selected-widget-border-color, 0, 1px, 0); 
+	}
+	
+	.xcp-master-header .x-toolbar-xcp-nav-toolbar.xcp-widget-selectable {
+		border-bottom-width: 1px !important;
+		border-bottom-color: $selectable-widget-border-color !important;
+	}
+	
+	.xcp-master-header .x-toolbar-xcp-nav-toolbar.xcp-widget-selected {
+		border-bottom-width: 1px !important;
+		border-bottom-color: $selected-widget-border-color !important;
+	}
+}

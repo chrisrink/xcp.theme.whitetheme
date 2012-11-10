@@ -1,0 +1,22 @@
+@mixin xcp-column-box {
+     //column header
+    .#{$prefix}panel-header-xcp-column-box-ui {
+        background-image: theme-image($theme-name, 'panel-header/column_head_bg.png', false, $relative-image-path-for-uis);
+        background-repeat: repeat-x;
+        padding-top: 20px;
+        height: 40px;
+    }
+
+    .#{$prefix}panel-header-text-xcp-column-box-ui {
+        @include xcp-column-box-header-text;
+    }
+
+    .#{$prefix}panel-header-xcp-column-box-ui {
+        @if $xcp-widget-header-background-color == null {
+            //override extjs hardcoded background-color
+            background-color: transparent;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@mixin xcp-toolbar {
+
+    .#{$prefix}toolbar-xcp-toolbar, .xcp_pagingtoolbar-cls, .xcp_results_list_grid-cls .#{$prefix}toolbar-docked-top {
+        background-color: $xcp-widget-interior-background-color;
+
+        .#{$prefix}toolbar-separator-horizontal {
+            height: $xcp-toolbar-separator-height;
+
+            border-left: 1px solid $xcp-toolbar-separator-color;
+            border-right: 1px solid $xcp-toolbar-separator-highlight-color;
+        }
+
+        .#{$prefix}box-menu-right {
+            width: 14px;
+
+            button {
+                width: 14px;
+            }
+
+            .x-btn-icon, .x-btn-inner {
+                width: 8px;
+            }
+        }
+
+        .#{$prefix}btn-default-toolbar-small-icon .#{$prefix}toolbar-more-icon{
+            top: 6px;
+            left: -2px;
+        }
+
+        .#{$prefix}toolbar-more-icon {
+            background-image: theme-image($theme-name, 'toolbar/menu_more_default.png', false, $relative-image-path-for-uis) !important;
+            background-position: 0px 0px !important;
+        }
+
+        .#{$prefix}btn-default-toolbar-small-pressed, .#{$prefix}btn-default-toolbar-small-menu-active {
+            .#{$prefix}toolbar-more-icon {
+                background-image: theme-image($theme-name, 'toolbar/menu_more_on.png', false, $relative-image-path-for-uis) !important;
+            }
+        }
+    }
+
+    .xcp_toolbar-cls, .xcp_results_list_grid-cls .#{$prefix}toolbar-docked-top {
+        border-bottom: $xcp-toolbar-border-color solid $xcp-toolbar-border-width-bottom;
+    }
+
+    .xcp_multivalueinput_toolbar {
+        border: $xcp-toolbar-border-color solid $xcp-toolbar-border-width-bottom !important;
+    }
+
+    .xcp_results_list_grid-cls .#{$prefix}toolbar-docked-top {
+        height: $xcp-toolbar-height;
+    }
+
+    .xcp_folder_list-cls .#{$prefix}toolbar {
+        height: $xcp-toolbar-height;
+    }
+
+    @if not $supports-gradients or $compile-all {
+            .#{$prefix}nlg {
+                .#{$prefix}toolbar-default {
+                    background-image: none !important;
+                }
+
+                .#{$prefix}btn-mc .#{$prefix}btn-icon {
+                    height: $xcp-toolbar-button-small-icon-size;
+                }
+            }
+    }
+}

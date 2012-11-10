@@ -1,0 +1,98 @@
+@import 'variables/core';
+
+//ext import
+@import 'ext-all-imports';
+
+//xcp import
+//it will override ext's mixins/varialbes if they are the same name
+@import 'variables';
+@import 'mixins';
+
+//ext widget mixins
+@import 'ext-all-widgets';
+
+$ext-default-theme-name: $theme-name;
+
+//define xcp theme name
+$theme-name: 'xcp-default';
+
+// Changes the location of images when creating UIs to be relative instead of within the ExtJS directory.
+$relative-image-path-for-uis: "../themes/images";
+
+@import 'util/messagebox';
+@import 'util/utils';
+@import 'widgets';
+@import 'util/tool';
+
+
+@include xcp-tool;
+
+@include xcp-toolbar-ui(
+        'xcp-nav-toolbar',
+
+        $background-color: $xcp-app-menu-background-color,
+        $background-gradient: $xcp-app-menu-background-gradient,
+        $border-color: $xcp-app-menu-border-color,
+        $border-radius: $xcp-app-menu-border-radius
+    );
+
+ // Need to override ext-panel-ui to fix the issue
+ // where theme-image is not using the $relative-image-path-for-uis
+ @include xcp-panel-ui(
+        'default',
+
+        $ui-base-color: $panel-base-color,
+        $ui-border-color: $panel-border-color,
+
+        $ui-header-color: $panel-header-color,
+        $ui-header-font-size: $panel-header-font-size,
+        $ui-header-font-weight: $panel-header-font-weight,
+        $ui-header-border-color: $panel-header-border-color,
+        $ui-header-background-color: $panel-header-background-color,
+        $ui-header-background-gradient: null,
+
+        $ui-body-color: $panel-body-color,
+        $ui-body-border-color: $panel-body-border-color,
+        $ui-body-border-width: 1px,
+        $ui-body-background-color: $panel-body-background-color
+    );
+
+ @include xcp-grid;
+ @include xcp-tree;
+ @include xcp-toolbar;
+
+ @include xcp-window-ui(
+    'default',
+    $xcp-dialog-border-radius,
+
+    $xcp-dialog-header-padding,
+    $xcp-dialog-header-background-color,
+    $xcp-dialog-header-background-gradient,
+
+    $xcp-dialog-background-color
+
+ );
+
+ @include xcp-all;
+ @include xcp-page;
+ @include xcp-qtip;
+ @include xcp-menu;
+ @include xcp-datetime;
+ @include xcp-boundlist;
+ @include xcp-toolbar-button;
+ @include xcp-widget-button;
+ @include xcp-facet;
+ @include xcp-master-header;
+ @include xcp-column-box;
+ @include xcp-tab-group;
+ @include xcp-form;
+ @include xcp-messagebox;
+ @include xcp-multivalue-input;
+ @include xcp-field;
+ @include xcp-comments;
+ @include xcp-image;
+
+
+
+
+

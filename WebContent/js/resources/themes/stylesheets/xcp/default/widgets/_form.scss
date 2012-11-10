@@ -1,0 +1,44 @@
+@mixin xcp-form {
+    /** Widget Text label **/
+    .#{$prefix}form-item-label {
+        @include xcp-widget-label-text;
+    }
+
+     /** Tucks the label under the field **/
+    .#{$prefix}form-item-label {
+        overflow: hidden;
+    }
+
+    /** Validation error label style **/
+    .xcp_form_field_validation_label {
+        font-weight: bold;
+    }
+
+    .x-form-checkbox.x-form-invalid-field {
+        background-image: theme-image($theme-name, 'form/checkbox.gif', false, $relative-image-path-for-uis);
+        background-position: -52px 0;
+    }
+
+    .x-form-cb-checked .x-form-checkbox.x-form-invalid-field {
+        background-position: -52px -13px;
+    }
+
+     /** Fixes an IE bug where just setting height to 22px; in ext was causing the text to appear at the top of the input, because of padding and something else 18 seems to center it better then 22 (for all zooms) **/
+    .#{$prefix}border-box .#{$prefix}form-text {
+      line-height: 18px !important;
+    }
+
+    /** Disabled form labels should have normal opacity */
+    .x-item-disabled .x-form-item-label {
+        @include opacity(1);
+    }
+
+    /** Disabled form values should have .4 opacity */
+    .#{$prefix}item-disabled .#{$prefix}form-field,
+    .#{$prefix}item-disabled .#{$prefix}form-trigger
+    {
+        @include opacity(0.4);
+    }
+
+
+}

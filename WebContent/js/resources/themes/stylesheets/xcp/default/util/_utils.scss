@@ -1,0 +1,18 @@
+@mixin ie-linear-gradient($start-color, $end-color) {
+   filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#{$start-color}', endColorstr='#{$end-color}');
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$start-color}', endColorstr='#{$end-color}')";
+}
+
+
+@mixin doubleborder($side, $innerColor, $outerColor, $outer-height) {
+    $shadow: "0 0 0";
+    border-#{$side}: 1px solid $innerColor;
+    @if ($side == "top") { $shadow: 0 -1px 0; }
+    @if ($side == "right") { $shadow: 1px 0 0; }
+    @if ($side == "bottom") { $shadow: 0 $outer-height 0; }
+    @if ($side == "left") { $shadow: -1px 0 0; }
+    -webkit-box-shadow: $shadow $outerColor;
+    -moz-box-shadow: $shadow $outerColor;
+    -o-box-shadow: $shadow $outerColor;
+    box-shadow: $shadow $outerColor;
+}

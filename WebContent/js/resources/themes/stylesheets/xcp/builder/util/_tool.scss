@@ -1,0 +1,7 @@
+ @mixin xcp-builder-tool {
+    .#{$prefix}tool {
+        img {
+            background-image: url('../themes/images/builder/tools/tools-sprites-trans-xcpbuilder.gif');
+        }
+    }
+ }

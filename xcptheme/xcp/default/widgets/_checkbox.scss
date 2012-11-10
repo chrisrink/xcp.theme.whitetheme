@@ -1,0 +1,7 @@
+.#{$prefix}form-cb-label {
+    @include xcp-widget-value-text;
+}
+
+.x-item-disabled .x-form-cb-label {
+    @include opacity(.4);
+}

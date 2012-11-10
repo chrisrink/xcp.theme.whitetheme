@@ -1,9 +1,12 @@
-@import "compass";
+@import "compass/css3";
 @import "sassy/sassy-buttons";
+
+/*
 @import 'ext4/default/functions';
 @import 'ext4/default/variables';
 @import 'ext4/default/mixins';
 @import 'ext4/default/widgets/button';
+
 
 // xcp default theme
 @import 'xcp/default/variables/xcp';
@@ -11,7 +14,7 @@
 @import 'xcp/default/mixins/widget';
 @import 'xcp/default/util/utils';
 @import 'xcp/default/widgets';
-
+*/
 /*Custom Font Example
 @font-face {
     font-family: 'AmaranthRegular';
@@ -39,7 +42,7 @@ BODY{
 
 H1,H2,H3,.x-panel-header-text-xcp-column-box-ui{
 	font-family:  Arial, Helvetica, sans-serif;
-	font-size: 12px
+	font-size: 13px
 }
 H1{
 	font-size: 20px;
@@ -64,7 +67,6 @@ H3{
 }
 
 H4{
-	font-size: 13px;
 	font-weight: bold;
 	color: #787878;
 	padding-bottom: 4px;
@@ -72,7 +74,7 @@ H4{
 }
 
 // Paragragh Text Style 
-.xcp_plain_text-cls, .xcp_rich_text-cls,.x-form-item,.x-grid-row .x-grid-cell,.x-column-header{
+.xcp_plain_text-cls, .xcp_rich_text-cls,.x-form-item,.x-grid-row .x-grid-cell,.x-column-header,.x-body {
 	font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
 	font-size: 12px;
 	line-height: 21px;
@@ -88,7 +90,7 @@ $xcp-app-header-background-gradient: color_stops(#444 0%, #222 100%);
 $xcp-app-menu-label-text-font-family: Arial, Helvetica, sans-serif;
 $xcp-app-menu-label-text-font-size: 16px;			
 $xcp-app-menu-label-text-font-color: #FFF;
-@include xcp-toolbar-ui('xcp-nav-toolbar',$background-gradient: $xcp-app-menu-background-gradient);
+//@include xcp-toolbar-ui('xcp-nav-toolbar',$background-gradient: $xcp-app-menu-background-gradient);
 
 .x-toolbar-xcp-nav-toolbar .x-btn-xcp-nav-button-toolbar-small-over,
 .x-toolbar-xcp-nav-toolbar .x-btn-xcp-nav-button-toolbar-small-focus{
@@ -118,10 +120,7 @@ $xcp-app-menu-label-text-font-color: #FFF;
 
 .xcp-chart-inner-panel-body {
 	@include box-shadow(none);
-}
-
-.x-panel-header-default {
-	border:none;
+	
 }
 
 .xcp-not-supported img {
@@ -135,13 +134,20 @@ $xcp-app-menu-label-text-font-color: #FFF;
 
 //ColumnBox Updates
 .x-panel-header{
-		margin: 0 !important;
+		margin: 0!important;
+		
+}
+
+.x-panel-header-default {
+	border:none!important;
+	@include box-shadow(none);
 }
 
 .x-panel-header-xcp-column-box-ui{
 	background-image: none;
 	@include background-image(linear-gradient(rgb(236,236,236) 30%, #F8F8F8 94%)); 
 	background-color: #F8F8F8;
+	border-width: 1px 1px 0 1px!important;
 	padding: 6px;
 	height: 32px;
 	@include border-top-radius(6px);
@@ -149,13 +155,14 @@ $xcp-app-menu-label-text-font-color: #FFF;
 
 .x-panel-header-text-xcp-column-box-ui{
 	//color:#4e9ac9;
-	color: #363636;
-	font-size: 14px;
+	//color: #363636;
+	font-size: 13px;
 }
 
 .x-panel-header-xcp-column-box-ui + .x-panel-body-xcp-column-box-ui {
 	background-color:#F8F8F8;
 	@include border-bottom-radius(6px);
+	border-width: 1px;
 }
 
 //General columnbox fix
@@ -173,6 +180,7 @@ $xcp-app-menu-label-text-font-color: #FFF;
 		border:		1px solid #dadada !important;
 		@include border-top-radius(6px);
 		border-bottom-width: 0;
+
 	}
 	
 	
@@ -190,8 +198,7 @@ $xcp-app-menu-label-text-font-color: #FFF;
 		&.x-tab-xcp-tab-ui-over{
 			background: #fff !important;
 			button{
-			  color: #39C !important;
-			  font-size: 12px;
+			  color: #39C !important; 
 			  text-shadow: none;
 			}
 		}
@@ -203,7 +210,7 @@ $xcp-app-menu-label-text-font-color: #FFF;
 		
 		button{
 			color: #666;
-			font-size: 12px;
+			//font-size: 12px;
 			font-weight: bold;
 			text-shadow:none;
 		}
@@ -397,7 +404,7 @@ TABLE.x-form-item td{
 	
 	.rmViewerToolBar{
 			@include background-image(linear-gradient(#F8F8F8 30%, rgb(236,236,236) 94%));
-			background-color: #F8F8F8;
+			//background-color: #F8F8F8;
 			@include border-top-right-radius(6px);
 	}
 	

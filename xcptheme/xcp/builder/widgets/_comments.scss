@@ -1,0 +1,58 @@
+@mixin xcp-builder-comments {
+
+.xcp-comment-tree.x-tree-panel .x-grid-row .x-grid-cell-inner {
+    height: auto;
+    white-space: pre-wrap;
+    margin: 5px 5px 0px 0px;
+}
+
+.xcp-comment-tree .comment-header {
+    font-weight: bold;
+}
+
+.xcp-comment-tree .comment-body {
+    margin-top: 10px;
+}
+
+.xcp-comment-tree .comment-footer {
+    margin-top: 10px;
+    color: #555555;
+}
+
+.xcp-comment-tree .comment-hr {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.x-mask-msg.xcp-mask-error div {
+    background-color: #ffdddd;
+    background-image: none;
+    padding: 5px 10px;
+}
+
+.x-mask-msg.xcp-mask-info div {
+    background-color: #eeffee;
+    background-image: none;
+    padding: 5px 10px;
+}
+
+.x-grid-row .xcp-comment-form-ct {
+    background-color: transparent !important
+}
+
+.x-scroller-vertical .x-scroller-ct {
+    overflow-y: scroll;
+}
+
+.xcp-comment-tree .x-grid-dirty-cell {
+    background-image: none;
+}
+
+.xcp-comment-tree-add-comment {
+    background-image: url("xcp-core/icons/comment_add.png");
+}
+
+.xcp-comment-tree-new-comment-label {
+    font-weight: bold;
+}
+}

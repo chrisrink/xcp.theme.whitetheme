@@ -1,0 +1,268 @@
+@mixin xcp-comments {
+
+
+.xcp-comment-tree.x-tree-panel .x-grid-row .x-grid-cell-inner {
+    height: auto;
+    white-space: pre-wrap;
+    margin: 5px 5px 0px 0px;
+}
+
+.xcp-comment-tree .toolbar-btn .x-btn-inner {
+    //@include xcp-toolbar-button;
+    //@include xcp-widget-label-text;
+
+}
+
+.xcp-comment-tree.x-tree-arrows .x-tree-expander {
+    margin-top: 0px;
+}
+
+.xcp-comment-tree {
+    .comment-marker {
+         display: inline-block;
+         margin-right: 3px;
+         padding: 0 2px;
+         border-radius: 2px;
+         -moz-border-radius: 2px;
+
+         * {
+          display: inline-block;
+          vertical-align: top;
+         }
+         .comment-marker-icon {
+          height: 16px;
+          width: 16px;
+          background: url("xcp-ivf-widgets/icons/viewer_comment_ovr.png") no-repeat scroll center center transparent;
+         }
+         .comment-marker-num {
+             margin-left: 3px;
+         }
+    }
+}
+/*
+    .comment-number {
+
+        background: none repeat scroll 0 0 black;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        color: white;
+        display: inline-block;
+        margin-right: 3px;
+        min-width: 16px;
+        padding: 0 5px;
+        text-align: center;
+    }
+}
+   */
+
+.xcp-comment-tree .comment-header {
+    @include xcp-widget-title-text;
+}
+
+.xcp-comment-tree .comment-body {
+    @include xcp-widget-value-text;
+    margin-top: 10px;
+}
+
+.xcp-comment-tree-over-item {
+    background-color: transparent !important;
+}
+
+.xcp-comment-tree .x-grid-row-focused .x-grid-cell, .xcp-comment-tree .x-grid-row-focused .x-grid-rowwrap-div {
+    background-color: transparent !important;;
+}
+
+.xcp-comment-tree .comment-unread,
+.xcp-comment-tree .x-grid-row-focused .x-grid-cell.comment-unread,
+.xcp-comment-tree .x-grid-row-focused .x-grid-rowwrap-div.comment-unread {
+    background-color: #F2FFF2 !important;  /* fixed */
+}
+
+.xcp-comment-tree .comment-footer {
+    @include xcp-widget-value-text;
+    margin-top: 10px;
+}
+
+.xcp-comment-tree .comment-footer-reply {
+    font-family: $xcp-widget-value-text-font-family;
+    font-size: $xcp-widget-value-text-font-size;
+    font-weight: $xcp-widget-value-text-font-weight;
+    font-color: lighten($xcp-widget-value-text-font-color,30%);
+}
+
+.xcp-comment-tree .comment-unread-count {
+    color: #FF6600;  /* fixed */
+}
+
+.xcp-comment-tree .comment-action {
+    margin-left: 15px;
+}
+
+.xcp-comment-tree .x-grid-row .x-grid-cell-inner .comment-action-img {
+    margin-right: 5px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.xcp-comment-tree .x-grid-row .x-grid-cell-inner .comment-action-img.reply {
+    background-image: url("xcp-core/icons/comment_add.png");
+}
+
+.xcp-comment-tree .x-grid-row .x-grid-cell-inner .comment-action-img.edit {
+    background-image: url("xcp-core/icons/comment_edit.png");
+}
+
+.xcp-comment-tree .x-grid-row .x-grid-cell-inner .comment-action-img.delete {
+    background-image: url("xcp-core/icons/comment_delete.png");
+}
+
+.xcp-comment-tree.disable-comment-actions .x-grid-row .x-grid-cell-inner .comment-action-img {
+    opacity: .70;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+.xcp-comment-tree .x-toolbar-default {
+    //height: $xcp-toolbar-height;
+    height: 26px;
+    border: $xcp-toolbar-border-color solid $xcp-toolbar-border-width-bottom !important;
+    //border-bottom: $xcp-toolbar-border-color solid $xcp-toolbar-border-width-bottom !important;
+}
+
+.xcp-comment-tree .comment-action-text {
+    @include xcp-link-text;
+    margin-right: 5px;
+}
+
+.xcp-comment-tree .comment-action-text:hover {
+    color: $xcp-link-text-hover-color;
+}
+
+.xcp-comment-tree.disable-comment-actions .comment-action-text,
+.xcp-comment-tree.disable-comment-actions .comment-action-text:hover {
+    display: inline-block;
+    opacity: .70;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+
+.xcp-comment-tree.disable-comment-actions .comment-action-text:hover {
+    color: $xcp-link-text-normal-color;
+}
+
+.x-tree-arrows.xcp-comment-tree .x-tree-elbow-plus,
+.x-tree-arrows.xcp-comment-tree .x-tree-elbow-minus,
+.x-tree-arrows.xcp-comment-tree .x-tree-elbow-end-plus,
+.x-tree-arrows.xcp-comment-tree .x-tree-elbow-end-minus {
+    background-image: url("xcp-core/icons/comment-trigger.png");
+}
+
+.x-tree-arrows.disable-comment-actions .x-grid-tree-node-expanded .x-tree-expander-over .x-tree-elbow-plus,
+.x-tree-arrows.disable-comment-actions .x-grid-tree-node-expanded .x-tree-expander-over .x-tree-elbow-end-plus {
+    background-position: -16px, 0;
+}
+
+.xcp-comment-tree .comment-hr {
+    height: 1px;
+    color: #ebebeb;
+}
+
+.x-mask-msg {
+   z-index: 18501;
+}
+
+.x-mask-msg.xcp-mask-error div {
+    background-color: #FFDDDD;
+    background-image: none;
+    padding: 5px 10px;
+}
+
+.x-mask-msg.xcp-mask-info div {
+    background-color: #EEFFEE;
+    background-image: none;
+    padding: 5px 10px;
+}
+
+.x-grid-row .xcp-comment-form-ct {
+    background-color: transparent !important;
+}
+.x-grid-row .xcp-comment-form-ct .x-toolbar-footer {
+    margin-top: 0 !important;
+    padding: 2px 0 2px 0 !important;
+}
+.x-grid-row .xcp-comment-form-ct .x-btn-default-small {
+
+    margin-left: -5 !important;
+}
+
+
+.x-scroller-vertical .x-scroller-ct {
+    overflow-y: scroll;
+}
+
+.xcp-comment-tree .x-grid-dirty-cell {
+    background-image: none;
+}
+
+.xcp-comment-tree-add-comment {
+    background-image: url("xcp-core/icons/comment_add.png");
+}
+
+.xcp-comment-tree-editor-label {
+    color: gray;
+}
+
+.xcp-comment-tree-hide-btn .comment-reply {
+    display: none;
+}
+
+.xcp_comment_editor_bkg_color  {
+	background-color: #E1F0F7 !important;
+}
+
+/* restore some default html 4 styles when displaying rich text */
+.comment-body {
+  line-height: normal;
+  white-space: normal;
+  li {
+    display: list-item;
+    list-style: inherit;
+    line-height: normal; }
+  p {
+    margin: 5px 0 10px 0; }
+  blockquote {
+    margin-left: 40px;
+    margin-right: 40px; }
+  cite, em, var, address {
+    font-style: italic; }
+  pre, tt, code, kbd, samp {
+    font-family: monospace; }
+  big {
+    font-size: 1.17em; }
+  small, sub, sup {
+    font-size: .83em; }
+  sub {
+    vertical-align: sub; }
+  sup {
+    vertical-align: super; }
+  s, strike, del {
+    text-decoration: line-through; }
+  hr {
+    border: 1px inset; }
+  dir, menu, dd {
+    margin-left: 40px; }
+  ol ul, ul ol, ol ol {
+    margin-top: 0;
+    margin-bottom: 0; }
+  u, ins {
+    text-decoration: underline; }
+  strong {
+    font-weight: bolder; }
+  em strong, strong em {
+    font-weight: bold;
+    font-style: italic; }
+  ol, ul, dl {
+    padding-left: 40px; } }
+}

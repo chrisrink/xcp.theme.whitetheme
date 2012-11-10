@@ -1,0 +1,31 @@
+@mixin xcp-splitter { 
+	.#{$prefix}layout-split-left {
+        background: theme-image($builder-theme-name, 'util/splitter/mini-left.gif', false, $relative-image-path-for-uis) no-repeat top right;
+    }
+
+    .#{$prefix}layout-split-right {
+        background: theme-image($builder-theme-name, 'util/splitter/mini-right.gif', false, $relative-image-path-for-uis) no-repeat top left;
+    }
+    
+    .#{$prefix}splitter-collapsed {
+        .#{$prefix}layout-split-left {
+            background: theme-image($builder-theme-name, 'util/splitter/mini-right.gif', false, $relative-image-path-for-uis) no-repeat top left;
+        }
+
+        .#{$prefix}layout-split-right {
+            background: theme-image($builder-theme-name, 'util/splitter/mini-left.gif', false, $relative-image-path-for-uis) no-repeat top right;
+        }
+	}
+	
+	/* EXACT same as Ext but for some reason (I suspect import order, this file 
+	gets precedence over what ever file was over writting the ext file and killing 
+	the style  */
+	.#{$prefix}splitter-vertical {
+	        cursor: e-resize;
+	        cursor: col-resize;
+	}
+	
+	.#{$prefix}splitter-vertical.#{$prefix}splitter-collapsed {	        
+	        cursor: default;
+	}       
+}

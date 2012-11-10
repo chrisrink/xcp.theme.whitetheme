@@ -1,0 +1,85 @@
+@mixin xcp-runtime-widget($color-selectable, $color-selected) {
+    .xcp-widget-base {
+        border: 1px solid transparent;
+    }
+
+    .xcp-widget-selected{
+        border: 1px solid $color-selected !important;
+    }
+
+    .xcp-widget-selectable {
+        border: 1px solid $color-selectable !important;
+        cursor: pointer;
+    }
+    .xcp-widget-selectable-selected {
+        border: 1px solid $color-selected ;
+        cursor: pointer;
+    }
+    .xcp-dsi-selected{
+        border: 1px solid $color-selected !important;
+    }
+    .xcp-dsi-overItemCls{
+        cursor: pointer;
+    }
+    
+    /* If there is no header, the first child is panel body. */
+    .xcp-form-region > .x-panel-body:first-child {
+        padding: 2px;
+    }
+    /* If there is a header, the second child is panel body and we don't want the padding */
+    /* between it and the header. */
+    .xcp-form-region > .x-panel-body {
+        padding: 0 2px 2px 2px;
+    }
+
+    .xcp-form-region > .x-panel-body > .x-box-inner {
+        border: 1px dotted $color-selectable;
+    }
+
+    .xcp-form-region-selected > .x-panel-body > .x-box-inner {
+        border: 1px dotted $color-selected;
+    }
+
+    /* xcp_columnbox/content/xcp_columnbox.css temporary added here, will be removed later once we have theme support */
+
+    .xcp-content-area {
+        background-color: #CCCCCC;
+        text-align: center;
+        font-family: tahoma,arial,verdana,sans-serif;
+        color: #666666;
+        font-weight: bold ;
+        font-size: 11px;
+    }
+
+    .xcp-content-area .xcp-contentarea-center {
+        width:0;
+        height:100%;
+        display:inline-block;
+        vertical-align:middle;
+    }
+
+    /** the style that simulates those for the runtime view port **/ 
+
+    .xcp-panel-collapse-left .x-tool-collapse-top {
+        margin-right: 5px;
+    }
+
+    .xcp-panel-collapse-left .x-tool-expand-bottom {
+        margin-right: 5px;
+    }
+}
+
+
+@mixin xcp-builder-dragndrop {
+    /**
+     * Drag and drop CSS
+     **/
+    .ddProxy {
+        background-color: #FFFF00;
+    }
+
+    .insertionPointLine {
+        background: #006600;
+    }
+}
+

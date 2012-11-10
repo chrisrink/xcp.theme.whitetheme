@@ -1,0 +1,330 @@
+/**
+*  This file contains all the xcp variables that is modifiable by the theme editor
+*/
+
+/** Default font **/
+$xcp-default-font-size: 12px;
+$xcp-default-font-family: Helvetica, Arial, sans-serif !default;
+
+/** widget selection color **/
+$xcp-widget-selection-color: #E1F0F7;
+$xcp-widget-hover-color: #F0F7FB;
+
+//xcp variables:
+/** Widget Label Text **/
+$xcp-widget-label-text-font-family: $xcp-default-font-family;
+$xcp-widget-label-text-font-size: $xcp-default-font-size;
+$xcp-widget-label-text-font-weight: normal;
+$xcp-widget-label-text-font-color: #363636;
+
+
+/** Widget Value Text **/
+$xcp-widget-value-text-font-family: $xcp-default-font-family;
+$xcp-widget-value-text-font-size: $xcp-default-font-size;
+$xcp-widget-value-text-font-weight: normal;
+$xcp-widget-value-text-font-color: #363636;
+$xcp-widget-empty-color: #959595;
+
+/** Widget Title Text **/
+$xcp-widget-title-text-font-family: $xcp-default-font-family;
+$xcp-widget-title-text-font-size: $xcp-default-font-size;
+$xcp-widget-title-text-font-weight: bold;
+$xcp-widget-title-text-font-color: #707070;
+
+/** Widget Button Text **/
+$xcp-widget-button-text-font-family: $xcp-default-font-family;
+$xcp-widget-button-text-font-size: $xcp-default-font-size;
+$xcp-widget-button-text-font-weight: bold;
+$xcp-widget-button-text-font-color: #FFFFFF;
+$xcp-widget-button-text-font-color-over: #FFFFFF;
+$xcp-widget-button-text-font-color-focus: #FFFFFF;
+$xcp-widget-button-text-font-color-pressed: #FFFFFF;
+$xcp-widget-button-text-font-color-disabled: #FFFFFF;
+
+/** Link Text **/
+$xcp-link-text-normal-style:  none;
+$xcp-link-text-normal-color: #3399CC;
+$xcp-link-text-hover-style: none;
+$xcp-link-text-hover-color: #3399CC;
+
+$xcp-link-text-font-size: 13px;
+$xcp-link-text-font-weight: bold;
+$xcp-link-text-font-color: #3399CC;
+$xcp-link-text-font-family: $xcp-default-font-family;
+
+
+/** Widget Interior **/
+$xcp-widget-interior-background-color: #FFFFFF;
+$xcp-widget-field-padding: 2px 3px;
+$xcp-widget-field-background-image: 'form/text-bg-trans.png';
+
+/** Widget Border **/
+$xcp-widget-border-color: #D7D7D7;
+$xcp-widget-border-color-focus: #959595;
+$xcp-widget-border-shadow: false;
+$xcp-widget-frame-border-radius: 0px;
+$xcp-widget-field-background-color-focus: #E1F0F7;
+
+
+/** Widget Header **/
+$xcp-widget-header-color: #EEEEEE;
+$xcp-widget-header-border-color: #707070;
+$xcp-widget-header-background-color: null;
+$xcp-widget-header-background-gradient: none;
+$xcp-widget-use-gradients: true;
+$xcp-widget-header-padding: 5px 0px;
+
+/** ColumnBox Header **/
+$xcp-columnbox-header-text-font-size: 16px;
+$xcp-columnbox-header-text-font-weight: bold;
+$xcp-columnbox-header-text-font-color: #363636;
+
+
+/** Widget Button **/
+$xcp-widget-button-color: #3399CC;
+$xcp-widget-button-color-over: adjust-color($xcp-widget-button-color, $saturation: 10%, $lightness: 10%);
+$xcp-widget-button-color-focus: $xcp-widget-button-color;
+$xcp-widget-button-color-pressed: adjust-color($xcp-widget-button-color, $saturation: -5%, $lightness: -5%);
+$xcp-widget-button-color-disabled: #D7D7D7;
+
+$xcp-widget-button-border-color-focus: #FF9900;
+
+$xcp-widget-button-use-gradients: false;
+$xcp-widget-button-radius: 0px;
+$xcp-widget-button-border-width: 0px;
+$xcp-widget-button-padding: 3px 24px;
+$xcp-widget-button-margin: 0px 10px;
+$xcp-widget-button-icon-size: 16px;
+
+
+/** Widget Panel **/
+$xcp-widget-panel-color: #C3D2E1;
+$xcp-widget-panel-use-gradients: true;
+
+/** Widget Labels **/
+$xcp-widget-label-position: left;
+$xcp-widget-label-width: 150;
+$xcp-widget-label-padding: 5;
+//$xcp-widget-label-separator:
+
+/** List Selection **/
+$xcp-list-item-selection-color:  change-color($xcp-widget-panel-color, $saturation: 20%, $lightness: 85%);
+$xcp-list-item-hover-color:  change-color($xcp-widget-panel-color, $saturation: 20%, $lightness: 90%);
+
+$xcp-boundlist-item-hover-color: $xcp-widget-hover-color;
+$xcp-boundlist-selected-color: $xcp-widget-selection-color;
+$xcp-boundlist-item-selected-border-style: solid;
+$xcp-boundlist-item-selected-border-color: transparent;
+$xcp-boundlist-item-selected-border-width: 1px;
+
+
+/** Framework Tab **/
+$xcp-app-menu-label-text-font-family: $xcp-default-font-family;
+$xcp-app-menu-label-text-font-size: 14px;
+$xcp-app-menu-label-text-font-weight: bold;
+$xcp-app-menu-label-text-font-color: #40BFFF;
+$xcp-app-menu-label-text-font-color-over: #FFFFFF;
+$xcp-app-menu-label-text-font-color-focus: #FFFFFF;
+$xcp-app-menu-label-text-font-color-pressed: #FFFFFF;
+$xcp-app-menu-label-text-font-color-pressed-over: #3399CC;
+
+/** App Header Background **/
+$xcp-app-header-background: #000000;
+$xcp-app-header-background-gradient-start: #3E3E3E;
+$xcp-app-header-background-gradient-end: #000000;
+$xcp-app-header-background-gradient: color_stops($xcp-app-header-background-gradient-start 0%, $xcp-app-header-background-gradient-end 100%);
+
+/** App Menu Background **/
+$xcp-app-menu-background-color: #5588BB;
+$xcp-app-menu-background-gradient: color_stops(lighten($xcp-app-menu-background-color, 25%), $xcp-app-menu-background-color 50%, darken($xcp-app-menu-background-color, 5%));
+$xcp-app-menu-background-use-gradients: false;
+
+/** App Menu Border **/
+$xcp-app-menu-border: none;
+$xcp-app-menu-border-color: #D7D7D7;
+$xcp-app-menu-border-style: solid round;
+$xcp-app-menu-shadow: false;
+$xcp-app-menu-border-radius: 0px;
+$xcp-app-menu-bottom-border-size: 5px;
+$xcp-app-menu-bottom-border-color: #3399CC;
+$xcp-app-menu-bottom-inner-border-size: 1px;
+$xcp-app-menu-bottom-inner-border-color: #FFFFFF;
+
+/** App Menu button **/
+$xcp-app-menu-button-small-padding: 8px 0 6px 0;
+$xcp-app-menu-button-small-text-padding: 5px;
+$xcp-app-menu-button-background-color: none;
+$xcp-app-menu-button-background-color-over: rgba(#3399CC, .25);
+$xcp-app-menu-button-background-color-focus: $xcp-app-menu-button-background-color-over;
+$xcp-app-menu-button-background-color-pressed: none;
+
+$xcp-app-menu-button-background-gradient-over: none;
+$xcp-app-menu-button-background-gradient-focus: none;
+$xcp-app-menu-button-background-gradient-pressed: none;
+
+/** App Menu Button Border **/
+$xcp-app-menu-button-border: 1px;
+$xcp-app-menu-button-border-color: transparent;
+$xcp-app-menu-button-border-color-over: rgba(#40BFFF, .25);
+
+/** App Menu marker **/
+$xcp-app-menu-marker-color: $xcp-app-menu-bottom-border-color;
+
+
+/** Nav Menu **/
+$xcp-nav-menu-background-color: change-color($xcp-widget-panel-color, $saturation:30%, $lightness: 97%);
+
+
+/** Case Menu **/
+$xcp-case-menu-label-text-font-family: $xcp-default-font-family;
+$xcp-case-menu-label-text-font-size: 14px;
+$xcp-case-menu-label-text-font-weight: bold;
+$xcp-case-menu-label-text-font-color: #5588BB;
+$xcp-case-menu-background-color: #EEEEEE;
+$xcp-case-menu-background-use-gradients: true;
+
+$xcp-case-menu-border-color: #CCCCCC;
+$xcp-case-menu-border-style: solid, round;
+$xcp-case-menu-border-shadow: false;
+
+
+/** Master Background **/
+$xcp-master-background-color: #F0F5F9;
+
+/** Page Background **/
+$xcp-page-background-color: transparent;
+$xcp-page-background-image: 'page/xcpbg_pattern.png';
+
+/** Content Area **/
+$xcp-content-area-margin: 10px;
+$xcp-content-area-background: transparent;
+
+/** Menu, Context Menu **/
+$xcp-menu-body-padding: 0 10px 0 10px;
+$xcp-menu-item-text-padding: 10px 10px 10px 0;
+$xcp_menu_background-color: #FFFFFF;
+$xcp-menu-item-background-over: #3399CC;
+$xcp-menu-separator-border-color: #D7D7D7;
+
+/** Context menu item **/
+$xcp-context-menuitem-label-text-font-family: $xcp-default-font-family;
+$xcp-context-menuitem-label-text-font-size: 11px;
+$xcp-context-menuitem-label-text-font-weight: normal;
+$xcp-context-menuitem-label-text-font-color: #363636;
+$xcp-context-menuitem-label-text-font-color-over: #FFFFFF;
+
+$xcp-window-shadow-color: #FFFFFF;
+
+/** load mask **/
+$xcp-loadmask-opacity: 0.6;
+$xcp-loadmask-backgorund: #FFFFFF;
+
+/** Toolbar **/
+$xcp-toolbar-height: 36px;
+$xcp-toolbar-background-color: $xcp-page-background-color;
+
+//toolbar border
+$xcp-toolbar-border-color: #D7D7D7;
+$xcp-toolbar-border-width-bottom: 1px;
+$xcp-toolbar-border-radius: 0px;
+
+// toolbar separator
+$xcp-toolbar-separator-color: #D7D7D7;
+$xcp-toolbar-separator-highlight-color: #FFFFFF;
+$xcp-toolbar-separator-height: 24px;
+
+// Toolbar button
+$xcp-toolbar-button-border-radius: 0px;
+$xcp-toolbar-button-border-width: 1px;
+
+$xcp-toolbar-button-border-color: transparent;
+$xcp-toolbar-button-border-color-over: rgba(#40BFFF, .25);
+$xcp-toolbar-button-border-color-pressed: #40BFFF;
+$xcp-toolbar-button-border-color-disabled: transparent;
+
+$xcp-toolbar-button-background-color: transparent;
+$xcp-toolbar-button-background-color-over: rgba(#3399CC, .25);
+$xcp-toolbar-button-background-color-over-ie8: #CFEFFF;
+
+$xcp-toolbar-button-background-color-focus: $xcp-toolbar-button-background-color-over;
+$xcp-toolbar-button-background-color-pressed: #3399CC;
+$xcp-toolbar-button-background-color-disabled: transparent;
+
+$xcp-toolbar-button-background-gradient: null;
+$xcp-toolbar-button-background-gradient-over: null;
+$xcp-toolbar-button-background-gradient-focus: null;
+$xcp-toolbar-button-background-gradient-pressed: null;
+$xcp-toolbar-button-background-gradient-disabled: null;
+
+$xcp-toolbar-button-small-icon-size: 16px;
+
+$xcp-toolbar-button-small-padding: 2px 4px;
+
+//Toolbar button text
+$xcp-toolbar-button-text-color: $xcp-widget-label-text-font-color;
+$xcp-toolbar-button-text-color-over: $xcp-widget-label-text-font-color;
+$xcp-toolbar-button-text-color-focus: $xcp-widget-label-text-font-color;
+$xcp-toolbar-button-text-color-pressed: #FFFFFF;
+
+$xcp-toolbar-button-text-font-size: $xcp-widget-value-text-font-size;
+$xcp-toolbar-button-text-font-weight: $xcp-widget-value-text-font-weight;
+$xcp-toolbar-button-text-font-family: $xcp-widget-value-text-font-family;
+
+
+/** tab bar **/
+$xcp-tab-bar-background-color: transparent;
+$xcp-tab-bar-border-color: #959595;
+
+/** tab button **/
+$xcp-header-tab-height: 26px;
+$xcp-header-tab-padding: 5px 10px 5px 10px;
+
+$xcp-header-tab-background: #3399CC;
+$xcp-header-tab-background-inactive: #e1f0f7;
+$xcp-header-tab-background-active: #3399CC;
+$xcp-header-tab-text-shadow-active: rgba(0,0,0,.4) 0 0 5px;
+$xcp-header-tab-background-over: adjust-color($xcp-header-tab-background, $saturation: 10%, $lightness: 10%);
+$xcp-header-tab-text-shadow-over: rgba(0,0,0,.4) 0 0 5px;
+$xcp-header-tab-background-disabled: #D7D7D7;
+$xcp-header-tab-opacity-disabled: .5;
+$xcp-header-tab-font-disabled: #959595;
+$xcp-header-tab-icon-opacity: .5;
+
+$xcp-header-tab-caret-width: 8px;
+$xcp-header-tab-caret-height: 8px;
+$xcp-header-tab-caret-offset: 10px;
+
+/** ToolTip **/
+$xcp-tooltip-background-color: #e1f0f7;
+$xcp-tooltip-padding: 5px;
+$xcp-tooltip-border-color: #D7D7D7;
+
+/** Window **/
+$xcp-window-fill-color: #EEEEEE;
+
+/** Date picker **/
+$xcp-datepicker-border-color: transparent;
+
+$xcp-datepicker-header-background-color: transparent;
+$xcp-datepicker-header-background-gradient: null;
+$xcp-datepicker-header-border-color: #D7D7D7;
+
+$xcp_datepicker-item-hover-background-color: $xcp-widget-hover-color;
+
+$xcp-datepicker-toolbar-button-label-font-size: 11px;
+$xcp-datepicker-th-background-color: #EEEEEE;
+$xcp-datepicker-th-background-gradient: null;
+
+$xcp-datepicker-today-item-border-color: #009900;
+$xcp-datepicker-today-item-background-color: transparant;
+$xcp-datepicker-today-item-selected-background-color: $xcp-widget-selection-color;
+$xcp-datepicker-selected-item-background-color: $xcp-widget-selection-color;
+$xcp-datepicker-selected-item-border-width: 0px;
+$xcp-datepicker-today-selected-item-border-width: 1px;
+
+$xcp-datepicker-selected-item-border-color: transparent;
+
+$xcp-datepicker-footer-background-color: transparent;
+
+$xcp-monthpicker-item-hover-background-color: $xcp-widget-hover-color;
+$xcp-picker-toolbar-button-padding: 3px 19px;

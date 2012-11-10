@@ -1,0 +1,221 @@
+@mixin xcp-toolbar-ui(
+    $ui,
+
+    $background-color: transparent,
+    $background-gradient: null,
+
+    $border-color: null,
+    $border-radius: null
+) {
+
+    $nav-menu-caret-width: 7px;
+    $nav-menu-caret-border-color: #FFF;
+
+    .xcp-master-header > * > .x-box-inner{
+        @include background-gradient($xcp-app-header-background, $xcp-app-header-background-gradient);
+    }
+
+    .nav-menu-caret {
+        position: relative;
+        @include triangle($width: $nav-menu-caret-width, $color: $nav-menu-caret-border-color);
+    }
+
+    .nav-menu-caret.x-layer {
+        overflow: visible;
+    }
+
+    .nav-menu-caret .inner-caret {
+        position: relative;
+        top: 2px;
+        right: 6px;
+        @include triangle($width: $nav-menu-caret-width - 1, $color: $xcp-app-menu-marker-color);
+    }
+
+    .xcp-master-header .#{$prefix}toolbar-#{$ui} {
+        //no bottom border and background if inside master header
+        border: none;
+        background: none;
+
+    }
+
+    .#{$prefix}toolbar {
+        border: $xcp-app-menu-border;
+    }
+
+    .xcp_nav_menuitem-cls {
+        .#{$prefix}menu-item-link {
+            margin: 0px;
+        }
+    }
+    //Navigation menu item
+    .xcp_nav_menuitem-cls.#{$prefix}menu-item-active {
+        .#{$prefix}menu-item-link {
+            border: 0px;
+            margin: 0px;
+            background-color: $xcp-menu-item-background-over !important;
+        }
+    }
+
+    .#{$prefix}toolbar-#{$ui} {
+         //padding: 0 5px;
+         //margin-bottom: 5px;
+         position: relative;
+
+         @if $border-color != null {
+            border-color: $border-color;
+         }
+         @if $border-radius != null {
+            @include border-radius($border-radius);
+         }
+
+         @include background-gradient($xcp-app-header-background, $xcp-app-header-background-gradient);
+
+         //call x-btn mixin to override ext default
+         @include extjs-button-ui(
+            'xcp-nav-button-toolbar-small',
+
+            0, //no border radius
+            $xcp-app-menu-button-border,
+
+            $xcp-app-menu-button-border-color,
+            $xcp-app-menu-button-border-color-over,
+            $xcp-app-menu-button-border-color,
+            $xcp-app-menu-button-border-color,
+            $xcp-app-menu-button-border-color,
+
+            $xcp-app-menu-button-small-padding,
+            $xcp-app-menu-button-small-text-padding,
+
+            $xcp-app-menu-button-background-color,
+            $xcp-app-menu-button-background-color-over,
+            $xcp-app-menu-button-background-color-focus,
+            $xcp-app-menu-button-background-color-pressed,
+
+            $button-toolbar-background-color-disabled,
+
+            $button-toolbar-background-gradient,
+            $xcp-app-menu-button-background-gradient-over,
+            $xcp-app-menu-button-background-gradient-focus,
+            $xcp-app-menu-button-background-gradient-pressed,
+            $xcp-app-menu-button-background-gradient-pressed,
+
+
+            $xcp-app-menu-label-text-font-color,
+            $xcp-app-menu-label-text-font-color-over,
+            $xcp-app-menu-label-text-font-color-focus,
+            $xcp-app-menu-label-text-font-color-pressed,
+            $xcp-app-menu-label-text-font-color,
+
+            $xcp-app-menu-label-text-font-size,
+            $xcp-app-menu-label-text-font-size,
+            $xcp-app-menu-label-text-font-size,
+            $xcp-app-menu-label-text-font-size,
+            $xcp-app-menu-label-text-font-size,
+
+            $xcp-app-menu-label-text-font-weight,
+            $xcp-app-menu-label-text-font-weight,
+            $xcp-app-menu-label-text-font-weight,
+            $xcp-app-menu-label-text-font-weight,
+            $xcp-app-menu-label-text-font-weight,
+
+            $xcp-app-menu-label-text-font-family,
+            $xcp-app-menu-label-text-font-family,
+            $xcp-app-menu-label-text-font-family,
+            $xcp-app-menu-label-text-font-family,
+            $xcp-app-menu-label-text-font-family,
+
+            $button-small-icon-size
+        );
+
+        border-bottom: $xcp-app-menu-bottom-border-size $xcp-app-menu-bottom-border-color solid !important;
+
+        .x-box-inner {
+            border-bottom: $xcp-app-menu-bottom-inner-border-size $xcp-app-menu-bottom-inner-border-color solid !important;
+        }
+
+        //app menu trigger
+        .#{$prefix}btn-default-toolbar-small {
+             //override Ext's hardcoded tranparent background
+            background: $xcp-app-menu-button-background-color;
+        }
+
+        .#{$prefix}btn-xcp-nav-button-toolbar-small {
+            .x-btn-inner {
+                margin: 0 25px;
+            }
+
+            .#{$prefix}btn-arrow-right .x-btn-inner {
+                margin-right: 15px;
+            }
+        }
+
+        .#{$prefix}btn-default-toolbar-small-over {
+            background: $xcp-app-menu-button-background-color-over;
+
+            .#{$prefix}toolbar-more-icon {
+                background-image: theme-image($theme-name, 'toolbar/nav_more_on.png', false, $relative-image-path-for-uis) !important;
+            }
+        }
+
+        .#{$prefix}btn button {
+            vertical-align: middle;
+        }
+
+        .#{$prefix}btn-xcp-nav-button-toolbar-small-icon button,
+        .#{$prefix}btn-xcp-nav-button-toolbar-small-icon .x-btn-inner,
+        .#{$prefix}btn-xcp-nav-button-toolbar-small-noicon button,
+        .#{$prefix}btn-xcp-nav-button-toolbar-small-noicon .x-btn-inner {
+            height: $xcp-app-menu-label-text-font-size + 4;
+            line-height:$xcp-app-menu-label-text-font-size + 2;
+        }
+
+        .#{$prefix}toolbar-more-icon {
+            background-image: theme-image($theme-name, 'toolbar/nav_more_default.png', false, $relative-image-path-for-uis) !important;
+            width: 8px !important;
+            background-repeat: no-repeat;
+            background-position: center !important;
+        }
+
+        .x-btn-default-toolbar-small-icon .#{$prefix}toolbar-more-icon {
+            left: 4px;
+        }
+
+        .x-box-menu-right {
+            padding: $xcp-app-menu-button-small-padding;
+            float: left;
+        }
+    }
+
+    //don't display bottom border if inside columnbox
+    .xcp-master-header .#{$prefix}toolbar-#{$ui} {
+        border-bottom: none !important;
+
+        .x-box-inner {
+            border-bottom: none !important;
+        }
+    }
+
+    @if not $supports-gradients or $compile-all {
+        .#{$prefix}nlg {
+            .#{$prefix}toolbar-#{$ui} {
+                background-image: none;
+                @include ie-linear-gradient($xcp-app-header-background-gradient-start, $xcp-app-header-background-gradient-end);
+            }
+
+            .xcp-master-header .#{$prefix}toolbar-#{$ui} {
+                //no bottom border and background if inside master header
+                background: none;
+            }
+        }
+
+        .#{$prefix}nbr {
+            .#{$prefix}toolbar-#{$ui} {
+                .#{$prefix}btn-default-toolbar-small-over {
+                   .#{$prefix}frame-mc {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
