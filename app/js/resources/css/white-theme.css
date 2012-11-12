@@ -1,0 +1,882 @@
+/**
+ * @var {string} $prefix 
+ * The prefix to be applied to all CSS selectors. If this is changed, it must also be changed in your 
+ * JavaScript application.
+ */
+/**
+ * @var {string} $theme-name 
+ * The name of the theme. This must match the the output directory of the images.
+ * (defaults to 'default')
+ */
+/**
+ * @var {boolean/string} $relative-image-path-for-uis 
+ * True to use a relative image path for all new UIs. If true, the path will be "../images/".
+ * It can also be a string of the path value.
+ * It defaults to false, which means it will look for the images in the ExtJS SDK folder.
+ */
+/**
+ * @var {string} $font-family 
+ * The default font-family to be used throughout the theme.
+ */
+/**
+ * @var {string} $base-gradient 
+ * The base gradient to be used throughout the theme.
+ */
+/**
+ * @var {color} $base-color
+ * The base color to be used throughout the theme.
+ */
+/**
+ * @var {boolean} $include-not-found-images
+ * True to include files which are not found when compiling your SASS
+ */
+/**
+ * @var {boolean} $include-ie
+ * True to include Internet Explorer specific rules
+ */
+/**
+ * @var {boolean} $include-ff
+ * True to include Firefox specific rules
+ */
+/**
+ * @var {boolean} $include-chrome
+ * True to include Chrome specific rules
+ */
+/**
+ * @var {boolean} $include-safari
+ * True to include Safari specific rules
+ */
+/**
+ * @var {boolean} $include-opera
+ * True to include Opera specific rules
+ */
+/**
+ * @var {boolean} $include-webkit
+ * True to include Webkit specific rules
+ */
+/**
+ * @var {boolean} $compile-all
+ * True to copile all CSS, even if above include rules are false
+ */
+/**
+ * @var {boolean} $scope-reset-css
+ * True to scope the reset CSS within the $prefix variable.
+ */
+/**
+ * @var {color} $css-shadow-background-color
+ * The base color for CSS shadows
+ */
+/**
+ * @var {color} $include-shadow-images
+ * True to include all shadow images.
+ */
+/**
+ * Toolbar buttons
+ */
+/**
+ * @class Ext.form.*
+ */
+/**
+ * @class Ext.form.field.Base
+ */
+/**
+ * @class Ext.form.field.TextArea
+ */
+/**
+ * @class Ext.form.Label
+ */
+/**
+ * @class Ext.form.field.Checkbox
+ */
+/**
+ * @class Ext.form.field.Radio
+ */
+/**
+ * Error messages
+ */
+/**
+ * Trigger Field
+ */
+/**
+ * Fieldsets
+ */
+/**
+ * Sliders
+ */
+/**
+ * @mixin background-gradient
+ * 
+ * @param {Color} $background-color The background color of the gradient
+ * @param {String/List} $type The type of gradient to be used. Can either be a String which is a predefined gradient, or it can
+ *                            can be a list of color_stops. If none is set, it will still set the `background-color` to the $background-color.
+ * @param {String} $direction The direction of the gradient. Can either me `top` or `left`. (defaults to `top`)
+ */
+/**
+ * Method which inserts a full background-image property for a theme image.
+ * It checks if the file exists and if it doesn't, it'll throw an error. 
+ * By default it will not include the background-image property if it is not found,
+ * but this can be changed by changing the default value of $include-missing-images to 
+ * be true. 
+ */
+/**
+  * @class Ext.Button
+  * Used to create the base structure of an Ext.Button
+  */
+/**
+*  This file contains all the xcp variables that is modifiable by the theme editor
+*/
+/** Default font **/
+/** widget selection color **/
+/** Widget Label Text **/
+/** Widget Value Text **/
+/** Widget Title Text **/
+/** Widget Button Text **/
+/** Link Text **/
+/** Widget Interior **/
+/** Widget Border **/
+/** Widget Header **/
+/** ColumnBox Header **/
+/** Widget Button **/
+/** Widget Panel **/
+/** Widget Labels **/
+/** List Selection **/
+/** Framework Tab **/
+/** App Header Background **/
+/** App Menu Background **/
+/** App Menu Border **/
+/** App Menu button **/
+/** App Menu Button Border **/
+/** App Menu marker **/
+/** Nav Menu **/
+/** Case Menu **/
+/** Master Background **/
+/** Page Background **/
+/** Content Area **/
+/** Menu, Context Menu **/
+/** Context menu item **/
+/** load mask **/
+/** Toolbar **/
+/** tab bar **/
+/** tab button **/
+/** ToolTip **/
+/** Window **/
+/** Date picker **/
+/* Box-Shadow for widgets */
+/* line 1, ../../../styles/scss/xcp/default/widgets/_checkbox.scss */
+.x-form-cb-label {
+  font-family: Helvetica, Arial, sans-serif;
+  font: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #363636;
+  word-wrap: break-word;
+}
+
+/* line 5, ../../../styles/scss/xcp/default/widgets/_checkbox.scss */
+.x-item-disabled .x-form-cb-label {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+
+/*Custom Font Example
+@font-face {
+    font-family: 'AmaranthRegular';
+    src: url('../../../../../Artifacts/Resources/Fonts/amaranth/Amaranth-webfont.eot');
+    src: url('../../../../../Artifacts/Resources/Fonts/amaranth/Amaranth-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../../../../Artifacts/Resources/Fonts/amaranth/Amaranth-webfont.woff') format('woff'),
+         url('../../../../../Artifacts/Resources/Fonts/amaranth/Amaranth-webfont.ttf') format('truetype'),
+         url('../../../../../Artifacts/Resources/Fonts/amaranth/Amaranth-webfont.svg#AmaranthRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*/
+/* line 32, ../../../styles/scss/white-theme.scss */
+BODY {
+  font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+}
+
+/* line 37, ../../../styles/scss/white-theme.scss */
+.xcp-viewport {
+  background: none;
+}
+
+/* Header Text Style */
+/* line 43, ../../../styles/scss/white-theme.scss */
+H1, H2, H3, .x-panel-header-text-xcp-column-box-ui {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+/* line 47, ../../../styles/scss/white-theme.scss */
+H1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #39C;
+  line-height: 29px;
+}
+
+/* line 54, ../../../styles/scss/white-theme.scss */
+H2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #39C;
+  line-height: 25px;
+}
+
+/* line 61, ../../../styles/scss/white-theme.scss */
+H3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #787878;
+  padding-bottom: 4px;
+  line-height: 24px;
+}
+
+/* line 69, ../../../styles/scss/white-theme.scss */
+H4 {
+  font-weight: bold;
+  color: #787878;
+  padding-bottom: 4px;
+  line-height: 22px;
+}
+
+/* line 77, ../../../styles/scss/white-theme.scss */
+.xcp_plain_text-cls, .xcp_rich_text-cls, .x-form-item, .x-grid-row .x-grid-cell, .x-column-header, .x-body {
+  font-family: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+/******************************
+ NAVIGATION MENU             
+*/
+/* line 96, ../../../styles/scss/white-theme.scss */
+.x-toolbar.x-toolbar-xcp-nav-toolbar {
+  background-image: none;
+  background-color: #444444;
+  background-image: none;
+}
+
+/* line 106, ../../../styles/scss/white-theme.scss */
+.x-toolbar-xcp-nav-toolbar .x-btn-xcp-nav-button-toolbar-small-over,
+.x-toolbar-xcp-nav-toolbar .x-btn-xcp-nav-button-toolbar-small-focus {
+  background-color: #3F3F3F;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #3f3f3f));
+  background-image: -webkit-linear-gradient(#333333 0%, #3f3f3f 100%);
+  background-image: -moz-linear-gradient(#333333 0%, #3f3f3f 100%);
+  background-image: -o-linear-gradient(#333333 0%, #3f3f3f 100%);
+  background-image: linear-gradient(#333333 0%, #3f3f3f 100%);
+  border: 1px solid #4E4E4E;
+}
+
+/* line 113, ../../../styles/scss/white-theme.scss */
+.x-form-item-label {
+  font-weight: bold;
+}
+
+/* line 119, ../../../styles/scss/white-theme.scss */
+.xcp_gauge_chart-cls .x-panel-header-default {
+  background: #fff;
+  border: none;
+  padding-left: 10px;
+  height: auto;
+}
+/* line 126, ../../../styles/scss/white-theme.scss */
+.xcp_gauge_chart-cls .x-panel-body-default {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 132, ../../../styles/scss/white-theme.scss */
+.xcp-chart-inner-panel-body {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 137, ../../../styles/scss/white-theme.scss */
+.xcp-not-supported img {
+  opacity: 1!important;
+}
+
+/* line 141, ../../../styles/scss/white-theme.scss */
+.xcp-not-supported {
+  color: #363636!important;
+}
+
+/* line 147, ../../../styles/scss/white-theme.scss */
+.x-panel-header {
+  margin: 0!important;
+}
+
+/* line 152, ../../../styles/scss/white-theme.scss */
+.x-panel-header-default {
+  border: none!important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 157, ../../../styles/scss/white-theme.scss */
+.x-panel-header-xcp-column-box-ui {
+  background-image: none;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #ececec), color-stop(94%, #f8f8f8));
+  background-image: -webkit-linear-gradient(#ececec 30%, #f8f8f8 94%);
+  background-image: -moz-linear-gradient(#ececec 30%, #f8f8f8 94%);
+  background-image: -o-linear-gradient(#ececec 30%, #f8f8f8 94%);
+  background-image: linear-gradient(#ececec 30%, #f8f8f8 94%);
+  background-color: #F8F8F8;
+  border-width: 1px 1px 0 1px!important;
+  padding: 6px;
+  height: 32px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* line 167, ../../../styles/scss/white-theme.scss */
+.x-panel-header-text-xcp-column-box-ui {
+  font-size: 13px;
+}
+
+/* line 173, ../../../styles/scss/white-theme.scss */
+.x-panel-header-xcp-column-box-ui + .x-panel-body-xcp-column-box-ui {
+  background-color: #F8F8F8;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-width: 1px;
+}
+
+/* line 180, ../../../styles/scss/white-theme.scss */
+.xcp_form-cls > .x-panel-body > .xcp_column_box-cls {
+  margin-bottom: 10px;
+}
+
+/* line 188, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab-bar {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f8f8f8), color-stop(94%, #ececec)) !important;
+  background-image: -webkit-linear-gradient(#f8f8f8 30%, #ececec 94%) !important;
+  background-image: -moz-linear-gradient(#f8f8f8 30%, #ececec 94%) !important;
+  background-image: -o-linear-gradient(#f8f8f8 30%, #ececec 94%) !important;
+  background-image: linear-gradient(#f8f8f8 30%, #ececec 94%) !important;
+  background-color: #F8F8F8 !important;
+  border: 1px solid #dadada !important;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-width: 0;
+}
+/* line 198, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab {
+  border: 1px solid #dadada!important;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  height: 27px;
+  background: #f6f6f6;
+}
+/* line 204, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab button {
+  color: #666;
+  font-weight: normal;
+  text-shadow: none;
+}
+/* line 209, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab.x-tab-xcp-tab-ui-over {
+  background: #fff !important;
+}
+/* line 211, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab.x-tab-xcp-tab-ui-over button {
+  color: #39C !important;
+  text-shadow: none;
+}
+/* line 218, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab-xcp-tab-ui-active {
+  background: #fff !important;
+  border-bottom-width: 0 !important;
+}
+/* line 222, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab-xcp-tab-ui-active button {
+  color: #666;
+  font-weight: bold;
+  text-shadow: none;
+}
+/* line 230, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab-bar-top .xcp-tab-bar-caret {
+  display: none;
+}
+/* line 234, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab-bar-top .x-tab-bar-body {
+  height: 29px;
+}
+/* line 238, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls .x-tab-bar-strip {
+  background: #fff !important;
+  border-color: #dadada !important;
+}
+
+/* line 245, ../../../styles/scss/white-theme.scss */
+.xcp_tab_group-cls > .x-panel-body {
+  background: white;
+  border: 1px solid #dadada;
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-width: 0;
+}
+
+/* line 254, ../../../styles/scss/white-theme.scss */
+.x-btn-default-small.x-btn-default-small-noicon {
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #4ba3cc;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #87c1dd), color-stop(70%, #4ba3cc));
+  background: -webkit-linear-gradient(#87c1dd, #4ba3cc 70%);
+  background: -moz-linear-gradient(#87c1dd, #4ba3cc 70%);
+  background: -o-linear-gradient(#87c1dd, #4ba3cc 70%);
+  background: linear-gradient(#87c1dd, #4ba3cc 70%);
+  -webkit-box-shadow: #c2e0ee 0 1px 0 inset;
+  -moz-box-shadow: #c2e0ee 0 1px 0 inset;
+  box-shadow: #c2e0ee 0 1px 0 inset;
+  border: 1px solid #3899c6;
+  color: white;
+  text-shadow: #3185ac 0 -1px 0;
+  padding: 0.4em 1.1em !important;
+  border-width: 1px !important;
+}
+/* line 15, ../../../styles/scss/sassy/sassy-buttons/_sassy-button-pseudo-states.sass */
+.x-btn-default-small.x-btn-default-small-noicon:hover {
+  text-decoration: none;
+}
+/* line 18, ../../../styles/scss/sassy/sassy-buttons/_sassy-button-pseudo-states.sass */
+.x-btn-default-small.x-btn-default-small-noicon:hover {
+  background-color: #3899c6;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #73b7d7), color-stop(75%, #3899c6));
+  background: -webkit-linear-gradient(#73b7d7 3%, #3899c6 75%);
+  background: -moz-linear-gradient(#73b7d7 3%, #3899c6 75%);
+  background: -o-linear-gradient(#73b7d7 3%, #3899c6 75%);
+  background: linear-gradient(#73b7d7 3%, #3899c6 75%);
+}
+/* line 21, ../../../styles/scss/sassy/sassy-buttons/_sassy-button-pseudo-states.sass */
+.x-btn-default-small.x-btn-default-small-noicon:active {
+  -webkit-box-shadow: #358fba 0 1px 2px inset;
+  -moz-box-shadow: #358fba 0 1px 2px inset;
+  box-shadow: #358fba 0 1px 2px inset;
+}
+/* line 6, ../../../styles/scss/sassy/sassy-buttons/_sassy-button-pseudo-states.sass */
+.x-btn-default-small.x-btn-default-small-noicon.disabled, .x-btn-default-small.x-btn-default-small-noicon[disabled] {
+  opacity: 0.6;
+  background: #4ba3cc;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 73, ../../../styles/scss/sassy/_sassy-buttons.sass */
+.x-btn-default-small.x-btn-default-small-noicon::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 263, ../../../styles/scss/white-theme.scss */
+.x-btn-default-small.x-btn-default-small-noicon.x-btn-default-small-disabled {
+  opacity: 0.6;
+  background: #4ba3cc;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 270, ../../../styles/scss/white-theme.scss */
+.x-btn-default-small.x-btn-default-small-noicon.x-btn-default-small-focus {
+  box-shadow: 0 1px 2px #358FBA inset;
+}
+/* line 274, ../../../styles/scss/white-theme.scss */
+.x-btn-default-small.x-btn-default-small-noicon.x-btn .x-btn-center .x-btn-inner {
+  padding: 0;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+/* line 282, ../../../styles/scss/white-theme.scss */
+.cta .x-btn-default-small.x-btn-default-small-noicon {
+  font-size: 16px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #8cbe5f;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b3d495), color-stop(70%, #8cbe5f));
+  background: -webkit-linear-gradient(#b3d495, #8cbe5f 70%);
+  background: -moz-linear-gradient(#b3d495, #8cbe5f 70%);
+  background: -o-linear-gradient(#b3d495, #8cbe5f 70%);
+  background: linear-gradient(#b3d495, #8cbe5f 70%);
+  -webkit-box-shadow: #daeacc 0 1px 0 inset;
+  -moz-box-shadow: #daeacc 0 1px 0 inset;
+  box-shadow: #daeacc 0 1px 0 inset;
+  border: 1px solid #7fb74d;
+  color: white;
+  text-shadow: #6fa141 0 -1px 0;
+}
+/* line 15, ../../../styles/scss/sassy/sassy-buttons/_sassy-button-pseudo-states.sass */
+.cta .x-btn-default-small.x-btn-default-small-noicon:hover {
+  text-decoration: none;
+}
+/* line 18, ../../../styles/scss/sassy/sassy-buttons/_sassy-button-pseudo-states.sass */
+.cta .x-btn-default-small.x-btn-default-small-noicon:hover {
+  background-color: #7fb74d;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(3%, #a6cd83), color-stop(75%, #7fb74d));
+  background: -webkit-linear-gradient(#a6cd83 3%, #7fb74d 75%);
+  background: -moz-linear-gradient(#a6cd83 3%, #7fb74d 75%);
+  background: -o-linear-gradient(#a6cd83 3%, #7fb74d 75%);
+  background: linear-gradient(#a6cd83 3%, #7fb74d 75%);
+}
+/* line 21, ../../../styles/scss/sassy/sassy-buttons/_sassy-button-pseudo-states.sass */
+.cta .x-btn-default-small.x-btn-default-small-noicon:active {
+  -webkit-box-shadow: #77ae47 0 1px 2px inset;
+  -moz-box-shadow: #77ae47 0 1px 2px inset;
+  box-shadow: #77ae47 0 1px 2px inset;
+}
+/* line 6, ../../../styles/scss/sassy/sassy-buttons/_sassy-button-pseudo-states.sass */
+.cta .x-btn-default-small.x-btn-default-small-noicon.disabled, .cta .x-btn-default-small.x-btn-default-small-noicon[disabled] {
+  opacity: 0.6;
+  background: #8cbe5f;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 73, ../../../styles/scss/sassy/_sassy-buttons.sass */
+.cta .x-btn-default-small.x-btn-default-small-noicon::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 285, ../../../styles/scss/white-theme.scss */
+.cta .x-btn-default-small.x-btn-default-small-noicon.x-btn-default-small-disabled {
+  opacity: 0.6;
+  background: #8cbe5f;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 292, ../../../styles/scss/white-theme.scss */
+.cta .x-btn-default-small.x-btn-default-small-noicon.x-btn .x-btn-center .x-btn-inner {
+  padding: 0;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+/* line 299, ../../../styles/scss/white-theme.scss */
+.flat .x-btn-default-small.x-btn-default-small-noicon {
+  background-color: #4ba3cc;
+  border-radius: 4px;
+}
+/* line 304, ../../../styles/scss/white-theme.scss */
+.flat .x-btn-default-small.x-btn-default-small-noicon.x-btn-default-small-disabled {
+  opacity: 0.6;
+  background: #4ba3cc;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 314, ../../../styles/scss/white-theme.scss */
+.signin-panel .signin-form .x-panel-body {
+  background: #fff !important;
+}
+
+/* line 318, ../../../styles/scss/white-theme.scss */
+.signin-title {
+  color: #4E9AC9;
+}
+
+/* line 322, ../../../styles/scss/white-theme.scss */
+#signin-page {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  overflow: hidden;
+  height: 10000px;
+  position: static;
+  background-color: #F5F5F5;
+}
+
+/* LOGO Goes here
+.signin-panel .signin-logo-panel .x-panel-body {
+	background: url("../../../icons/welcome.png") no-repeat scroll 0 0 transparent;
+	height: 50px;
+} */
+/* line 340, ../../../styles/scss/white-theme.scss */
+TABLE.x-form-item td {
+  vertical-align: top;
+}
+
+/* line 344, ../../../styles/scss/white-theme.scss */
+.x-form-item-label, .x-form-display-field {
+  padding-top: 3px;
+}
+
+/* line 348, ../../../styles/scss/white-theme.scss */
+.xcp_folder_view-cls > .x-panel-body-default {
+  border: none;
+}
+
+/* line 353, ../../../styles/scss/white-theme.scss */
+.xcp_content_tree-cls {
+  padding: 0;
+}
+/* line 355, ../../../styles/scss/white-theme.scss */
+.xcp_content_tree-cls .x-grid-body {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #D7D7D7;
+}
+/* line 361, ../../../styles/scss/white-theme.scss */
+.xcp_content_tree-cls .x-grid-body TABLE {
+  margin-top: 6px;
+}
+/* line 365, ../../../styles/scss/white-theme.scss */
+.xcp_content_tree-cls .x-grid-body .xcp-content-runtime-tree-root div.x-grid-cell-inner {
+  padding-left: 9px !important;
+}
+/* line 369, ../../../styles/scss/white-theme.scss */
+.xcp_content_tree-cls .x-grid-body .x-tree-elbow-empty {
+  width: 9px;
+}
+
+/* line 376, ../../../styles/scss/white-theme.scss */
+.xcp_results_list-cls {
+  margin: 0 !important;
+}
+/* line 378, ../../../styles/scss/white-theme.scss */
+.xcp_results_list-cls .x-grid-header-ct {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f8f8f8), color-stop(94%, #ececec));
+  background-image: -webkit-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -moz-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -o-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-color: #F8F8F8;
+}
+/* line 383, ../../../styles/scss/white-theme.scss */
+.xcp_results_list-cls .x-column-header {
+  background: inherit;
+  border: none;
+}
+/* line 388, ../../../styles/scss/white-theme.scss */
+.xcp_results_list-cls .xcp_pagingtoolbar-cls {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f8f8f8), color-stop(94%, #ececec));
+  background-image: -webkit-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -moz-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -o-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-color: #F8F8F8;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* line 395, ../../../styles/scss/white-theme.scss */
+.xcp_results_list-cls > .x-panel-body {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* line 399, ../../../styles/scss/white-theme.scss */
+.xcp_results_list-cls > .x-panel-body .xcp_results_list_grid-cls {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin: 0;
+}
+
+/* line 407, ../../../styles/scss/white-theme.scss */
+.rmViewerToolBar {
+  background: inherit;
+}
+
+/* line 411, ../../../styles/scss/white-theme.scss */
+.xcp_viewer-cls .x-panel-body.x-panel-body-default {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 416, ../../../styles/scss/white-theme.scss */
+.xcp_viewer-cls .rmViewerToolBar {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f8f8f8), color-stop(94%, #ececec));
+  background-image: -webkit-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -moz-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -o-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: linear-gradient(#f8f8f8 30%, #ececec 94%);
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+/* line 422, ../../../styles/scss/white-theme.scss */
+.xcp_viewer-cls .pgModTbl .x-toolbar-default {
+  background-color: #ececec !important;
+}
+/* line 426, ../../../styles/scss/white-theme.scss */
+.xcp_viewer-cls .x-grid-table {
+  background: #F8F8F8;
+}
+/* line 428, ../../../styles/scss/white-theme.scss */
+.xcp_viewer-cls .x-grid-table .thmimg {
+  border: 1px solid #CCC;
+}
+/* line 433, ../../../styles/scss/white-theme.scss */
+.xcp_viewer-cls .rmPageDataView .rmPageContainer {
+  background: #F8F8F8;
+}
+/* line 435, ../../../styles/scss/white-theme.scss */
+.xcp_viewer-cls .rmPageDataView .rmPageContainer img {
+  border: 1px solid #CCC;
+}
+/* line 440, ../../../styles/scss/white-theme.scss */
+.xcp_viewer-cls .compPanel .x-panel-header-default {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f8f8f8), color-stop(94%, #ececec)) !important;
+  background-image: -webkit-linear-gradient(#f8f8f8 30%, #ececec 94%) !important;
+  background-image: -moz-linear-gradient(#f8f8f8 30%, #ececec 94%) !important;
+  background-image: -o-linear-gradient(#f8f8f8 30%, #ececec 94%) !important;
+  background-image: linear-gradient(#f8f8f8 30%, #ececec 94%) !important;
+  background-color: #F8F8F8;
+}
+
+/* line 448, ../../../styles/scss/white-theme.scss */
+.xcp_attachment_grid-cls > .x-panel-body-default {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 452, ../../../styles/scss/white-theme.scss */
+.xcp_attachment_grid-cls .x-toolbar-docked-top {
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* line 457, ../../../styles/scss/white-theme.scss */
+.x-toolbar-xcp-toolbar, .xcp_pagingtoolbar-cls, .xcp_results_list_grid-cls .x-toolbar-docked-top {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f8f8f8), color-stop(94%, #ececec));
+  background-image: -webkit-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -moz-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -o-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-color: #F8F8F8;
+  height: auto;
+}
+
+/* line 463, ../../../styles/scss/white-theme.scss */
+.xcp_toolbar-cls, .xcp_results_list_grid-cls .x-toolbar-docked-top {
+  border-bottom: 1px solid #D7D7D7 !important;
+}
+
+/* line 467, ../../../styles/scss/white-theme.scss */
+.xcp_pagingtoolbar-cls {
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* line 471, ../../../styles/scss/white-theme.scss */
+.x-toolbar-xcp-toolbar .x-btn, .rmViewerToolBar .x-btn, .xcp_results_list_grid-cls .x-toolbar-docked-top .x-btn {
+  height: 26px;
+}
+
+/* line 478, ../../../styles/scss/white-theme.scss */
+.x-mask-msg {
+  background: inherit;
+  border: none;
+}
+/* line 482, ../../../styles/scss/white-theme.scss */
+.x-mask-msg DIV {
+  border: none;
+  background: inherit;
+}
+/* line 487, ../../../styles/scss/white-theme.scss */
+.x-mask-msg .x-mask-msg.xcp-mask-info div {
+  background: inherit;
+  cursor: inherit;
+}
+
+/* line 496, ../../../styles/scss/white-theme.scss */
+.xcp_comments-cls .x-toolbar-default {
+  height: 30px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #f8f8f8), color-stop(94%, #ececec));
+  background-image: -webkit-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -moz-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: -o-linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-image: linear-gradient(#f8f8f8 30%, #ececec 94%);
+  background-color: #F8F8F8;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+/* line 503, ../../../styles/scss/white-theme.scss */
+.xcp_comments-cls .x-panel .x-grid-body {
+  -moz-border-radius-bottomleft: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}

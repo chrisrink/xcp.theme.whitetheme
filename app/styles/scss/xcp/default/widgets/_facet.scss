@@ -1,0 +1,152 @@
+// Facet related styles
+@mixin facet-value-over-text {
+     @include xcp-text(
+        $xcp-default-font-family,
+        $xcp-default-font-family,
+        $xcp-facet-value-over-font-size,
+        $xcp-facet-value-over-font-weight,
+        $xcp-facet-value-over-color
+     );
+
+     text-decoration: $xcp-facet-value-over-text-decoration;
+     cursor: pointer;
+}
+
+
+@mixin xcp-facet {
+    .xcp_results_list-cls .x-splitter-vertical {
+        border-width: 0;
+        border-style: none;
+        background-color: transparent;
+    }
+
+    .xcp_facet_simple-cls {
+         background-color: $xcp-facet-background;
+         @include xcp-box-shadow;
+         margin: $xcp-facet-simple-margin;
+    }
+
+    .#{$prefix}panel-body-xcp-facet-container {
+        padding: 4px 2px 4px 4px;
+    }
+
+    .#{$prefix}panel-xcp-selected-facets .x-toolbar-text-docked-bottom {
+        @include xcp-link;
+    }
+
+    .#{$prefix}panel-xcp-selected-facets {
+        @include xcp-box-shadow;
+
+        padding: 10px;
+        background-color: white;
+        margin: $xcp-facet-simple-margin;
+
+        .xcp-selected-facet {
+            padding: $xcp-facet-item-padding;
+        }
+
+        .xcp-selected-facet {
+            position: relative;
+        }
+
+        .xcp-selected-facet-value{
+            position: absolute;
+            top: 3px;
+            left: $xcp-facet-label-padding-left;
+            margin: 0;
+        }
+
+        .xcp-selected-facet-value-label {
+            white-space:nowrap;
+            text-align: left;
+            @include xcp-widget-label-text;
+        }
+
+        .xcp-selected-facet-remove-icon {
+            height: 15px;
+            width: 15px;
+            background-position: 0 -15px;
+            background-image: theme-image($theme-name, 'facet/remove_value_sprite.png', false, $relative-image-path-for-uis);
+        }
+
+        .xcp-selected-facet-over {
+            .xcp-selected-facet-remove-icon {
+                background-position: -15px -15px;
+                cursor: pointer;
+            }
+
+            .xcp-selected-facet-value-label {
+                @include facet-value-over-text;
+            }
+        }
+
+        .xcp-selected-facet-remove-label {
+            position: relative;
+            left: $xcp-facet-label-padding-left;
+            @include xcp-link-text;
+        }
+    }
+
+    .x-panel-xcp-simple-facet {
+
+        padding: 10px;
+
+        .x-panel-header-xcp-simple-facet {
+            padding: 0;
+        }
+
+        .x-panel-header-xcp-simple-facet-collapsed {
+            padding: 10px 0;
+            .x-panel-header-text-xcp-simple-facet {
+                color: $xcp-facet-group-label-collapsed-color;
+            }
+        }
+
+        .xcp-facet-item {
+            padding: $xcp-facet-item-padding;
+        }
+
+        .x-panel-header-text-xcp-simple-facet {
+            margin: 0 0 0 5px;
+            @include xcp-text(
+                $xcp-widget-title-text-font-family,
+                $xcp-widget-title-text-font-family,
+                $xcp-widget-title-text-font-size,
+                $xcp-widget-title-text-font-weight,
+                $xcp-facet-group-label-expanded-color);
+        }
+
+        .xcp-facet-value, .xcp-simple-facet-show-more {
+            padding: $xcp-facet-value-text-padding;
+        }
+
+        .xcp-simple-facet-show-more {
+           @include xcp-link;
+        }
+
+        .xcp-facet-value {
+            @include xcp-widget-value-text;
+        }
+
+        .xcp-facet-value-count {
+            color: lighten($xcp-widget-value-text-font-color, 30%);
+        }
+    }
+    .xcp-facet-item-over {
+        .xcp-facet-value-label {
+            @include facet-value-over-text;
+        }
+    }
+
+     @if not $supports-gradients or $compile-all {
+        .#{$prefix}nlg {
+
+            .xcp_facet_simple-cls{
+                border-style: solid;
+                border: 1px;
+                border-color:#D7D7D7;
+            }
+        }
+        }
+
+}

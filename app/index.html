@@ -1,0 +1,145 @@
+<!DOCTYPE HTML >
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8" >
+
+        <link rel="stylesheet" type="text/css" href="js/resources/css/xcp-default.css" />
+        <link rel="stylesheet" type="text/css" href="js/resources/css/contents-1.0.0.css"/>
+        <link rel="stylesheet" type="text/css" href="js/resources/css/white-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="js/resources/css/main.css"/>
+
+        <script type="text/javascript" src="js/ext-4.1/ext-all-dev.js"></script>
+        <script type="text/javascript" src="js/ext-4.1/locale/ext-lang-en.js"></script>
+        <script type="text/javascript" src="js/openajax/OpenAjax.js"></script>
+        <script type="text/javascript" src="js/xcp/contents-1.0.0.js"></script>
+        
+        <script type="text/javascript">
+           // xcp.appContext.contextPath = '/Documentation_Review';
+            //Check if the application version properties is missing
+            //Set application version from the server
+          //  xcp.appContext.version='1.0.0';
+
+            if (!xcp.componentVersion) {
+                xcp.componentVersion = '1.0.0';
+            }
+            xcp.ckeditorlanguage = "en";
+            xcp.extLangFileSuffix = "en";
+            xcp.language = "en_US";
+            Ext.namespace("xcp.Formats");
+            Ext.apply(xcp.Formats, {
+                dateFormats : {
+                    short:       "m/d/y",
+                    medium:      "M d, Y",
+                    long:        "F d, Y"
+                },
+                timeFormats : {
+                    short:       "h:i a",
+                    medium:      "h:i:s a",
+                    long:        "h:i:s a T"
+                },
+				timezoneAbbreviation : "UTC",
+				timezoneDstAbbreviation : "UTC",
+				timezoneId : "UTC"
+            });
+
+            // calculate timezone constants for the current user.  Use function closure to
+            // avoid cluttering the global namespace
+            (function() {
+            	var tzTab = {"-570:-570:-570:-570": {"id":"Pacific/Marquesas","abbr":"MART","dstAbbr":"MARST"},
+"-420:-420:-420:-420": {"id":"America/Dawson_Creek","abbr":"MST","dstAbbr":"MDT"},
+"-480:-420:-420:-480": {"id":"SystemV/PST8PDT","abbr":"PST","dstAbbr":"PDT"},
+"-360:-360:-360:-420": {"id":"US/Mountain","abbr":"MST","dstAbbr":"MDT"},
+"570:570:630:630": {"id":"Australia/Adelaide","abbr":"CST","dstAbbr":"CST"},
+"300:300:300:300": {"id":"Antarctica/Mawson","abbr":"MAWT","dstAbbr":"MAWST"},
+"-600:-600:-600:-600": {"id":"US/Hawaii","abbr":"HST","dstAbbr":"HDT"},
+"-120:-120:-120:-180": {"id":"America/Godthab","abbr":"WGT","dstAbbr":"WGST"},
+"180:180:120:120": {"id":"Asia/Jerusalem","abbr":"IST","dstAbbr":"IDT"},
+"-150:-150:-150:-210": {"id":"Canada/Newfoundland","abbr":"NST","dstAbbr":"NDT"},
+"300:300:300:240": {"id":"Asia/Baku","abbr":"AZT","dstAbbr":"AZST"},
+"-180:-180:-120:-120": {"id":"America/Montevideo","abbr":"UYT","dstAbbr":"UYST"},
+"240:240:240:240": {"id":"Europe/Moscow","abbr":"MSK","dstAbbr":"MSD"},
+"-240:-240:-180:-180": {"id":"America/Asuncion","abbr":"PYT","dstAbbr":"PYST"},
+"180:180:180:120": {"id":"Asia/Amman","abbr":"EET","dstAbbr":"EEST"},
+"180:180:180:180": {"id":"Africa/Addis_Ababa","abbr":"EAT","dstAbbr":"EAST"},
+"-540:-540:-540:-540": {"id":"Etc/GMT+9","abbr":"GMT-09:00","dstAbbr":"GMT-09:00"},
+"-540:-540:-540:-600": {"id":"America/Adak","abbr":"HAST","dstAbbr":"HADT"},
+"840:840:840:840": {"id":"Etc/GMT-14","abbr":"GMT+14:00","dstAbbr":"GMT+14:00"},
+"390:390:390:390": {"id":"Asia/Rangoon","abbr":"MMT","dstAbbr":"MMST"},
+"420:420:420:420": {"id":"Asia/Bangkok","abbr":"ICT","dstAbbr":"ICST"},
+"600:600:600:600": {"id":"Antarctica/DumontDUrville","abbr":"DDUT","dstAbbr":"DDUST"},
+"-540:-480:-480:-540": {"id":"SystemV/YST9YDT","abbr":"AKST","dstAbbr":"AKDT"},
+"60:60:60:0": {"id":"Europe/London","abbr":"GMT","dstAbbr":"BST"},
+"660:660:660:660": {"id":"Antarctica/Macquarie","abbr":"MIST","dstAbbr":"MIST"},
+"-300:-300:-300:-300": {"id":"America/Atikokan","abbr":"EST","dstAbbr":"EDT"},
+"0:0:0:0": {"id":"UTC","abbr":"UTC","dstAbbr":"UTC"},
+"270:270:210:210": {"id":"Asia/Tehran","abbr":"IRST","dstAbbr":"IRDT"},
+"-180:-180:-180:-240": {"id":"Canada/Atlantic","abbr":"AST","dstAbbr":"ADT"},
+"-180:-180:-180:-180": {"id":"America/Argentina/San_Juan","abbr":"ART","dstAbbr":"ARST"},
+"-270:-270:-270:-270": {"id":"America/Caracas","abbr":"VET","dstAbbr":"VEST"},
+"360:360:360:360": {"id":"Antarctica/Vostok","abbr":"VOST","dstAbbr":"VOSST"},
+"-240:-240:-240:-300": {"id":"US/Eastern","abbr":"EST","dstAbbr":"EDT"},
+"-60:-60:-60:-60": {"id":"Atlantic/Cape_Verde","abbr":"CVT","dstAbbr":"CVST"},
+"-360:-300:-300:-360": {"id":"SystemV/CST6CDT","abbr":"CST","dstAbbr":"CDT"},
+"-420:-420:-420:-480": {"id":"US/Pacific","abbr":"PST","dstAbbr":"PDT"},
+"330:330:330:330": {"id":"IST","abbr":"IST","dstAbbr":"IDT"},
+"-480:-480:-480:-540": {"id":"US/Alaska","abbr":"AKST","dstAbbr":"AKDT"},
+"270:270:270:270": {"id":"Asia/Kabul","abbr":"AFT","dstAbbr":"AFST"},
+"720:720:780:780": {"id":"Pacific/Auckland","abbr":"NZST","dstAbbr":"NZDT"},
+"-480:-480:-480:-480": {"id":"America/Metlakatla","abbr":"MeST","dstAbbr":"MeDT"},
+"525:525:525:525": {"id":"Australia/Eucla","abbr":"CWST","dstAbbr":"CWST"},
+"120:120:120:120": {"id":"Africa/Cairo","abbr":"EET","dstAbbr":"EEST"},
+"-240:-240:-240:-240": {"id":"America/Anguilla","abbr":"AST","dstAbbr":"ADT"},
+"570:570:570:570": {"id":"ACT","abbr":"CST","dstAbbr":"CST"},
+"-660:-660:-660:-660": {"id":"Etc/GMT+11","abbr":"GMT-11:00","dstAbbr":"GMT-11:00"},
+"-720:-720:-720:-720": {"id":"Etc/GMT+12","abbr":"GMT-12:00","dstAbbr":"GMT-12:00"},
+"720:720:720:720": {"id":"Asia/Anadyr","abbr":"ANAT","dstAbbr":"ANAST"},
+"690:690:690:690": {"id":"Pacific/Norfolk","abbr":"NFT","dstAbbr":"NFST"},
+"345:345:345:345": {"id":"Asia/Kathmandu","abbr":"NPT","dstAbbr":"NPST"},
+"-240:-180:-180:-240": {"id":"SystemV/AST4ADT","abbr":"AST","dstAbbr":"ADT"},
+"60:60:120:120": {"id":"Africa/Windhoek","abbr":"WAT","dstAbbr":"WAST"},
+"480:480:480:480": {"id":"Asia/Shanghai","abbr":"CST","dstAbbr":"CDT"},
+"-360:-360:-300:-300": {"id":"Chile/EasterIsland","abbr":"EAST","dstAbbr":"EASST"},
+"630:630:660:660": {"id":"Australia/LHI","abbr":"LHST","dstAbbr":"LHST"},
+"-420:-360:-360:-420": {"id":"SystemV/MST7MDT","abbr":"MST","dstAbbr":"MDT"},
+"-300:-240:-240:-300": {"id":"SystemV/EST5EDT","abbr":"EST","dstAbbr":"EDT"},
+"-300:-300:-300:-360": {"id":"US/Central","abbr":"CST","dstAbbr":"CDT"},
+"540:540:540:540": {"id":"Asia/Tokyo","abbr":"JST","dstAbbr":"JDT"},
+"-120:-120:-120:-120": {"id":"America/Noronha","abbr":"FNT","dstAbbr":"FNST"},
+"765:765:825:825": {"id":"NZ-CHAT","abbr":"CHAST","dstAbbr":"CHADT"},
+"600:600:660:660": {"id":"AET","abbr":"EST","dstAbbr":"EST"},
+"120:120:120:60": {"id":"Europe/Paris","abbr":"CET","dstAbbr":"CEST"},
+"0:0:0:-60": {"id":"America/Scoresbysund","abbr":"EGT","dstAbbr":"EGST"},
+"-360:-360:-360:-360": {"id":"America/Belize","abbr":"CST","dstAbbr":"CDT"},
+"780:780:780:780": {"id":"Etc/GMT-13","abbr":"GMT+13:00","dstAbbr":"GMT+13:00"},
+"60:60:60:60": {"id":"Africa/Algiers","abbr":"CET","dstAbbr":"CEST"},
+"187:187:187:187": {"id":"Asia/Riyadh87","abbr":"GMT+03:07","dstAbbr":"GMT+03:07"}};
+                var springDate = new Date(2012,3,21,12,0,0);
+                var summerDate = new Date(2012,6,21,12,0,0);
+                var fallDate = new Date(2012,9,21,12,0,0);
+                var winterDate = new Date(2012,12,21,12,0,0);
+                var key = "" +
+                        springDate.getTimezoneOffset() * -1 + ":" +
+                        summerDate.getTimezoneOffset() * -1 + ":" +
+                        fallDate.getTimezoneOffset() * -1 + ":" +
+                        winterDate.getTimezoneOffset() * -1;
+                if (key in tzTab) {
+                	xcp.Formats.timezoneId = tzTab[key].id;
+                	xcp.Formats.timezoneAbbreviation = tzTab[key].abbr;
+                	xcp.Formats.timezoneDstAbbreviation = tzTab[key].dstAbbr;
+                }
+            })();
+        </script>
+
+        
+
+         
+    </head>
+    <body>
+        
+    <div>Hello World</div>
+    <script type="text/javascript" src="scripts/main.js"></script>   
+    </body>
+</html>

@@ -1,0 +1,120 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "App Master",
+  "xtype" : "xcp_form",
+  "items" : [ {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "cls" : "xcp-master-header",
+    "items" : [ {
+      "xcpId" : "columnhbox",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "width" : "100%",
+      "overflow_x" : "hidden",
+      "labelWidth" : 50,
+      "defaultMargins" : "0",
+      "margins" : "0",
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "bottom",
+      "items" : [ {
+        "xcpId" : "navigation_menu",
+        "xtype" : "xcp_navigation_menu",
+        "orientation" : "horizontal",
+        "xcp_menu_onhover" : true,
+        "enableOverflow" : true,
+        "items" : [ {
+          "xcpId" : "nav_button8",
+          "xtype" : "xcp_nav_button",
+          "text" : "Home",
+          "xcp_nav_type" : "page",
+          "xcp_link_type" : "application",
+          "xcp_nav_url" : "#application/doc_home"
+        }, {
+          "xcpId" : "nav_button7",
+          "xtype" : "xcp_nav_button",
+          "text" : "Reviews",
+          "xcp_nav_type" : "page",
+          "xcp_link_type" : "application",
+          "xcp_nav_url" : "#application/doc_all_reviews"
+        }, {
+          "xcpId" : "nav_button6",
+          "xtype" : "xcp_nav_button",
+          "text" : "Stories",
+          "xcp_nav_type" : "page",
+          "xcp_link_type" : "application",
+          "xcp_nav_url" : "#application/doc_stories"
+        }, {
+          "xcpId" : "nav_button",
+          "xtype" : "xcp_nav_button",
+          "text" : "Browse",
+          "xcp_nav_type" : "page",
+          "xcp_link_type" : "application",
+          "xcp_nav_url" : "#application/doc_browse"
+        }, {
+          "xcpId" : "nav_button2",
+          "xtype" : "xcp_nav_button",
+          "text" : "Administration",
+          "xcp_nav_type" : "page",
+          "xcp_link_type" : "none",
+          "menu" : {
+            "xcpId" : "menu",
+            "xtype" : "xcp_menu",
+            "items" : [ {
+              "xcpId" : "nav_menuitem",
+              "xtype" : "xcp_nav_menuitem",
+              "text" : "Team Administration",
+              "xcp_nav_url" : "#application/doc_team_administration",
+              "xcp_nav_type" : "page",
+              "xcp_link_type" : "application"
+            }, {
+              "xcpId" : "nav_menuitem4",
+              "xtype" : "xcp_nav_menuitem",
+              "text" : "User List",
+              "xcp_nav_url" : "#application/doc_user_list",
+              "xcp_nav_type" : "page",
+              "xcp_link_type" : "application"
+            }, {
+              "xcpId" : "nav_menuitem1",
+              "xtype" : "xcp_nav_menuitem",
+              "text" : "Application Parameters",
+              "xcp_nav_url" : "#doc_application_parameter",
+              "xcp_nav_type" : "page",
+              "xcp_link_type" : "application"
+            }, {
+              "xcpId" : "nav_menuitem2",
+              "xtype" : "xcp_nav_menuitem",
+              "text" : "Role Management",
+              "xcp_nav_url" : "#doc_manage_app_role",
+              "xcp_nav_type" : "page",
+              "xcp_link_type" : "application"
+            } ]
+          }
+        } ]
+      }, {
+        "xcpId" : "user_button",
+        "xtype" : "xcp_user_button"
+      } ]
+    } ]
+  }, {
+    "xcpId" : "page",
+    "xtype" : "xcp_page",
+    "cls" : "xcp-content-area",
+    "margin" : "10 10 10 10"
+  }, {
+    "xcpId" : "image",
+    "xtype" : "xcp_image",
+    "behavior" : false,
+    "width" : 100,
+    "height" : 100,
+    "isInternal" : true
+  } ]
+}

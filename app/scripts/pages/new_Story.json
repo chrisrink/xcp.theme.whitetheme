@@ -1,0 +1,86 @@
+{
+  "padding": "0",
+  "border": false,
+  "pageTitle": "${_UI_Page_doc_create_a_new_story_title}",
+  "xtype": "xcp_form",
+  "items": [{
+    "xcpId": "rich_text",
+    "xtype": "xcp_rich_text",
+    "html": "{_UI_Page_doc_create_a_new_story_rich_text_html}"
+  }, {
+    "xcpId": "column_box",
+    "xtype": "xcp_column_box",
+    "collapsible": false,
+    "collapsed": false,
+    "collapseFirst": true,
+    "border": false,
+    "defaultMargins": "5",
+    "layout": "xcp_columnbox",
+    "items": [{
+      "xcpId": "columnvbox",
+      "xtype": "xcp_columnvbox",
+      "orientation": "Vertical",
+      "width": "500",
+      "overflow_x": "hidden",
+      "labelWidth": 150,
+      "labelAlign": "left",
+      "halign": "left",
+      "valign": "top",
+      "defaultMargins": "5",
+      "items": [{
+        "xcpId": "sname",
+        "xtype": "xcp_text_input",
+        "fieldLabel": "{_UI_Page_doc_create_a_new_story_sname_fieldLabel}",
+        "emptyText": "{_UI_Page_doc_create_a_new_story_sname_emptyText}",
+        "hstretch": true,
+        "valueType": "STRING"
+      }, {
+        "xcpId": "team",
+        "xtype": "xcp_dropdown_list",
+        "fieldLabel": "{_UI_Page_doc_create_a_new_story_team_fieldLabel}",
+        "valueField": "id",
+        "displayField": "object_name",
+        "store": "team_administration",
+        "valueType": "STRING"
+      }, {
+        "xcpId": "iteration",
+        "xtype": "xcp_dropdown_list",
+        "fieldLabel": "{_UI_Page_doc_create_a_new_story_iteration_fieldLabel}",
+        "store": "xcp.picklist.doc_iteration",
+        "valueType": "xcp.picklist.doc_iteration"
+
+
+      }, {
+        "xcpId": "checkbox",
+        "xtype": "xcp_checkbox",
+        "fieldLabel": "{_UI_Page_doc_create_a_new_story_checkbox_fieldLabel}",
+        "valueType": "BOOLEAN"
+      }]
+    }]
+  }, {
+    "xcpId": "column_box1",
+    "xtype": "xcp_column_box",
+    "collapsible": false,
+    "collapsed": false,
+    "collapseFirst": true,
+    "border": false,
+    "defaultMargins": "5",
+    "layout": "xcp_columnbox",
+    "items": [{
+      "xcpId": "columnvbox1",
+      "xtype": "xcp_columnvbox",
+      "orientation": "Vertical",
+      "overflow_x": "hidden",
+      "labelWidth": 150,
+      "labelAlign": "left",
+      "halign": "left",
+      "valign": "top",
+      "defaultMargins": "5 5 5 150",
+      "items": [{
+        "xcpId": "button",
+        "xtype": "xcp_button",
+        "text": "{_UI_Page_doc_create_a_new_story_button_text}"
+      }]
+    }]
+  }]
+}

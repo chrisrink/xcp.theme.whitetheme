@@ -1,0 +1,15 @@
+/* line 1, ../../../styles/scss/main.scss */
+.pageWrap {
+  background: #fff;
+  padding: 8px;
+}
+
+/* line 6, ../../../styles/scss/main.scss */
+.pageWrap:hover {
+  background: #39C;
+}
+
+/* line 10, ../../../styles/scss/main.scss */
+.pageSelector {
+  background: #fff;
+}

@@ -1,0 +1,117 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "{_UI_Page_doc_all_reviews_title}",
+  "xtype" : "xcp_form",
+  "items" : [  {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "rich_text",
+        "xtype" : "xcp_rich_text",
+        "html" : "{_UI_Page_doc_all_reviews_rich_text_html}"
+      } ]
+    } ]
+  }, {
+    "xcpId" : "results_list1",
+    "xtype" : "xcp_results_list",
+    "typeName" : "xcp_task",
+    "modelName" : "doc_my_other_tasklist_outputs",
+    "storeId" : "my_other_tasklist",
+    "pageSize" : 10,
+    "selectionModel" : false,
+    "columns" : [ {
+      "xcpId" : "results_list_page_link_column",
+      "xtype" : "xcp_results_list_page_link_column",
+      "text" : "{_UI_Page_doc_all_reviews_results_list_page_link_column_text}",
+      "width" : 150,
+      "dataIndex" : "task_performer_name",
+      "valueType" : "STRING",
+      "isRepeating" : false,
+      "sortable" : false,
+      "menuDisabled" : true
+    }, {
+      "xcpId" : "results_list_column6",
+      "xtype" : "xcp_results_list_column",
+      "text" : "{_UI_Page_doc_all_reviews_results_list_column6_text}",
+      "width" : 150,
+      "dataIndex" : "task_subject",
+      "valueType" : "STRING",
+      "isRepeating" : false,
+      "sortable" : false,
+      "menuDisabled" : true
+    }, {
+      "xcpId" : "results_list_column7",
+      "xtype" : "xcp_results_list_column",
+      "text" : "{_UI_Page_doc_all_reviews_results_list_column7_text}",
+      "width" : 150,
+      "dataIndex" : "task_due_date",
+      "valueType" : "DATETIME",
+      "isRepeating" : false,
+      "format" : {
+        "xtype" : "xcp_datetime_formatter",
+        "dateFormat" : "short",
+        "timeFormat" : "short",
+        "dateStyle" : "datetime"
+      },
+      "sortable" : false,
+      "menuDisabled" : true
+    }, {
+      "xcpId" : "results_list_column8",
+      "xtype" : "xcp_results_list_column",
+      "text" : "{_UI_Page_doc_all_reviews_results_list_column8_text}",
+      "width" : 150,
+      "dataIndex" : "packagesstoryobject_name",
+      "valueType" : "STRING",
+      "isRepeating" : false,
+      "sortable" : false,
+      "menuDisabled" : true
+    }, {
+      "xcpId" : "results_list_column9",
+      "xtype" : "xcp_results_list_column",
+      "text" : "{_UI_Page_doc_all_reviews_results_list_column9_text}",
+      "width" : 150,
+      "dataIndex" : "packagesstorytitle",
+      "valueType" : "STRING",
+      "isRepeating" : false,
+      "sortable" : false,
+      "menuDisabled" : true
+    }, {
+      "xcpId" : "results_list_column10",
+      "xtype" : "xcp_results_list_column",
+      "text" : "{_UI_Page_doc_all_reviews_results_list_column10_text}",
+      "width" : 150,
+      "dataIndex" : "packagesstoryiteration",
+      "valueType" : "xcp.picklist.doc_iteration",
+      "isRepeating" : false,
+      "sortable" : false,
+      "menuDisabled" : true
+    }, {
+      "xcpId" : "results_list_column11",
+      "xtype" : "xcp_results_list_column",
+      "text" : "{_UI_Page_doc_all_reviews_results_list_column11_text}",
+      "width" : 150,
+      "dataIndex" : "packagesstorystatus",
+      "valueType" : "xcp.picklist.doc_status",
+      "isRepeating" : false,
+      "sortable" : false,
+      "menuDisabled" : true
+    } ]
+  } ]
+}

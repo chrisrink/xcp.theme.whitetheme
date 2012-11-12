@@ -2,18 +2,18 @@
   "name": "xcp.theme.whitetheme",
   "description": "A Clean looking  Theme for  EMC Documentum xCP 2.0",
   "author": "Chris Rink",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "github.com/chrisrink/xcp.theme.whitetheme.git"
   },
   "dependencies": {
-    "grunt": >= 2.0,
+    "grunt": ">= 2.0",
     "requirejs": "~2.0.2",
     "connect": "~2.2.1",
-    "shelljs":"~0.0.6",
+    "shelljs": "~0.0.6",
     "grunt-mocha": "~0.1.7",
-   },
-  "engine":  {
-  	"node": ">=0.8.0"
+  },
+  "engine": {
+    "node": ">=0.8.0"
   }
 }
