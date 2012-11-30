@@ -1,0 +1,137 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "Field Alignment",
+  "xtype" : "xcp_form",
+  "items" : [ {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "checkbox",
+        "xtype" : "xcp_checkbox",
+        "fieldLabel" : "Checkbox",
+        "boxLabel" : "checkbox",
+        "valueType" : "BOOLEAN"
+      }, {
+        "xcpId" : "date_time_input",
+        "xtype" : "xcp_date_time_input",
+        "fieldLabel" : "Datetime",
+        "hstretch" : true,
+        "format" : {
+          "xtype" : "xcp_datetime_formatter",
+          "dateFormat" : "short",
+          "timeFormat" : "short",
+          "dateStyle" : "datetime"
+        },
+        "valueType" : "DATETIME"
+      }, {
+        "xcpId" : "multivalue_date_input",
+        "xtype" : "xcp_multivalue_date_input",
+        "fieldLabel" : "Multi Datatime",
+        "height" : 150,
+        "format" : {
+          "xtype" : "xcp_datetime_formatter",
+          "dateFormat" : "short",
+          "timeFormat" : "short",
+          "dateStyle" : "datetime"
+        },
+        "valueType" : "DATETIME",
+        "isRepeating" : true
+      }, {
+        "xcpId" : "number_input",
+        "xtype" : "xcp_number_input",
+        "fieldLabel" : "Number",
+        "hideTrigger" : true,
+        "keyNavEnabled" : false,
+        "mouseWheelEnabled" : false,
+        "autoStripChars" : true,
+        "hstretch" : true,
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "multivalue_number_input",
+        "xtype" : "xcp_multivalue_number_input",
+        "fieldLabel" : "Multi Number",
+        "height" : 150,
+        "valueType" : "FLOAT",
+        "isRepeating" : true
+      }, {
+        "xcpId" : "text_area",
+        "xtype" : "xcp_text_area",
+        "fieldLabel" : "Text Area",
+        "hstretch" : true,
+        "valueType" : "STRING",
+        "height" : 100
+      }, {
+        "xcpId" : "text_input",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "Text",
+        "hstretch" : true,
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "multivalue_text_input",
+        "xtype" : "xcp_multivalue_text_input",
+        "fieldLabel" : "Multi Text",
+        "height" : 150,
+        "valueType" : "STRING",
+        "isRepeating" : true
+      }, {
+        "xcpId" : "dropdown_list",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "Drop Down",
+        "store" : "xcp.picklist.xcp_taskstatuspiclkist",
+        "valueType" : "xcp.picklist.xcp_taskstatuspiclkist"
+      }, {
+        "xcpId" : "dropdown_list_multi",
+        "xtype" : "xcp_dropdown_list_multi",
+        "fieldLabel" : "Multi Dropdown",
+        "store" : "xcp.picklist.xcp_taskstatuspiclkist",
+        "valueType" : "xcp.picklist.xcp_taskstatuspiclkist",
+        "isRepeating" : true
+      }, 
+      {
+        "xcpId" : "value_display",
+        "xtype" : "xcp_value_display",
+        "fieldLabel" : "Single Value",
+        "valueType" : "STRING",
+        "isRepeating" : false
+        
+      }, {
+        "xcpId" : "value_display1",
+        "xtype" : "xcp_value_display",
+        "fieldLabel" : "Multi value",
+        "valueType" : "STRING",
+        "isRepeating" : true,
+        "repeatingAttributeFormat" : {
+          "xtype" : "xcp_repeating_attribute_formatter",
+          "separatorStyle" : "NEWLINE"
+        }
+      } ]
+    }, {
+      "xcpId" : "columnvbox1",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5"
+    } ]
+  } ]
+}
