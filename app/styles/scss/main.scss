@@ -1,12 +1,57 @@
- .pageWrap{
-    background: #fff;
-    padding: 8px;
+@import "compass/css3";
+
+BODY.x-border-layout-ct{
+	background: #fff;
+
+}
+
+.thm-header{
+	@include background-image(linear-gradient(#333 0%, #444 100%));
+	padding: 8px;
+}
+
+.thm-header .x-box-item{
+	color: #DDD;
+	font-size: 16px;
+}
+
+.thm-pl-ctnr{
+    background: #444;
+    border-right: 1px solid #999;
+    padding-top: 8px;
+}
+
+.thm-pl-ctnr .x-panel-body{
+	border: none;
+	border-bottom: 1px solid #393939;
+}
+
+.thm-pl-ctnr .x-panel-header-text{
+	color: #fff;
+	padding-left: 6px;
+	//font-size: 14px;
+	font-weight: normal;
+	padding-top: 15px;
+
+}
+
+.pageWrap{
+    //background: #555;
+    color: #AAA;
+    padding: 8px 8px 8px 16px;
+    border-top: 1px solid #4E4E4E;
+	border-bottom: 1px solid #393939;
+}
+.pageWrap:first-child{
+	//border-top: 1px solid #999;
+
 }
 
 .pageWrap:hover{
-    background: #39C;
+    background: #4A4A4A;
 }
 
-.pageSelector{
-    background: #fff;
+.pageWrap.x-item-selected{
+    @include background-image(linear-gradient(#333 0%, #3F3F3F 100%)); 
 }
+

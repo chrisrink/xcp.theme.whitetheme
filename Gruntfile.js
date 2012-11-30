@@ -37,7 +37,7 @@ module.exports = function( grunt ) {
           css_dir: 'app/js/resources/css',
           sass_dir: 'app/styles/scss',
           images_dir: 'app/styles/scss/images',
-          javascripts_dir: 'temp/scripts',
+          javascripts_dir: 'app/scripts',
           force: true
         }
       }

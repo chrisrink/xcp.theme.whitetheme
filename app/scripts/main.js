@@ -1,79 +1,49 @@
-Ext.onReady(function(){
 
-            var pageStore =  Ext.create('Ext.data.Store', {
-                fields: [
-                    {name: 'name',  type: 'string'},
-                    {name: 'url',   type: 'string'}
-                ],
-                data : [
-                    {
-                        name: 'Application Master',
-                        url: 'scripts/pages/app_master.json'
-                    },
-                    {
-                        name: 'All Reviews',
-                        url: 'scripts/pages/all_reviews.json'
-                    },
-                    {
-                        name: 'New Story',
-                        url: 'scripts/pages/new_Story.json'
-                    }
-                ],
-                autoload:true
-            });
-
-            var pageTpl = new Ext.XTemplate(
-                '<tpl for=".">',
-                    '<div style="margin-bottom: 10px;" class="pageWrap" >',
-                      '<span>{name}</span>',
-                      '</div>',
-                '</tpl>'
-            );
-
-            var updatePage = function(response){
-               
-                var text = response.responseText;
-                var cmp = JSON.parse(text);
-                if(content.childEls.length !==0){
-                    content.removeAll();
+Ext.application({
+    name: 'theme',
+    appFolder: '/scripts/theme',
+    appProperty: 'app',
+    stores: ["Pages","Themes"],
+    views: ["PageContainer","PageList","ThemeHeader"],
+    controllers: ["PageController"],
+    refs:[
+        {
+            ref: 'ThemeSelector',
+            selector: 'themeheader combo'
+        }
+    ],
+    defaultTheme: 'white',
+   
+    launch: function() {
+        var params = Ext.urlDecode(location.search.substr(1));
+        var pages = this.getStore('Pages');
+        var themes = this.getStore('Themes');
+        this.theme = (params.theme === undefined) ? this.defaultTheme : params.theme ;
+        
+        Ext.create('Ext.container.Viewport', {
+            layout: 'border',
+            items: [
+                {
+                    xtype: 'pagelist',
+                    region: 'west',
+                    store: pages
+                },
+                {
+                    xtype: 'pagecontainer',
+                    region: 'center'
+                },
+                {
+                    xtype: 'themeheader',
+                    region: 'north',
+                    theme: this.theme
                 }
-
-                content.add(cmp);
-                content.setLoading(false);
-
-            };
-
-            var content =  Ext.create('Ext.panel.Panel',{
-                region:'center',
-                html: "Loading",
-                layout: "fit"
-            });
-            var vp = Ext.create('Ext.container.Viewport',{
-                layout:'border',
-                cls: 'xcp-viewport',
-                items: [
-                    {
-                        region: 'west',
-                        xtype: 'dataview',
-                        store: pageStore,
-                        tpl: pageTpl,
-                        itemSelector: 'div.pageWrap',
-                        width:250,
-                        cls: 'pageSelector',
-                        listeners: {
-                            itemclick: {
-                                fn: function( me, record, item, index, e, eOpts ){
-                                    content.setLoading(true);
-                                    Ext.Ajax.request({
-                                        url: record.get("url"),
-                                        success: updatePage
-                                    });
-                                }
-                            }
-                        }
-                    },
-                   content
-                ]
-            });
-
+            ]
         });
+        theme.app =  this;
+        if(this.theme !== this.defaultTheme){
+            this.getController("PageController").onThemeSelected(null,this.theme,this.defaultTheme);
+        }
+    }
+
+
+});

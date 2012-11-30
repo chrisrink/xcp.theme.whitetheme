@@ -96,6 +96,7 @@ H4{
 .x-toolbar.x-toolbar-xcp-nav-toolbar {
 	background-image: none;
 	background-color: #444444;
+	//background-color: blue;
 	background-image: none;
 }
 
@@ -505,6 +506,16 @@ TABLE.x-form-item td{
 	}
 }
 
+//MultiValue Lists
+
+.xcp_multivalueinput .x-grid-body{
+	border: 1px solid #D7D7D7;
+	border-top-width: 0;
+}
+
+.xcp_multivalueinput_toolbar{
+	border-bottom-width: 0 !important;
+}
 
 
 

@@ -1,15 +1,63 @@
-/* line 1, ../../../styles/scss/main.scss */
-.pageWrap {
+/* line 3, ../../../styles/scss/main.scss */
+BODY.x-border-layout-ct {
   background: #fff;
+}
+
+/* line 8, ../../../styles/scss/main.scss */
+.thm-header {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #444444));
+  background-image: -webkit-linear-gradient(#333333 0%, #444444 100%);
+  background-image: -moz-linear-gradient(#333333 0%, #444444 100%);
+  background-image: -o-linear-gradient(#333333 0%, #444444 100%);
+  background-image: linear-gradient(#333333 0%, #444444 100%);
   padding: 8px;
 }
 
-/* line 6, ../../../styles/scss/main.scss */
-.pageWrap:hover {
-  background: #39C;
+/* line 13, ../../../styles/scss/main.scss */
+.thm-header .x-box-item {
+  color: #DDD;
+  font-size: 16px;
 }
 
-/* line 10, ../../../styles/scss/main.scss */
-.pageSelector {
-  background: #fff;
+/* line 18, ../../../styles/scss/main.scss */
+.thm-pl-ctnr {
+  background: #444;
+  border-right: 1px solid #999;
+  padding-top: 8px;
+}
+
+/* line 24, ../../../styles/scss/main.scss */
+.thm-pl-ctnr .x-panel-body {
+  border: none;
+  border-bottom: 1px solid #393939;
+}
+
+/* line 29, ../../../styles/scss/main.scss */
+.thm-pl-ctnr .x-panel-header-text {
+  color: #fff;
+  padding-left: 6px;
+  font-weight: normal;
+  padding-top: 15px;
+}
+
+/* line 38, ../../../styles/scss/main.scss */
+.pageWrap {
+  color: #AAA;
+  padding: 8px 8px 8px 16px;
+  border-top: 1px solid #4E4E4E;
+  border-bottom: 1px solid #393939;
+}
+
+/* line 50, ../../../styles/scss/main.scss */
+.pageWrap:hover {
+  background: #4A4A4A;
+}
+
+/* line 54, ../../../styles/scss/main.scss */
+.pageWrap.x-item-selected {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #3f3f3f));
+  background-image: -webkit-linear-gradient(#333333 0%, #3f3f3f 100%);
+  background-image: -moz-linear-gradient(#333333 0%, #3f3f3f 100%);
+  background-image: -o-linear-gradient(#333333 0%, #3f3f3f 100%);
+  background-image: linear-gradient(#333333 0%, #3f3f3f 100%);
 }
