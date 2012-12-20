@@ -1,8 +1,8 @@
-Manifest-Version: 1.0
+Manifest-Version: 1.1
 Theme-Name: White Theme
 Created-By: EMC
 Theme-Sass-File: white-theme.scss
 Bundle-Name: WhiteTheme
 Bundle-SymbolicName: WhiteTheme
-Bundle-Version: 1.0
+Bundle-Version: 1.1
 NAMESPACE: thm

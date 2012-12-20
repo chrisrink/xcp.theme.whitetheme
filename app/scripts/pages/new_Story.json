@@ -1,12 +1,12 @@
 {
   "padding": "0",
   "border": false,
-  "pageTitle": "${_UI_Page_doc_create_a_new_story_title}",
+  "pageTitle": "Form Example",
   "xtype": "xcp_form",
   "items": [{
     "xcpId": "rich_text",
     "xtype": "xcp_rich_text",
-    "html": "{_UI_Page_doc_create_a_new_story_rich_text_html}"
+    "html": "Form Example"
   }, {
     "xcpId": "column_box",
     "xtype": "xcp_column_box",
@@ -30,14 +30,14 @@
       "items": [{
         "xcpId": "sname",
         "xtype": "xcp_text_input",
-        "fieldLabel": "{_UI_Page_doc_create_a_new_story_sname_fieldLabel}",
-        "emptyText": "{_UI_Page_doc_create_a_new_story_sname_emptyText}",
+        "fieldLabel": "Textfield",
+        "emptyText": "This is placeholder text",
         "hstretch": true,
         "valueType": "STRING"
       }, {
         "xcpId": "team",
         "xtype": "xcp_dropdown_list",
-        "fieldLabel": "{_UI_Page_doc_create_a_new_story_team_fieldLabel}",
+        "fieldLabel": "Dropdown field",
         "valueField": "id",
         "displayField": "object_name",
         "store": "team_administration",
@@ -45,15 +45,13 @@
       }, {
         "xcpId": "iteration",
         "xtype": "xcp_dropdown_list",
-        "fieldLabel": "{_UI_Page_doc_create_a_new_story_iteration_fieldLabel}",
+        "fieldLabel": "Dropdown field",
         "store": "xcp.picklist.doc_iteration",
         "valueType": "xcp.picklist.doc_iteration"
-
-
       }, {
         "xcpId": "checkbox",
         "xtype": "xcp_checkbox",
-        "fieldLabel": "{_UI_Page_doc_create_a_new_story_checkbox_fieldLabel}",
+        "fieldLabel": "Checkbox",
         "valueType": "BOOLEAN"
       }]
     }]
@@ -79,7 +77,7 @@
       "items": [{
         "xcpId": "button",
         "xtype": "xcp_button",
-        "text": "{_UI_Page_doc_create_a_new_story_button_text}"
+        "text": "Submit"
       }]
     }]
   }]

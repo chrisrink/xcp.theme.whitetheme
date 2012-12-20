@@ -1,0 +1,239 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "Buttons",
+  "xtype" : "xcp_form",
+  "items" : [ {
+    "xcpId" : "rich_text",
+    "xtype" : "xcp_rich_text",
+    "html" : "Button"
+  }, {
+    "xcpId" : "button",
+    "xtype" : "xcp_button",
+    "text" : "Button",
+    "action" : {
+      "redirectStyle" : "current"
+    }
+  }, {
+    "xcpId" : "button2",
+    "xtype" : "xcp_button",
+    "text" : "Button",
+    "disabled": true,
+    "action" : {
+      "redirectStyle" : "current"
+    }
+  }, {
+    "xcpId" : "button1",
+    "xtype" : "xcp_button",
+    "text" : "Button",
+    "action" : {
+      "redirectStyle" : "current"
+    }
+  }, {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "button3",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button4",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "disabled": true,
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button5",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box1",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox1",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "items" : [ {
+        "xcpId" : "button6",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button7",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "disabled": true,
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button8",
+        "xtype" : "xcp_button",
+       "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box2",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "cls" : "cta",
+    "items" : [ {
+      "xcpId" : "columnvbox2",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "items" : [ {
+        "xcpId" : "button10",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button9",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "disabled": true,
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button14",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      } ]
+    }, {
+      "xcpId" : "columnvbox3",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "button11",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button13",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "disabled": true,
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button12",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box3",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "cls" : "flat",
+    "items" : [ {
+      "xcpId" : "columnvbox4",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "items" : [ {
+        "xcpId" : "button15",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button16",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      }, {
+        "xcpId" : "button17",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      } ]
+    } ]
+  } ]
+}

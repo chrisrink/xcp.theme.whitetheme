@@ -1,0 +1,106 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "Form Panel",
+  "xtype" : "xcp_form",
+  "items" : [ {
+  
+    "xcpId" : "column_box2",
+    "xtype" : "xcp_column_box",
+    "title" : "Form Panel",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox2",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "sname",
+        "xtype" : "xcp_text_input",
+        "fieldLabel" : "TextField",
+        "emptyText" : "Placeholder text",
+        "hstretch" : true,
+        "valueType" : "STRING"
+      }, {
+        "xcpId" : "team",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "Dropdown field",
+        "valueField" : "id",
+        "displayField" : "object_name",
+        "store" : "team_administration",
+        "valueType" : "STRING",
+        "plugins" : [ {
+          "ptype" : "xcp_expression_properties",
+          "expression" : [ {
+            "propertyId" : "value",
+            "setterFunName" : "setValue",
+            "etype" : "doc_create_story_with_p_team_value_1"
+          } ]
+        } ]
+      }, {
+        "xcpId" : "iteration",
+        "xtype" : "xcp_dropdown_list",
+        "fieldLabel" : "Dropdown field",
+        "store" : "xcp.picklist.doc_iteration",
+        "valueType" : "xcp.picklist.doc_iteration",
+        "plugins" : [ {
+          "ptype" : "xcp_expression_properties",
+          "expression" : [ {
+            "propertyId" : "value",
+            "setterFunName" : "setValue",
+            "etype" : "doc_create_story_with_p_iteration_value_1"
+          } ]
+        } ]
+      }, {
+        "xcpId" : "checkbox",
+        "xtype" : "xcp_checkbox",
+        "fieldLabel" : "Checkbox",
+        "valueType" : "BOOLEAN"
+      }, {
+        "xcpId" : "column_box",
+        "xtype" : "xcp_column_box",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "0",
+        "layout" : "xcp_columnbox",
+        "cls" : "button-bar",
+        "items" : [ {
+          "xcpId" : "columnvbox",
+          "xtype" : "xcp_columnhbox",
+          "orientation" : "Horizontal",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "defaultMargins" : "0 5 0 0",
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "items" : [ {
+            "xcpId" : "button1",
+            "xtype" : "xcp_button",
+            "text" : "Submit",
+            "action" : {
+              "redirectStyle" : "current"
+            }
+          }, {
+            "xcpId" : "button",
+            "xtype" : "xcp_button",
+            "text" : "Cancel",
+            "actionInstanceId" : "create_story_initiate_staless_ds"
+          } ]
+        } ]
+      } ]
+    } ]
+  } ]
+}

@@ -13,12 +13,24 @@ Ext.define('theme.store.Pages', {
             url: 'scripts/pages/all_reviews.json'
         },
         {
-            name: 'New Story',
+            name: 'Simple Form',
             url: 'scripts/pages/new_Story.json'
+        },
+         {
+            name: 'Form Panel',
+            url: 'scripts/pages/doc_create_story_with_p.json'
         },
         {
             name: 'Form Alignment',
             url: 'scripts/pages/form_alignment.json'
+        },
+         {
+            name: 'Columns',
+            url: 'scripts/pages/doc_columnbox.json'
+        },
+         {
+            name: 'buttons',
+            url: 'scripts/pages/doc_buttons.json'
         }
     ],
     autoload: true,

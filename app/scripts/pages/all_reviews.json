@@ -1,7 +1,7 @@
 {
   "padding" : "0",
   "border" : false,
-  "pageTitle" : "{_UI_Page_doc_all_reviews_title}",
+  "pageTitle" : "Grid Widget",
   "xtype" : "xcp_form",
   "items" : [  {
     "xcpId" : "column_box",
@@ -25,7 +25,7 @@
       "items" : [ {
         "xcpId" : "rich_text",
         "xtype" : "xcp_rich_text",
-        "html" : "{_UI_Page_doc_all_reviews_rich_text_html}"
+        "html" : "Label"
       } ]
     } ]
   }, {
@@ -39,7 +39,7 @@
     "columns" : [ {
       "xcpId" : "results_list_page_link_column",
       "xtype" : "xcp_results_list_page_link_column",
-      "text" : "{_UI_Page_doc_all_reviews_results_list_page_link_column_text}",
+      "text" : "Column",
       "width" : 150,
       "dataIndex" : "task_performer_name",
       "valueType" : "STRING",
@@ -49,7 +49,7 @@
     }, {
       "xcpId" : "results_list_column6",
       "xtype" : "xcp_results_list_column",
-      "text" : "{_UI_Page_doc_all_reviews_results_list_column6_text}",
+      "text" : "Column",
       "width" : 150,
       "dataIndex" : "task_subject",
       "valueType" : "STRING",
@@ -59,7 +59,7 @@
     }, {
       "xcpId" : "results_list_column7",
       "xtype" : "xcp_results_list_column",
-      "text" : "{_UI_Page_doc_all_reviews_results_list_column7_text}",
+      "text" : "Column",
       "width" : 150,
       "dataIndex" : "task_due_date",
       "valueType" : "DATETIME",
@@ -75,40 +75,10 @@
     }, {
       "xcpId" : "results_list_column8",
       "xtype" : "xcp_results_list_column",
-      "text" : "{_UI_Page_doc_all_reviews_results_list_column8_text}",
+      "text" : "Column",
       "width" : 150,
       "dataIndex" : "packagesstoryobject_name",
       "valueType" : "STRING",
-      "isRepeating" : false,
-      "sortable" : false,
-      "menuDisabled" : true
-    }, {
-      "xcpId" : "results_list_column9",
-      "xtype" : "xcp_results_list_column",
-      "text" : "{_UI_Page_doc_all_reviews_results_list_column9_text}",
-      "width" : 150,
-      "dataIndex" : "packagesstorytitle",
-      "valueType" : "STRING",
-      "isRepeating" : false,
-      "sortable" : false,
-      "menuDisabled" : true
-    }, {
-      "xcpId" : "results_list_column10",
-      "xtype" : "xcp_results_list_column",
-      "text" : "{_UI_Page_doc_all_reviews_results_list_column10_text}",
-      "width" : 150,
-      "dataIndex" : "packagesstoryiteration",
-      "valueType" : "xcp.picklist.doc_iteration",
-      "isRepeating" : false,
-      "sortable" : false,
-      "menuDisabled" : true
-    }, {
-      "xcpId" : "results_list_column11",
-      "xtype" : "xcp_results_list_column",
-      "text" : "{_UI_Page_doc_all_reviews_results_list_column11_text}",
-      "width" : 150,
-      "dataIndex" : "packagesstorystatus",
-      "valueType" : "xcp.picklist.doc_status",
       "isRepeating" : false,
       "sortable" : false,
       "menuDisabled" : true

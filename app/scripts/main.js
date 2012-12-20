@@ -21,6 +21,7 @@ Ext.application({
         this.theme = (params.theme === undefined) ? this.defaultTheme : params.theme ;
         
         Ext.create('Ext.container.Viewport', {
+            cls: 'xcp-viewport',
             layout: 'border',
             items: [
                 {

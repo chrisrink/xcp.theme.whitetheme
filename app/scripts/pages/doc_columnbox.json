@@ -1,0 +1,452 @@
+{
+  "padding" : "0",
+  "border" : false,
+  "pageTitle" : "${_UI_Page_doc_columnbox_title}",
+  "xtype" : "xcp_form",
+  "items" : [ {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "title" : "Column Test",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "rich_text",
+        "xtype" : "xcp_rich_text",
+        "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box1",
+    "xtype" : "xcp_column_box",
+    "title" : "${_UI_Page_doc_columnbox_column_box1_title}",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox1",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "rich_text3",
+        "xtype" : "xcp_rich_text",
+        "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+      } ]
+    }, {
+      "xcpId" : "columnvbox2",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "rich_text2",
+        "xtype" : "xcp_rich_text",
+        "html" : "${_UI_Page_doc_columnbox_rich_text2_html}"
+      } ]
+    }, {
+      "xcpId" : "columnvbox3",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "rich_text1",
+        "xtype" : "xcp_rich_text",
+        "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box2",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox4",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "column_box3",
+        "xtype" : "xcp_column_box",
+        "title" : "${_UI_Page_doc_columnbox_column_box3_title}",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox6",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "rich_text4",
+            "xtype" : "xcp_rich_text",
+             "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+          } ]
+        } ]
+      }, {
+        "xcpId" : "column_box4",
+        "xtype" : "xcp_column_box",
+        "title" : "${_UI_Page_doc_columnbox_column_box4_title}",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox5",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "rich_text7",
+            "xtype" : "xcp_rich_text",
+             "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+          } ]
+        }, {
+          "xcpId" : "columnvbox7",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "rich_text6",
+            "xtype" : "xcp_rich_text",
+             "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+          } ]
+        }, {
+          "xcpId" : "columnvbox8",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "rich_text5",
+            "xtype" : "xcp_rich_text",
+             "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+          } ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box5",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox9",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "column_box6",
+        "xtype" : "xcp_column_box",
+        "title" : "${_UI_Page_doc_columnbox_column_box6_title}",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox11",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "rich_text8",
+            "xtype" : "xcp_rich_text",
+            "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+          } ]
+        } ]
+      } ]
+    }, {
+      "xcpId" : "columnvbox10",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "column_box7",
+        "xtype" : "xcp_column_box",
+        "title" : "${_UI_Page_doc_columnbox_column_box7_title}",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox12",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "rich_text9",
+            "xtype" : "xcp_rich_text",
+            "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+          } ]
+        } ]
+      } ]
+    }, {
+      "xcpId" : "columnvbox13",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "column_box8",
+        "xtype" : "xcp_column_box",
+        "title" : "${_UI_Page_doc_columnbox_column_box8_title}",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox14",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "rich_text10",
+            "xtype" : "xcp_rich_text",
+             "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+          } ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "xcpId" : "column_box9",
+    "xtype" : "xcp_column_box",
+    "title" : "${_UI_Page_doc_columnbox_column_box9_title}",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnvbox15",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "width" : "25%",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5"
+    }, {
+      "xcpId" : "columnvbox16",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "column_box10",
+        "xtype" : "xcp_column_box",
+        "title" : "${_UI_Page_doc_columnbox_column_box10_title}",
+        "collapsible" : false,
+        "collapsed" : false,
+        "collapseFirst" : true,
+        "border" : false,
+        "defaultMargins" : "5",
+        "layout" : "xcp_columnbox",
+        "items" : [ {
+          "xcpId" : "columnvbox17",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5",
+          "items" : [ {
+            "xcpId" : "column_box11",
+            "xtype" : "xcp_column_box",
+            "title" : "${_UI_Page_doc_columnbox_column_box11_title}",
+            "collapsible" : false,
+            "collapsed" : false,
+            "collapseFirst" : true,
+            "border" : false,
+            "defaultMargins" : "5",
+            "layout" : "xcp_columnbox",
+            "items" : [ {
+              "xcpId" : "columnvbox19",
+              "xtype" : "xcp_columnvbox",
+              "orientation" : "Vertical",
+              "overflow_x" : "hidden",
+              "labelWidth" : 150,
+              "labelAlign" : "left",
+              "halign" : "left",
+              "valign" : "top",
+              "defaultMargins" : "5",
+              "items" : [ {
+                "xcpId" : "rich_text11",
+                "xtype" : "xcp_rich_text",
+                "html" : "Bacon ipsum dolor sit amet jerky sausage andouille pork venison pork chop. Andouille pastrami biltong shoulder pork chop, bresaola sausage turducken ribeye ball tip drumstick flank frankfurter tenderloin. Tenderloin capicola tri-tip shankle hamburger. Shankle ham hock meatloaf, bresaola pig swine doner pork brisket ball tip beef hamburger andouille beef ribs bacon. Doner sausage filet mignon sirloin corned beef shoulder."
+              } ]
+            }, {
+              "xcpId" : "columnvbox20",
+              "xtype" : "xcp_columnvbox",
+              "orientation" : "Vertical",
+              "width" : "25%",
+              "overflow_x" : "hidden",
+              "labelWidth" : 150,
+              "labelAlign" : "left",
+              "halign" : "left",
+              "valign" : "top",
+              "defaultMargins" : "5"
+            } ]
+          } ]
+        }, {
+          "xcpId" : "columnvbox18",
+          "xtype" : "xcp_columnvbox",
+          "orientation" : "Vertical",
+          "width" : "25%",
+          "overflow_x" : "hidden",
+          "labelWidth" : 150,
+          "labelAlign" : "left",
+          "halign" : "left",
+          "valign" : "top",
+          "defaultMargins" : "5"
+        } ]
+      } ]
+    } ]
+  }, {
+    "xcpId" : "button",
+    "xtype" : "xcp_button",
+    "text" : "Button",
+    "action" : {
+      "redirectStyle" : "current"
+    }
+  }, {
+    "xcpId" : "column_box12",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "cls" : "cta",
+    "items" : [ {
+      "xcpId" : "columnvbox21",
+      "xtype" : "xcp_columnvbox",
+      "orientation" : "Vertical",
+      "overflow_x" : "hidden",
+      "labelWidth" : 150,
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "top",
+      "defaultMargins" : "5",
+      "items" : [ {
+        "xcpId" : "button1",
+        "xtype" : "xcp_button",
+        "text" : "Button",
+        "action" : {
+          "redirectStyle" : "current"
+        }
+      } ]
+    } ]
+  } ]
+}

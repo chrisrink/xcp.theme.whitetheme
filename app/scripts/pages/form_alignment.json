@@ -5,6 +5,7 @@
   "xtype" : "xcp_form",
   "items" : [ {
     "xcpId" : "column_box",
+    "width" : 500,
     "xtype" : "xcp_column_box",
     "collapsible" : false,
     "collapsed" : false,
@@ -26,6 +27,7 @@
         "xcpId" : "checkbox",
         "xtype" : "xcp_checkbox",
         "fieldLabel" : "Checkbox",
+        "checked": true,
         "boxLabel" : "checkbox",
         "valueType" : "BOOLEAN"
       }, {
@@ -62,34 +64,38 @@
         "mouseWheelEnabled" : false,
         "autoStripChars" : true,
         "hstretch" : true,
-        "valueType" : "STRING"
+        "valueType" : "STRING",
+        "value" : 187
       }, {
         "xcpId" : "multivalue_number_input",
         "xtype" : "xcp_multivalue_number_input",
         "fieldLabel" : "Multi Number",
         "height" : 150,
         "valueType" : "FLOAT",
-        "isRepeating" : true
+        "isRepeating" : true,
+        "value": [2,4,6,8]
       }, {
         "xcpId" : "text_area",
         "xtype" : "xcp_text_area",
         "fieldLabel" : "Text Area",
         "hstretch" : true,
         "valueType" : "STRING",
-        "height" : 100
+        "height" : 100,
+        "value": "Bacon ipsum dolor sit amet shank corned beef tri-tip frankfurter chicken pork chop. Corned beef shoulder kielbasa pork venison, chuck jerky boudin pork chop sirloin doner. Filet mignon t-bone ball tip flank bacon pork, spare ribs ground round beef pork chop sausage doner pork belly jowl turkey. Jerky fatback meatball jowl biltong sausage. T-bone corned beef tri-tip tail ball tip shankle filet mignon shoulder andouille cow chuck strip steak. Short loin leberkas shoulder shankle pork loin, drumstick frankfurter ball tip. Tenderloin turducken hamburger bresaola, fatback pork loin capicola short ribs ball tip turkey shoulder."
       }, {
         "xcpId" : "text_input",
         "xtype" : "xcp_text_input",
         "fieldLabel" : "Text",
         "hstretch" : true,
-        "valueType" : "STRING"
+        "valueType" : "STRING","value": "Bacon ipsum dolor sit amet shank corned beef"
       }, {
         "xcpId" : "multivalue_text_input",
         "xtype" : "xcp_multivalue_text_input",
         "fieldLabel" : "Multi Text",
         "height" : 150,
         "valueType" : "STRING",
-        "isRepeating" : true
+        "isRepeating" : true,
+        "value": "Bacon ipsum dolor sit amet shank corned beef"
       }, {
         "xcpId" : "dropdown_list",
         "xtype" : "xcp_dropdown_list",
@@ -109,7 +115,8 @@
         "xtype" : "xcp_value_display",
         "fieldLabel" : "Single Value",
         "valueType" : "STRING",
-        "isRepeating" : false
+        "isRepeating" : false,
+        "value": "Bacon ipsum dolor sit amet shank corned beef"
         
       }, {
         "xcpId" : "value_display1",
@@ -120,18 +127,9 @@
         "repeatingAttributeFormat" : {
           "xtype" : "xcp_repeating_attribute_formatter",
           "separatorStyle" : "NEWLINE"
-        }
+        },
+        "value": ["Bacon", "shank","corned beef"]
       } ]
-    }, {
-      "xcpId" : "columnvbox1",
-      "xtype" : "xcp_columnvbox",
-      "orientation" : "Vertical",
-      "overflow_x" : "hidden",
-      "labelWidth" : 150,
-      "labelAlign" : "left",
-      "halign" : "left",
-      "valign" : "top",
-      "defaultMargins" : "5"
     } ]
   } ]
 }

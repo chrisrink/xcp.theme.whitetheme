@@ -1,0 +1,662 @@
+3.2.2 (Media Mark)
+f7a6d7a127c6579deb9ade04e492e411c560cf62
+o:Sass::Tree::RootNode
+:@template"≥-/**
+*  This file contains all the xcp variables that is modifiable by the theme editor
+*/
+
+/** Default font **/
+$xcp-default-font-size: 12px;
+$xcp-default-font-family: Helvetica, Arial, sans-serif !default;
+
+/** widget selection color **/
+$xcp-widget-selection-color: #E1F0F7;
+$xcp-widget-hover-color: #F0F7FB;
+
+//xcp variables:
+/** Widget Label Text **/
+$xcp-widget-label-text-font-family: $xcp-default-font-family;
+$xcp-widget-label-text-font-size: $xcp-default-font-size;
+$xcp-widget-label-text-font-weight: normal;
+$xcp-widget-label-text-font-color: #363636;
+
+
+/** Widget Value Text **/
+$xcp-widget-value-text-font-family: $xcp-default-font-family;
+$xcp-widget-value-text-font-size: $xcp-default-font-size;
+$xcp-widget-value-text-font-weight: normal;
+$xcp-widget-value-text-font-color: #363636;
+$xcp-widget-empty-color: #959595;
+
+/** Widget Title Text **/
+$xcp-widget-title-text-font-family: $xcp-default-font-family;
+$xcp-widget-title-text-font-size: $xcp-default-font-size;
+$xcp-widget-title-text-font-weight: bold;
+$xcp-widget-title-text-font-color: #707070;
+
+/** Widget Button Text **/
+$xcp-widget-button-text-font-family: $xcp-default-font-family;
+$xcp-widget-button-text-font-size: $xcp-default-font-size;
+$xcp-widget-button-text-font-weight: bold;
+$xcp-widget-button-text-font-color: #FFFFFF;
+$xcp-widget-button-text-font-color-over: #FFFFFF;
+$xcp-widget-button-text-font-color-focus: #FFFFFF;
+$xcp-widget-button-text-font-color-pressed: #FFFFFF;
+$xcp-widget-button-text-font-color-disabled: #FFFFFF;
+
+/** Link Text **/
+$xcp-link-text-normal-style:  none;
+$xcp-link-text-normal-color: #3399CC;
+$xcp-link-text-hover-style: none;
+$xcp-link-text-hover-color: #3399CC;
+
+$xcp-link-text-font-size: 13px;
+$xcp-link-text-font-weight: bold;
+$xcp-link-text-font-color: #3399CC;
+$xcp-link-text-font-family: $xcp-default-font-family;
+
+
+/** Widget Interior **/
+$xcp-widget-interior-background-color: #FFFFFF;
+$xcp-widget-field-padding: 2px 3px;
+$xcp-widget-field-background-image: 'form/text-bg-trans.png';
+
+/** Widget Border **/
+$xcp-widget-border-color: #D7D7D7;
+$xcp-widget-border-color-focus: #959595;
+$xcp-widget-border-shadow: false;
+$xcp-widget-frame-border-radius: 0px;
+$xcp-widget-field-background-color-focus: #E1F0F7;
+
+
+/** Widget Header **/
+$xcp-widget-header-color: #EEEEEE;
+$xcp-widget-header-border-color: #707070;
+$xcp-widget-header-background-color: null;
+$xcp-widget-header-background-gradient: none;
+$xcp-widget-use-gradients: true;
+$xcp-widget-header-padding: 5px 0px;
+
+/** ColumnBox Header **/
+$xcp-columnbox-header-text-font-size: 16px;
+$xcp-columnbox-header-text-font-weight: bold;
+$xcp-columnbox-header-text-font-color: #363636;
+
+
+/** Widget Button **/
+$xcp-widget-button-color: #3399CC;
+$xcp-widget-button-color-over: adjust-color($xcp-widget-button-color, $saturation: 10%, $lightness: 10%);
+$xcp-widget-button-color-focus: $xcp-widget-button-color;
+$xcp-widget-button-color-pressed: adjust-color($xcp-widget-button-color, $saturation: -5%, $lightness: -5%);
+$xcp-widget-button-color-disabled: #D7D7D7;
+
+$xcp-widget-button-border-color-focus: #FF9900;
+
+$xcp-widget-button-use-gradients: false;
+$xcp-widget-button-radius: 0px;
+$xcp-widget-button-border-width: 0px;
+$xcp-widget-button-padding: 3px 24px;
+$xcp-widget-button-margin: 0px 10px;
+$xcp-widget-button-icon-size: 16px;
+
+
+/** Widget Panel **/
+$xcp-widget-panel-color: #C3D2E1;
+$xcp-widget-panel-use-gradients: true;
+
+/** Widget Labels **/
+$xcp-widget-label-position: left;
+$xcp-widget-label-width: 150;
+$xcp-widget-label-padding: 5;
+//$xcp-widget-label-separator:
+
+/** List Selection **/
+$xcp-list-item-selection-color:  change-color($xcp-widget-panel-color, $saturation: 20%, $lightness: 85%);
+$xcp-list-item-hover-color:  change-color($xcp-widget-panel-color, $saturation: 20%, $lightness: 90%);
+
+$xcp-boundlist-item-hover-color: $xcp-widget-hover-color;
+$xcp-boundlist-selected-color: $xcp-widget-selection-color;
+$xcp-boundlist-item-selected-border-style: solid;
+$xcp-boundlist-item-selected-border-color: transparent;
+$xcp-boundlist-item-selected-border-width: 1px;
+
+
+/** Framework Tab **/
+$xcp-app-menu-label-text-font-family: $xcp-default-font-family;
+$xcp-app-menu-label-text-font-size: 14px;
+$xcp-app-menu-label-text-font-weight: bold;
+$xcp-app-menu-label-text-font-color: #40BFFF;
+$xcp-app-menu-label-text-font-color-over: #FFFFFF;
+$xcp-app-menu-label-text-font-color-focus: #FFFFFF;
+$xcp-app-menu-label-text-font-color-pressed: #FFFFFF;
+$xcp-app-menu-label-text-font-color-pressed-over: #3399CC;
+
+/** App Header Background **/
+$xcp-app-header-background: #000000;
+$xcp-app-header-background-gradient-start: #3E3E3E;
+$xcp-app-header-background-gradient-end: #000000;
+$xcp-app-header-background-gradient: color_stops($xcp-app-header-background-gradient-start 0%, $xcp-app-header-background-gradient-end 100%);
+
+/** App Menu Background **/
+$xcp-app-menu-background-color: #5588BB;
+$xcp-app-menu-background-gradient: color_stops(lighten($xcp-app-menu-background-color, 25%), $xcp-app-menu-background-color 50%, darken($xcp-app-menu-background-color, 5%));
+$xcp-app-menu-background-use-gradients: false;
+
+/** App Menu Border **/
+$xcp-app-menu-border: none;
+$xcp-app-menu-border-color: #D7D7D7;
+$xcp-app-menu-border-style: solid round;
+$xcp-app-menu-shadow: false;
+$xcp-app-menu-border-radius: 0px;
+$xcp-app-menu-bottom-border-size: 5px;
+$xcp-app-menu-bottom-border-color: #3399CC;
+$xcp-app-menu-bottom-inner-border-size: 1px;
+$xcp-app-menu-bottom-inner-border-color: #FFFFFF;
+
+/** App Menu button **/
+$xcp-app-menu-button-small-padding: 8px 0 6px 0;
+$xcp-app-menu-button-small-text-padding: 5px;
+$xcp-app-menu-button-background-color: none;
+$xcp-app-menu-button-background-color-over: rgba(#3399CC, .25);
+$xcp-app-menu-button-background-color-focus: $xcp-app-menu-button-background-color-over;
+$xcp-app-menu-button-background-color-pressed: none;
+
+$xcp-app-menu-button-background-gradient-over: none;
+$xcp-app-menu-button-background-gradient-focus: none;
+$xcp-app-menu-button-background-gradient-pressed: none;
+
+/** App Menu Button Border **/
+$xcp-app-menu-button-border: 1px;
+$xcp-app-menu-button-border-color: transparent;
+$xcp-app-menu-button-border-color-over: rgba(#40BFFF, .25);
+
+/** App Menu marker **/
+$xcp-app-menu-marker-color: $xcp-app-menu-bottom-border-color;
+
+
+/** Nav Menu **/
+$xcp-nav-menu-background-color: change-color($xcp-widget-panel-color, $saturation:30%, $lightness: 97%);
+
+
+/** Case Menu **/
+$xcp-case-menu-label-text-font-family: $xcp-default-font-family;
+$xcp-case-menu-label-text-font-size: 14px;
+$xcp-case-menu-label-text-font-weight: bold;
+$xcp-case-menu-label-text-font-color: #5588BB;
+$xcp-case-menu-background-color: #EEEEEE;
+$xcp-case-menu-background-use-gradients: true;
+
+$xcp-case-menu-border-color: #CCCCCC;
+$xcp-case-menu-border-style: solid, round;
+$xcp-case-menu-border-shadow: false;
+
+
+/** Master Background **/
+$xcp-master-background-color: #F0F5F9;
+
+/** Page Background **/
+$xcp-page-background-color: transparent;
+$xcp-page-background-image: 'page/xcpbg_pattern.png';
+
+/** Content Area **/
+$xcp-content-area-margin: 10px;
+$xcp-content-area-background: transparent;
+
+/** Menu, Context Menu **/
+$xcp-menu-body-padding: 0 10px 0 10px;
+$xcp-menu-item-text-padding: 10px 10px 10px 0;
+$xcp_menu_background-color: #FFFFFF;
+$xcp-menu-item-background-over: #3399CC;
+$xcp-menu-separator-border-color: #D7D7D7;
+
+/** Context menu item **/
+$xcp-context-menuitem-label-text-font-family: $xcp-default-font-family;
+$xcp-context-menuitem-label-text-font-size: 11px;
+$xcp-context-menuitem-label-text-font-weight: normal;
+$xcp-context-menuitem-label-text-font-color: #363636;
+$xcp-context-menuitem-label-text-font-color-over: #FFFFFF;
+
+$xcp-window-shadow-color: #FFFFFF;
+
+/** load mask **/
+$xcp-loadmask-opacity: 0.6;
+$xcp-loadmask-backgorund: #FFFFFF;
+
+/** Toolbar **/
+$xcp-toolbar-height: 36px;
+$xcp-toolbar-background-color: $xcp-page-background-color;
+
+//toolbar border
+$xcp-toolbar-border-color: #D7D7D7;
+$xcp-toolbar-border-width-bottom: 1px;
+$xcp-toolbar-border-radius: 0px;
+
+// toolbar separator
+$xcp-toolbar-separator-color: #D7D7D7;
+$xcp-toolbar-separator-highlight-color: #FFFFFF;
+$xcp-toolbar-separator-height: 24px;
+
+// Toolbar button
+$xcp-toolbar-button-border-radius: 0px;
+$xcp-toolbar-button-border-width: 1px;
+
+$xcp-toolbar-button-border-color: transparent;
+$xcp-toolbar-button-border-color-over: rgba(#40BFFF, .25);
+$xcp-toolbar-button-border-color-pressed: #40BFFF;
+$xcp-toolbar-button-border-color-disabled: transparent;
+
+$xcp-toolbar-button-background-color: transparent;
+$xcp-toolbar-button-background-color-over: rgba(#3399CC, .25);
+$xcp-toolbar-button-background-color-over-ie8: #CFEFFF;
+
+$xcp-toolbar-button-background-color-focus: $xcp-toolbar-button-background-color-over;
+$xcp-toolbar-button-background-color-pressed: #3399CC;
+$xcp-toolbar-button-background-color-disabled: transparent;
+
+$xcp-toolbar-button-background-gradient: null;
+$xcp-toolbar-button-background-gradient-over: null;
+$xcp-toolbar-button-background-gradient-focus: null;
+$xcp-toolbar-button-background-gradient-pressed: null;
+$xcp-toolbar-button-background-gradient-disabled: null;
+
+$xcp-toolbar-button-small-icon-size: 16px;
+
+$xcp-toolbar-button-small-padding: 2px 4px;
+
+//Toolbar button text
+$xcp-toolbar-button-text-color: $xcp-widget-label-text-font-color;
+$xcp-toolbar-button-text-color-over: $xcp-widget-label-text-font-color;
+$xcp-toolbar-button-text-color-focus: $xcp-widget-label-text-font-color;
+$xcp-toolbar-button-text-color-pressed: #FFFFFF;
+
+$xcp-toolbar-button-text-font-size: $xcp-widget-value-text-font-size;
+$xcp-toolbar-button-text-font-weight: $xcp-widget-value-text-font-weight;
+$xcp-toolbar-button-text-font-family: $xcp-widget-value-text-font-family;
+
+
+/** tab bar **/
+$xcp-tab-bar-background-color: transparent;
+$xcp-tab-bar-border-color: #959595;
+
+/** tab button **/
+$xcp-header-tab-height: 26px;
+$xcp-header-tab-padding: 5px 10px 5px 10px;
+
+$xcp-header-tab-background: #3399CC;
+$xcp-header-tab-background-inactive: #e1f0f7;
+$xcp-header-tab-background-active: #3399CC;
+$xcp-header-tab-text-shadow-active: rgba(0,0,0,.4) 0 0 5px;
+$xcp-header-tab-background-over: adjust-color($xcp-header-tab-background, $saturation: 10%, $lightness: 10%);
+$xcp-header-tab-text-shadow-over: rgba(0,0,0,.4) 0 0 5px;
+$xcp-header-tab-background-disabled: #D7D7D7;
+$xcp-header-tab-opacity-disabled: .5;
+$xcp-header-tab-font-disabled: #959595;
+$xcp-header-tab-icon-opacity: .5;
+
+$xcp-header-tab-caret-width: 8px;
+$xcp-header-tab-caret-height: 8px;
+$xcp-header-tab-caret-offset: 10px;
+
+/** ToolTip **/
+$xcp-tooltip-background-color: #e1f0f7;
+$xcp-tooltip-padding: 5px;
+$xcp-tooltip-border-color: #D7D7D7;
+
+/** Window **/
+$xcp-window-fill-color: #EEEEEE;
+
+/** Date picker **/
+$xcp-datepicker-border-color: transparent;
+
+$xcp-datepicker-header-background-color: transparent;
+$xcp-datepicker-header-background-gradient: null;
+$xcp-datepicker-header-border-color: #D7D7D7;
+
+$xcp_datepicker-item-hover-background-color: $xcp-widget-hover-color;
+
+$xcp-datepicker-toolbar-button-label-font-size: 11px;
+$xcp-datepicker-th-background-color: #EEEEEE;
+$xcp-datepicker-th-background-gradient: null;
+
+$xcp-datepicker-today-item-border-color: #009900;
+$xcp-datepicker-today-item-background-color: transparant;
+$xcp-datepicker-today-item-selected-background-color: $xcp-widget-selection-color;
+$xcp-datepicker-selected-item-background-color: $xcp-widget-selection-color;
+$xcp-datepicker-selected-item-border-width: 0px;
+$xcp-datepicker-today-selected-item-border-width: 1px;
+
+$xcp-datepicker-selected-item-border-color: transparent;
+
+$xcp-datepicker-footer-background-color: transparent;
+
+$xcp-monthpicker-item-hover-background-color: $xcp-widget-hover-color;
+$xcp-picker-toolbar-button-padding: 3px 19px;
+:@options{ :
+@linei:@has_childrenT:@children[ˇo:Sass::Tree::CommentNode
+:@value["^/**
+*  This file contains all the xcp variables that is modifiable by the theme editor
+*/:
+@type:normal;@;i;
+[ o;
+;["/** Default font **/;;;@;i
+;
+[ o:Sass::Tree::VariableNode:
+@expro:Sass::Script::Number;i:@denominator_units[ ;@;i:@numerator_units["px:@original"	12px;@;i;
+[ :@guarded0:
+@name"xcp-default-font-sizeo;;o:Sass::Script::List	;[o:Sass::Script::String	;"Helvetica;:identifier;@;io;	;"
+Arial;;;@;io;	;"sans-serif;;;@;i;@;i:@separator:
+comma;@;i;
+[ ;"!default;"xcp-default-font-familyo;
+;["#/** widget selection color **/;;;@;i;
+[ o;;o:Sass::Script::Color	;0;@;i:@attrs{	:redi·:
+alphai:
+greeni:	bluei˜;@;i;
+[ ;0;"xcp-widget-selection-coloro;;o;	;0;@;i;{	;i;i; i˜;!i˚;@;i;
+[ ;0;"xcp-widget-hover-coloro;
+;["/*xcp variables: */;:silent;@;i;
+[ o;
+;["/** Widget Label Text **/;;;@;i;
+[ o;;o:Sass::Script::Variable	:@underscored_name"xcp_default_font_family;@;i;"xcp-default-font-family;@;i;
+[ ;0;"&xcp-widget-label-text-font-familyo;;o;#	;$"xcp_default_font_size;@;i;"xcp-default-font-size;@;i;
+[ ;0;"$xcp-widget-label-text-font-sizeo;;o;	;"normal;;;@;i;@;i;
+[ ;0;"&xcp-widget-label-text-font-weighto;;o;	;0;@;i;{	;i;;i; i;;!i;;@;i;
+[ ;0;"%xcp-widget-label-text-font-coloro;
+;["/** Widget Value Text **/;;;@;i;
+[ o;;o;#	;$"xcp_default_font_family;@;i;"xcp-default-font-family;@;i;
+[ ;0;"&xcp-widget-value-text-font-familyo;;o;#	;$"xcp_default_font_size;@;i;"xcp-default-font-size;@;i;
+[ ;0;"$xcp-widget-value-text-font-sizeo;;o;	;"normal;;;@;i;@;i;
+[ ;0;"&xcp-widget-value-text-font-weighto;;o;	;0;@;i;{	;i;;i; i;;!i;;@;i;
+[ ;0;"%xcp-widget-value-text-font-coloro;;o;	;0;@;i;{	;iï;i; iï;!iï;@;i;
+[ ;0;"xcp-widget-empty-coloro;
+;["/** Widget Title Text **/;;;@;i!;
+[ o;;o;#	;$"xcp_default_font_family;@;i";"xcp-default-font-family;@;i";
+[ ;0;"&xcp-widget-title-text-font-familyo;;o;#	;$"xcp_default_font_size;@;i#;"xcp-default-font-size;@;i#;
+[ ;0;"$xcp-widget-title-text-font-sizeo;;o;	;"	bold;;;@;i$;@;i$;
+[ ;0;"&xcp-widget-title-text-font-weighto;;o;	;0;@;i%;{	;iu;i; iu;!iu;@;i%;
+[ ;0;"%xcp-widget-title-text-font-coloro;
+;["/** Widget Button Text **/;;;@;i';
+[ o;;o;#	;$"xcp_default_font_family;@;i(;"xcp-default-font-family;@;i(;
+[ ;0;"'xcp-widget-button-text-font-familyo;;o;#	;$"xcp_default_font_size;@;i);"xcp-default-font-size;@;i);
+[ ;0;"%xcp-widget-button-text-font-sizeo;;o;	;"	bold;;;@;i*;@;i*;
+[ ;0;"'xcp-widget-button-text-font-weighto;;o;	;0;@;i+;{	;iˇ;i; iˇ;!iˇ;@;i+;
+[ ;0;"&xcp-widget-button-text-font-coloro;;o;	;0;@;i,;{	;iˇ;i; iˇ;!iˇ;@;i,;
+[ ;0;"+xcp-widget-button-text-font-color-overo;;o;	;0;@;i-;{	;iˇ;i; iˇ;!iˇ;@;i-;
+[ ;0;",xcp-widget-button-text-font-color-focuso;;o;	;0;@;i.;{	;iˇ;i; iˇ;!iˇ;@;i.;
+[ ;0;".xcp-widget-button-text-font-color-pressedo;;o;	;0;@;i/;{	;iˇ;i; iˇ;!iˇ;@;i/;
+[ ;0;"/xcp-widget-button-text-font-color-disabledo;
+;["/** Link Text **/;;;@;i1;
+[ o;;o;	;"	none;;;@;i2;@;i2;
+[ ;0;"xcp-link-text-normal-styleo;;o;	;0;@;i3;{	;i8;i; iô;!iÃ;@;i3;
+[ ;0;"xcp-link-text-normal-coloro;;o;	;"	none;;;@;i4;@;i4;
+[ ;0;"xcp-link-text-hover-styleo;;o;	;0;@;i5;{	;i8;i; iô;!iÃ;@;i5;
+[ ;0;"xcp-link-text-hover-coloro;;o;;i;[ ;@;i7;["px;"	13px;@;i7;
+[ ;0;"xcp-link-text-font-sizeo;;o;	;"	bold;;;@;i8;@;i8;
+[ ;0;"xcp-link-text-font-weighto;;o;	;0;@;i9;{	;i8;i; iô;!iÃ;@;i9;
+[ ;0;"xcp-link-text-font-coloro;;o;#	;$"xcp_default_font_family;@;i:;"xcp-default-font-family;@;i:;
+[ ;0;"xcp-link-text-font-familyo;
+;["/** Widget Interior **/;;;@;i=;
+[ o;;o;	;0;@;i>;{	;iˇ;i; iˇ;!iˇ;@;i>;
+[ ;0;")xcp-widget-interior-background-coloro;;o;	;[o;;i;[ ;@;i?;["px;"2pxo;;i;[ ;@;i?;["px;"3px;@;i?;:
+space;@;i?;
+[ ;0;"xcp-widget-field-paddingo;;o;	;"form/text-bg-trans.png;:string;@;i@;@;i@;
+[ ;0;"&xcp-widget-field-background-imageo;
+;["/** Widget Border **/;;;@;iB;
+[ o;;o;	;0;@;iC;{	;i◊;i; i◊;!i◊;@;iC;
+[ ;0;"xcp-widget-border-coloro;;o;	;0;@;iD;{	;iï;i; iï;!iï;@;iD;
+[ ;0;""xcp-widget-border-color-focuso;;o:Sass::Script::Bool;F;@;iE;@;iE;
+[ ;0;"xcp-widget-border-shadowo;;o;;i ;[ ;@;iF;["px;"0px;@;iF;
+[ ;0;"#xcp-widget-frame-border-radiuso;;o;	;0;@;iG;{	;i·;i; i;!i˜;@;iG;
+[ ;0;",xcp-widget-field-background-color-focuso;
+;["/** Widget Header **/;;;@;iJ;
+[ o;;o;	;0;@;iK;{	;iÓ;i; iÓ;!iÓ;@;iK;
+[ ;0;"xcp-widget-header-coloro;;o;	;0;@;iL;{	;iu;i; iu;!iu;@;iL;
+[ ;0;"#xcp-widget-header-border-coloro;;o:Sass::Script::Null;0;@;iM;@;iM;
+[ ;0;"'xcp-widget-header-background-coloro;;o;	;"	none;;;@;iN;@;iN;
+[ ;0;"*xcp-widget-header-background-gradiento;;o;';T;@;iO;@;iO;
+[ ;0;"xcp-widget-use-gradientso;;o;	;[o;;i
+;[ ;@;iP;["px;"5pxo;;i ;[ ;@;iP;["px;"0px;@;iP;;%;@;iP;
+[ ;0;"xcp-widget-header-paddingo;
+;["/** ColumnBox Header **/;;;@;iR;
+[ o;;o;;i;[ ;@;iS;["px;"	16px;@;iS;
+[ ;0;"(xcp-columnbox-header-text-font-sizeo;;o;	;"	bold;;;@;iT;@;iT;
+[ ;0;"*xcp-columnbox-header-text-font-weighto;;o;	;0;@;iU;{	;i;;i; i;;!i;;@;iU;
+[ ;0;")xcp-columnbox-header-text-font-coloro;
+;["/** Widget Button **/;;;@;iX;
+[ o;;o;	;0;@;iY;{	;i8;i; iô;!iÃ;@;iY;
+[ ;0;"xcp-widget-button-coloro;;o:Sass::Script::Funcall;@:@splat0;iZ:
+@args[o;#	;$"xcp_widget_button_color;@;iZ;"xcp-widget-button-color:@keywords{"lightnesso;;i;[ ;@;iZ;["%;"10%"saturationo;;i;[ ;@;iZ;["%;"10%;"adjust-color;@;iZ;
+[ ;0;"!xcp-widget-button-color-overo;;o;#	;$"xcp_widget_button_color;@;i[;"xcp-widget-button-color;@;i[;
+[ ;0;""xcp-widget-button-color-focuso;;o;);@;*0;i\;+[o;#	;$"xcp_widget_button_color;@;i\;"xcp-widget-button-color;,{"lightnesso;;iˆ;[ ;@;i\;["%;"-5%"saturationo;;iˆ;[ ;@;i\;["%;"-5%;"adjust-color;@;i\;
+[ ;0;"$xcp-widget-button-color-pressedo;;o;	;0;@;i];{	;i◊;i; i◊;!i◊;@;i];
+[ ;0;"%xcp-widget-button-color-disabledo;;o;	;0;@;i_;{	;iˇ;i; iô;!i ;@;i_;
+[ ;0;")xcp-widget-button-border-color-focuso;;o;';F;@;ia;@;ia;
+[ ;0;"$xcp-widget-button-use-gradientso;;o;;i ;[ ;@;ib;["px;"0px;@;ib;
+[ ;0;"xcp-widget-button-radiuso;;o;;i ;[ ;@;ic;["px;"0px;@;ic;
+[ ;0;"#xcp-widget-button-border-widtho;;o;	;[o;;i;[ ;@;id;["px;"3pxo;;i;[ ;@;id;["px;"	24px;@;id;;%;@;id;
+[ ;0;"xcp-widget-button-paddingo;;o;	;[o;;i ;[ ;@;ie;["px;"0pxo;;i;[ ;@;ie;["px;"	10px;@;ie;;%;@;ie;
+[ ;0;"xcp-widget-button-margino;;o;;i;[ ;@;if;["px;"	16px;@;if;
+[ ;0;" xcp-widget-button-icon-sizeo;
+;["/** Widget Panel **/;;;@;ii;
+[ o;;o;	;0;@;ij;{	;i√;i; i“;!i·;@;ij;
+[ ;0;"xcp-widget-panel-coloro;;o;';T;@;ik;@;ik;
+[ ;0;"#xcp-widget-panel-use-gradientso;
+;["/** Widget Labels **/;;;@;im;
+[ o;;o;	;"	left;;;@;in;@;in;
+[ ;0;"xcp-widget-label-positiono;;o;;iñ;[ ;@;io;[ ;"150;@;io;
+[ ;0;"xcp-widget-label-widtho;;o;;i
+;@ˆ;@;ip;[ ;"5;@;ip;
+[ ;0;"xcp-widget-label-paddingo;
+;["&/*$xcp-widget-label-separator: */;;";@;iq;
+[ o;
+;["/** List Selection **/;;;@;is;
+[ o;;o;);@;*0;it;+[o;#	;$"xcp_widget_panel_color;@;it;"xcp-widget-panel-color;,{"lightnesso;;iZ;[ ;@;it;["%;"85%"saturationo;;i;[ ;@;it;["%;"20%;"change-color;@;it;
+[ ;0;""xcp-list-item-selection-coloro;;o;);@;*0;iu;+[o;#	;$"xcp_widget_panel_color;@;iu;"xcp-widget-panel-color;,{"lightnesso;;i_;[ ;@;iu;["%;"90%"saturationo;;i;[ ;@;iu;["%;"20%;"change-color;@;iu;
+[ ;0;"xcp-list-item-hover-coloro;;o;#	;$"xcp_widget_hover_color;@;iw;"xcp-widget-hover-color;@;iw;
+[ ;0;"#xcp-boundlist-item-hover-coloro;;o;#	;$"xcp_widget_selection_color;@;ix;"xcp-widget-selection-color;@;ix;
+[ ;0;"!xcp-boundlist-selected-coloro;;o;	;"
+solid;;;@;iy;@;iy;
+[ ;0;"-xcp-boundlist-item-selected-border-styleo;;o;	;"transparent;;;@;iz;@;iz;
+[ ;0;"-xcp-boundlist-item-selected-border-coloro;;o;;i;[ ;@;i{;["px;"1px;@;i{;
+[ ;0;"-xcp-boundlist-item-selected-border-widtho;
+;["/** Framework Tab **/;;;@;i~;
+[ o;;o;#	;$"xcp_default_font_family;@;i;"xcp-default-font-family;@;i;
+[ ;0;"(xcp-app-menu-label-text-font-familyo;;o;;i;[ ;@;i{;["px;"	14px;@;i{;
+[ ;0;"&xcp-app-menu-label-text-font-sizeo;;o;	;"	bold;;;@;i|;@;i|;
+[ ;0;"(xcp-app-menu-label-text-font-weighto;;o;	;0;@;i};{	;iE;i; iø;!iˇ;@;i};
+[ ;0;"'xcp-app-menu-label-text-font-coloro;;o;	;0;@;i~;{	;iˇ;i; iˇ;!iˇ;@;i~;
+[ ;0;",xcp-app-menu-label-text-font-color-overo;;o;	;0;@;i;{	;iˇ;i; iˇ;!iˇ;@;i;
+[ ;0;"-xcp-app-menu-label-text-font-color-focuso;;o;	;0;@;iÄ;{	;iˇ;i; iˇ;!iˇ;@;iÄ;
+[ ;0;"/xcp-app-menu-label-text-font-color-pressedo;;o;	;0;@;iÅ;{	;i8;i; iô;!iÃ;@;iÅ;
+[ ;0;"4xcp-app-menu-label-text-font-color-pressed-overo;
+;[""/** App Header Background **/;;;@;iÉ;
+[ o;;o;	;0;@;iÑ;{	;i ;i; i ;!i ;@;iÑ;
+[ ;0;"xcp-app-header-backgroundo;;o;	;0;@;iÖ;{	;iC;i; iC;!iC;@;iÖ;
+[ ;0;"-xcp-app-header-background-gradient-starto;;o;	;0;@;iÜ;{	;i ;i; i ;!i ;@;iÜ;
+[ ;0;"+xcp-app-header-background-gradient-endo;;o;);@;*0;iá;+[o;	;[o;#	;$"-xcp_app_header_background_gradient_start;@;iá;"-xcp-app-header-background-gradient-starto;;i ;[ ;@;iá;["%;"0%;@;iá;;%o;	;[o;#	;$"+xcp_app_header_background_gradient_end;@;iá;"+xcp-app-header-background-gradient-endo;;ii;[ ;@;iá;["%;"	100%;@;iá;;%;,{ ;"color_stops;@;iá;
+[ ;0;"'xcp-app-header-background-gradiento;
+;[" /** App Menu Background **/;;;@;iâ;
+[ o;;o;	;0;@;iä;{	;iZ;i; ià;!iª;@;iä;
+[ ;0;""xcp-app-menu-background-coloro;;o;);@;*0;iã;+[o;);@;*0;iã;+[o;#	;$""xcp_app_menu_background_color;@;iã;""xcp-app-menu-background-coloro;;i;[ ;@;iã;["%;"25%;,{ ;"lighteno;	;[o;#	;$""xcp_app_menu_background_color;@;iã;""xcp-app-menu-background-coloro;;i7;[ ;@;iã;["%;"50%;@;iã;;%o;);@;*0;iã;+[o;#	;$""xcp_app_menu_background_color;@;iã;""xcp-app-menu-background-coloro;;i
+;[ ;@;iã;["%;"5%;,{ ;"darken;,{ ;"color_stops;@;iã;
+[ ;0;"%xcp-app-menu-background-gradiento;;o;';F;@;iå;@;iå;
+[ ;0;"*xcp-app-menu-background-use-gradientso;
+;["/** App Menu Border **/;;;@;ié;
+[ o;;o;	;"	none;;;@;iè;@;iè;
+[ ;0;"xcp-app-menu-bordero;;o;	;0;@;iê;{	;i◊;i; i◊;!i◊;@;iê;
+[ ;0;"xcp-app-menu-border-coloro;;o;	;[o;	;"
+solid;;;@;iëo;	;"
+round;;;@;ië;@;ië;;%;@;ië;
+[ ;0;"xcp-app-menu-border-styleo;;o;';F;@;ií;@;ií;
+[ ;0;"xcp-app-menu-shadowo;;o;;i ;[ ;@;iì;["px;"0px;@;iì;
+[ ;0;"xcp-app-menu-border-radiuso;;o;;i
+;[ ;@;iî;["px;"5px;@;iî;
+[ ;0;"$xcp-app-menu-bottom-border-sizeo;;o;	;0;@;iï;{	;i8;i; iô;!iÃ;@;iï;
+[ ;0;"%xcp-app-menu-bottom-border-coloro;;o;;i;[ ;@;iñ;["px;"1px;@;iñ;
+[ ;0;"*xcp-app-menu-bottom-inner-border-sizeo;;o;	;0;@;ió;{	;iˇ;i; iˇ;!iˇ;@;ió;
+[ ;0;"+xcp-app-menu-bottom-inner-border-coloro;
+;["/** App Menu button **/;;;@;iô;
+[ o;;o;	;[	o;;i;[ ;@;iö;["px;"8pxo;;i ;@ˆ;@;iö;[ ;"0o;;i;[ ;@;iö;["px;"6pxo;;i ;@ˆ;@;iö;[ ;"0;@;iö;;%;@;iö;
+[ ;0;"&xcp-app-menu-button-small-paddingo;;o;;i
+;[ ;@;iõ;["px;"5px;@;iõ;
+[ ;0;"+xcp-app-menu-button-small-text-paddingo;;o;	;"	none;;;@;iú;@;iú;
+[ ;0;")xcp-app-menu-button-background-coloro;;o;);@;*0;iù;+[o;	;0;@;iù;{	;i8;i; iô;!iÃo;;f	0.25;@ˆ;@;iù;[ ;"	0.25;,{ ;"	rgba;@;iù;
+[ ;0;".xcp-app-menu-button-background-color-overo;;o;#	;$".xcp_app_menu_button_background_color_over;@;iû;".xcp-app-menu-button-background-color-over;@;iû;
+[ ;0;"/xcp-app-menu-button-background-color-focuso;;o;	;"	none;;;@;iü;@;iü;
+[ ;0;"1xcp-app-menu-button-background-color-pressedo;;o;	;"	none;;;@;i°;@;i°;
+[ ;0;"1xcp-app-menu-button-background-gradient-overo;;o;	;"	none;;;@;i¢;@;i¢;
+[ ;0;"2xcp-app-menu-button-background-gradient-focuso;;o;	;"	none;;;@;i£;@;i£;
+[ ;0;"4xcp-app-menu-button-background-gradient-pressedo;
+;["#/** App Menu Button Border **/;;;@;i•;
+[ o;;o;;i;[ ;@;i¶;["px;"1px;@;i¶;
+[ ;0;"xcp-app-menu-button-bordero;;o;	;"transparent;;;@;iß;@;iß;
+[ ;0;"%xcp-app-menu-button-border-coloro;;o;);@;*0;i®;+[o;	;0;@;i®;{	;iE;i; iø;!iˇo;;f	0.25;@ˆ;@;i®;[ ;"	0.25;,{ ;"	rgba;@;i®;
+[ ;0;"*xcp-app-menu-button-border-color-overo;
+;["/** App Menu marker **/;;;@;i™;
+[ o;;o;#	;$"%xcp_app_menu_bottom_border_color;@;i´;"%xcp-app-menu-bottom-border-color;@;i´;
+[ ;0;"xcp-app-menu-marker-coloro;
+;["/** Nav Menu **/;;;@;iÆ;
+[ o;;o;);@;*0;iØ;+[o;#	;$"xcp_widget_panel_color;@;iØ;"xcp-widget-panel-color;,{"lightnesso;;if;[ ;@;iØ;["%;"97%"saturationo;;i#;[ ;@;iØ;["%;"30%;"change-color;@;iØ;
+[ ;0;""xcp-nav-menu-background-coloro;
+;["/** Case Menu **/;;;@;i≤;
+[ o;;o;#	;$"xcp_default_font_family;@;i≥;"xcp-default-font-family;@;i≥;
+[ ;0;")xcp-case-menu-label-text-font-familyo;;o;;i;[ ;@;i¥;["px;"	14px;@;i¥;
+[ ;0;"'xcp-case-menu-label-text-font-sizeo;;o;	;"	bold;;;@;iµ;@;iµ;
+[ ;0;")xcp-case-menu-label-text-font-weighto;;o;	;0;@;i∂;{	;iZ;i; ià;!iª;@;i∂;
+[ ;0;"(xcp-case-menu-label-text-font-coloro;;o;	;0;@;i∑;{	;iÓ;i; iÓ;!iÓ;@;i∑;
+[ ;0;"#xcp-case-menu-background-coloro;;o;';T;@;i∏;@;i∏;
+[ ;0;"+xcp-case-menu-background-use-gradientso;;o;	;0;@;i∫;{	;iÃ;i; iÃ;!iÃ;@;i∫;
+[ ;0;"xcp-case-menu-border-coloro;;o;	;[o;	;"
+solid;;;@;iªo;	;"
+round;;;@;iª;@;iª;;;@;iª;
+[ ;0;"xcp-case-menu-border-styleo;;o;';F;@;iº;@;iº;
+[ ;0;" xcp-case-menu-border-shadowo;
+;["/** Master Background **/;;;@;iø;
+[ o;;o;	;0;@;i¿;{	;i;i; iı;!i˘;@;i¿;
+[ ;0;" xcp-master-background-coloro;
+;["/** Page Background **/;;;@;i¬;
+[ o;;o;	;"transparent;;;@;i√;@;i√;
+[ ;0;"xcp-page-background-coloro;;o;	;"page/xcpbg_pattern.png;;&;@;iƒ;@;iƒ;
+[ ;0;"xcp-page-background-imageo;
+;["/** Content Area **/;;;@;i∆;
+[ o;;o;;i;[ ;@;i«;["px;"	10px;@;i«;
+[ ;0;"xcp-content-area-margino;;o;	;"transparent;;;@;i»;@;i»;
+[ ;0;" xcp-content-area-backgroundo;
+;["/** Menu, Context Menu **/;;;@;i ;
+[ o;;o;	;[	o;;i ;@ˆ;@;iÀ;[ ;"0o;;i;[ ;@;iÀ;["px;"	10pxo;;i ;@ˆ;@;iÀ;[ ;"0o;;i;[ ;@;iÀ;["px;"	10px;@;iÀ;;%;@;iÀ;
+[ ;0;"xcp-menu-body-paddingo;;o;	;[	o;;i;[ ;@;iÃ;["px;"	10pxo;;i;[ ;@;iÃ;["px;"	10pxo;;i;[ ;@;iÃ;["px;"	10pxo;;i ;@ˆ;@;iÃ;[ ;"0;@;iÃ;;%;@;iÃ;
+[ ;0;"xcp-menu-item-text-paddingo;;o;	;0;@;iÕ;{	;iˇ;i; iˇ;!iˇ;@;iÕ;
+[ ;0;"xcp_menu_background-coloro;;o;	;0;@;iŒ;{	;i8;i; iô;!iÃ;@;iŒ;
+[ ;0;""xcp-menu-item-background-overo;;o;	;0;@;iœ;{	;i◊;i; i◊;!i◊;@;iœ;
+[ ;0;"$xcp-menu-separator-border-coloro;
+;["/** Context menu item **/;;;@;i—;
+[ o;;o;#	;$"xcp_default_font_family;@;i“;"xcp-default-font-family;@;i“;
+[ ;0;"0xcp-context-menuitem-label-text-font-familyo;;o;;i;[ ;@;i”;["px;"	11px;@;i”;
+[ ;0;".xcp-context-menuitem-label-text-font-sizeo;;o;	;"normal;;;@;i‘;@;i‘;
+[ ;0;"0xcp-context-menuitem-label-text-font-weighto;;o;	;0;@;i’;{	;i;;i; i;;!i;;@;i’;
+[ ;0;"/xcp-context-menuitem-label-text-font-coloro;;o;	;0;@;i÷;{	;iˇ;i; iˇ;!iˇ;@;i÷;
+[ ;0;"4xcp-context-menuitem-label-text-font-color-overo;;o;	;0;@;iÿ;{	;iˇ;i; iˇ;!iˇ;@;iÿ;
+[ ;0;"xcp-window-shadow-coloro;
+;["/** load mask **/;;;@;i⁄;
+[ o;;o;;f0.59999999999999998 33;@ˆ;@;i€;[ ;"0.6;@;i€;
+[ ;0;"xcp-loadmask-opacityo;;o;	;0;@;i‹;{	;iˇ;i; iˇ;!iˇ;@;i‹;
+[ ;0;"xcp-loadmask-backgorundo;
+;["/** Toolbar **/;;;@;iﬁ;
+[ o;;o;;i);[ ;@;iﬂ;["px;"	36px;@;iﬂ;
+[ ;0;"xcp-toolbar-heighto;;o;#	;$"xcp_page_background_color;@;i‡;"xcp-page-background-color;@;i‡;
+[ ;0;"!xcp-toolbar-background-coloro;
+;["/*toolbar border */;;";@;i‚;
+[ o;;o;	;0;@;i„;{	;i◊;i; i◊;!i◊;@;i„;
+[ ;0;"xcp-toolbar-border-coloro;;o;;i;[ ;@;i‰;["px;"1px;@;i‰;
+[ ;0;"$xcp-toolbar-border-width-bottomo;;o;;i ;[ ;@;iÂ;["px;"0px;@;iÂ;
+[ ;0;"xcp-toolbar-border-radiuso;
+;["/* toolbar separator */;;";@;iÁ;
+[ o;;o;	;0;@;iË;{	;i◊;i; i◊;!i◊;@;iË;
+[ ;0;" xcp-toolbar-separator-coloro;;o;	;0;@;iÈ;{	;iˇ;i; iˇ;!iˇ;@;iÈ;
+[ ;0;"*xcp-toolbar-separator-highlight-coloro;;o;;i;[ ;@;iÍ;["px;"	24px;@;iÍ;
+[ ;0;"!xcp-toolbar-separator-heighto;
+;["/* Toolbar button */;;";@;iÏ;
+[ o;;o;;i ;[ ;@;iÌ;["px;"0px;@;iÌ;
+[ ;0;"%xcp-toolbar-button-border-radiuso;;o;;i;[ ;@;iÓ;["px;"1px;@;iÓ;
+[ ;0;"$xcp-toolbar-button-border-widtho;;o;	;"transparent;;;@;i;@;i;
+[ ;0;"$xcp-toolbar-button-border-coloro;;o;);@;*0;iÒ;+[o;	;0;@;iÒ;{	;iE;i; iø;!iˇo;;f	0.25;@ˆ;@;iÒ;[ ;"	0.25;,{ ;"	rgba;@;iÒ;
+[ ;0;")xcp-toolbar-button-border-color-overo;;o;	;0;@;iÚ;{	;iE;i; iø;!iˇ;@;iÚ;
+[ ;0;",xcp-toolbar-button-border-color-pressedo;;o;	;"transparent;;;@;iÛ;@;iÛ;
+[ ;0;"-xcp-toolbar-button-border-color-disabledo;;o;	;"transparent;;;@;iı;@;iı;
+[ ;0;"(xcp-toolbar-button-background-coloro;;o;);@;*0;iˆ;+[o;	;0;@;iˆ;{	;i8;i; iô;!iÃo;;f	0.25;@ˆ;@;iˆ;[ ;"	0.25;,{ ;"	rgba;@;iˆ;
+[ ;0;"-xcp-toolbar-button-background-color-overo;;o;	;0;@;i˜;{	;iœ;i; iÔ;!iˇ;@;i˜;
+[ ;0;"1xcp-toolbar-button-background-color-over-ie8o;;o;#	;$"-xcp_toolbar_button_background_color_over;@;i˘;"-xcp-toolbar-button-background-color-over;@;i˘;
+[ ;0;".xcp-toolbar-button-background-color-focuso;;o;	;0;@;i˙;{	;i8;i; iô;!iÃ;@;i˙;
+[ ;0;"0xcp-toolbar-button-background-color-pressedo;;o;	;"transparent;;;@;i˚;@;i˚;
+[ ;0;"1xcp-toolbar-button-background-color-disabledo;;o;(;0;@;i˝;@;i˝;
+[ ;0;"+xcp-toolbar-button-background-gradiento;;o;(;0;@;i˛;@;i˛;
+[ ;0;"0xcp-toolbar-button-background-gradient-overo;;o;(;0;@;iˇ;@;iˇ;
+[ ;0;"1xcp-toolbar-button-background-gradient-focuso;;o;(;0;@;i ;@;i ;
+[ ;0;"3xcp-toolbar-button-background-gradient-pressedo;;o;(;0;@;i;@;i;
+[ ;0;"4xcp-toolbar-button-background-gradient-disabledo;;o;;i;[ ;@;i;["px;"	16px;@;i;
+[ ;0;"'xcp-toolbar-button-small-icon-sizeo;;o;	;[o;;i;[ ;@;i;["px;"2pxo;;i	;[ ;@;i;["px;"4px;@;i;;%;@;i;
+[ ;0;"%xcp-toolbar-button-small-paddingo;
+;["/*Toolbar button text */;;";@;i;
+[ o;;o;#	;$"%xcp_widget_label_text_font_color;@;i;"%xcp-widget-label-text-font-color;@;i;
+[ ;0;""xcp-toolbar-button-text-coloro;;o;#	;$"%xcp_widget_label_text_font_color;@;i	;"%xcp-widget-label-text-font-color;@;i	;
+[ ;0;"'xcp-toolbar-button-text-color-overo;;o;#	;$"%xcp_widget_label_text_font_color;@;i
+;"%xcp-widget-label-text-font-color;@;i
+;
+[ ;0;"(xcp-toolbar-button-text-color-focuso;;o;	;0;@;i;{	;iˇ;i; iˇ;!iˇ;@;i;
+[ ;0;"*xcp-toolbar-button-text-color-pressedo;;o;#	;$"$xcp_widget_value_text_font_size;@;i;"$xcp-widget-value-text-font-size;@;i;
+[ ;0;"&xcp-toolbar-button-text-font-sizeo;;o;#	;$"&xcp_widget_value_text_font_weight;@;i;"&xcp-widget-value-text-font-weight;@;i;
+[ ;0;"(xcp-toolbar-button-text-font-weighto;;o;#	;$"&xcp_widget_value_text_font_family;@;i;"&xcp-widget-value-text-font-family;@;i;
+[ ;0;"(xcp-toolbar-button-text-font-familyo;
+;["/** tab bar **/;;;@;i;
+[ o;;o;	;"transparent;;;@;i;@;i;
+[ ;0;"!xcp-tab-bar-background-coloro;;o;	;0;@;i;{	;iï;i; iï;!iï;@;i;
+[ ;0;"xcp-tab-bar-border-coloro;
+;["/** tab button **/;;;@;i;
+[ o;;o;;i;[ ;@;i;["px;"	26px;@;i;
+[ ;0;"xcp-header-tab-heighto;;o;	;[	o;;i
+;[ ;@;i;["px;"5pxo;;i;[ ;@;i;["px;"	10pxo;;i
+;[ ;@;i;["px;"5pxo;;i;[ ;@;i;["px;"	10px;@;i;;%;@;i;
+[ ;0;"xcp-header-tab-paddingo;;o;	;0;@;i;{	;i8;i; iô;!iÃ;@;i;
+[ ;0;"xcp-header-tab-backgroundo;;o;	;0;@;i;{	;i·;i; i;!i˜;@;i;
+[ ;0;"'xcp-header-tab-background-inactiveo;;o;	;0;@;i;{	;i8;i; iô;!iÃ;@;i;
+[ ;0;"%xcp-header-tab-background-activeo;;o;	;[	o;);@;*0;i;+[	o;;i ;@ˆ;@;i;[ ;"0o;;i ;@ˆ;@;i;[ ;"0o;;i ;@ˆ;@;i;[ ;"0o;;f0.40000000000000002 ôö;@ˆ;@;i;[ ;"0.4;,{ ;"	rgbao;;i ;@ˆ;@;i;[ ;"0o;;i ;@ˆ;@;i;[ ;"0o;;i
+;[ ;@;i;["px;"5px;@;i;;%;@;i;
+[ ;0;"&xcp-header-tab-text-shadow-activeo;;o;);@;*0;i;+[o;#	;$"xcp_header_tab_background;@;i;"xcp-header-tab-background;,{"lightnesso;;i;[ ;@;i;["%;"10%"saturationo;;i;[ ;@;i;["%;"10%;"adjust-color;@;i;
+[ ;0;"#xcp-header-tab-background-overo;;o;	;[	o;);@;*0;i;+[	o;;i ;@ˆ;@;i;[ ;"0o;;i ;@ˆ;@;i;[ ;"0o;;i ;@ˆ;@;i;[ ;"0o;;f0.40000000000000002 ôö;@ˆ;@;i;[ ;"0.4;,{ ;"	rgbao;;i ;@ˆ;@;i;[ ;"0o;;i ;@ˆ;@;i;[ ;"0o;;i
+;[ ;@;i;["px;"5px;@;i;;%;@;i;
+[ ;0;"$xcp-header-tab-text-shadow-overo;;o;	;0;@;i ;{	;i◊;i; i◊;!i◊;@;i ;
+[ ;0;"'xcp-header-tab-background-disabledo;;o;;f0.5;@ˆ;@;i!;[ ;"0.5;@;i!;
+[ ;0;"$xcp-header-tab-opacity-disabledo;;o;	;0;@;i";{	;iï;i; iï;!iï;@;i";
+[ ;0;"!xcp-header-tab-font-disabledo;;o;;f0.5;@ˆ;@;i#;[ ;"0.5;@;i#;
+[ ;0;" xcp-header-tab-icon-opacityo;;o;;i;[ ;@;i%;["px;"8px;@;i%;
+[ ;0;"xcp-header-tab-caret-widtho;;o;;i;[ ;@;i&;["px;"8px;@;i&;
+[ ;0;" xcp-header-tab-caret-heighto;;o;;i;[ ;@;i';["px;"	10px;@;i';
+[ ;0;" xcp-header-tab-caret-offseto;
+;["/** ToolTip **/;;;@;i);
+[ o;;o;	;0;@;i*;{	;i·;i; i;!i˜;@;i*;
+[ ;0;"!xcp-tooltip-background-coloro;;o;;i
+;[ ;@;i+;["px;"5px;@;i+;
+[ ;0;"xcp-tooltip-paddingo;;o;	;0;@;i,;{	;i◊;i; i◊;!i◊;@;i,;
+[ ;0;"xcp-tooltip-border-coloro;
+;["/** Window **/;;;@;i.;
+[ o;;o;	;0;@;i/;{	;iÓ;i; iÓ;!iÓ;@;i/;
+[ ;0;"xcp-window-fill-coloro;
+;["/** Date picker **/;;;@;i1;
+[ o;;o;	;"transparent;;;@;i2;@;i2;
+[ ;0;" xcp-datepicker-border-coloro;;o;	;"transparent;;;@;i4;@;i4;
+[ ;0;"+xcp-datepicker-header-background-coloro;;o;(;0;@;i5;@;i5;
+[ ;0;".xcp-datepicker-header-background-gradiento;;o;	;0;@;i6;{	;i◊;i; i◊;!i◊;@;i6;
+[ ;0;"'xcp-datepicker-header-border-coloro;;o;#	;$"xcp_widget_hover_color;@;i8;"xcp-widget-hover-color;@;i8;
+[ ;0;"/xcp_datepicker-item-hover-background-coloro;;o;;i;[ ;@;i:;["px;"	11px;@;i:;
+[ ;0;"2xcp-datepicker-toolbar-button-label-font-sizeo;;o;	;0;@;i;;{	;iÓ;i; iÓ;!iÓ;@;i;;
+[ ;0;"'xcp-datepicker-th-background-coloro;;o;(;0;@;i<;@;i<;
+[ ;0;"*xcp-datepicker-th-background-gradiento;;o;	;0;@;i>;{	;i ;i; iô;!i ;@;i>;
+[ ;0;"+xcp-datepicker-today-item-border-coloro;;o;	;"transparant;;;@;i?;@;i?;
+[ ;0;"/xcp-datepicker-today-item-background-coloro;;o;#	;$"xcp_widget_selection_color;@;i@;"xcp-widget-selection-color;@;i@;
+[ ;0;"8xcp-datepicker-today-item-selected-background-coloro;;o;#	;$"xcp_widget_selection_color;@;iA;"xcp-widget-selection-color;@;iA;
+[ ;0;"2xcp-datepicker-selected-item-background-coloro;;o;;i ;[ ;@;iB;["px;"0px;@;iB;
+[ ;0;".xcp-datepicker-selected-item-border-widtho;;o;;i;[ ;@;iC;["px;"1px;@;iC;
+[ ;0;"4xcp-datepicker-today-selected-item-border-widtho;;o;	;"transparent;;;@;iE;@;iE;
+[ ;0;".xcp-datepicker-selected-item-border-coloro;;o;	;"transparent;;;@;iG;@;iG;
+[ ;0;"+xcp-datepicker-footer-background-coloro;;o;#	;$"xcp_widget_hover_color;@;iI;"xcp-widget-hover-color;@;iI;
+[ ;0;"0xcp-monthpicker-item-hover-background-coloro;;o;	;[o;;i;[ ;@;iJ;["px;"3pxo;;i;[ ;@;iJ;["px;"	19px;@;iJ;;%;@;iJ;
+[ ;0;"&xcp-picker-toolbar-button-padding
